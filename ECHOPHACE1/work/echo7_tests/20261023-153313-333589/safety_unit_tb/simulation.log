@@ -1,0 +1,23 @@
+Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153313-333589\safety_unit_tb\simlib safety_unit_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 15:33:14 on Oct 23,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153313-333589\safety_unit_tb\simlib.safety_unit_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153313-333589\safety_unit_tb\simlib.irEmergencyStop
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153313-333589\safety_unit_tb\simlib.motorSafetyController
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153313-333589\safety_unit_tb\simlib.controlWatchdog
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153313-333589\safety_unit_tb\simlib.ultrasonicSafety
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153313-333589\safety_unit_tb\simlib.motorSafetyArbiter
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# PASS safety_unit_tb: estop/reset, manual/visual inhibition, watchdog boundaries/recovery, sonar disable/dual threshold/hysteresis/invalid/stale, fault priority
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/safety/safety_unit_tb.sv(51)
+#    Time: 2640 ns  Iteration: 1  Instance: /safety_unit_tb
+# End time: 15:33:14 on Oct 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

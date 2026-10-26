@@ -1,0 +1,18 @@
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153748-540821\uartSafety_tb\simlib uartSafety_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 15:37:49 on Oct 23,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153748-540821\uartSafety_tb\simlib.uartSafety_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153748-540821\uartSafety_tb\simlib.irEmergencyStop
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153748-540821\uartSafety_tb\simlib.motorSafetyArbiter
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153748-540821\uartSafety_tb\simlib.safeChassisCommand
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153748-540821\uartSafety_tb\simlib.uart_tx
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# PASS uartSafety_tb: 26 stop phases, JSON/8N1, KEY0 in-flight, priority stop and persistent heartbeat; max decoded-event to zero-load/start/complete-stop-bit ns = 2257330 / 2257350 / 4341030
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/safety/uartSafety_tb.sv(60)
+#    Time: 205199170 ns  Iteration: 1  Instance: /uartSafety_tb
+# End time: 15:38:09 on Oct 23,2026, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0

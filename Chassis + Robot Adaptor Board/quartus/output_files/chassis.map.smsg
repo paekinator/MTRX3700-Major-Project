@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at top_level.sv(22): object "SW" differs only in case from object "sw" in the same scope File: C:/Quartus_Projects/Majortut/Chassis + Robot Adaptor Board/rtl/top_level.sv Line: 22
+Info (10281): Verilog HDL Declaration information at top_level.sv(21): object "KEY" differs only in case from object "key" in the same scope File: C:/Quartus_Projects/Majortut/Chassis + Robot Adaptor Board/rtl/top_level.sv Line: 21

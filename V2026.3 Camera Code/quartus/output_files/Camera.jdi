@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="c5fa32e9508b577ac6a4"/>
+  </project>
+  <file_info>
+    <file device="5CSEMA5F31C6" path="Camera.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="vga_sink:vga_u" name="vga_u">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME vga_sink HAS_SOPCINFO 1 GENERATION_ID 1792434856"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

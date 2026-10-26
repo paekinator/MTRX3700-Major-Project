@@ -1,0 +1,19 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/mtrx3700/mp/camera/quartus/vga_sink.qsys --synthesis=VERILOG --output-directory=/home/mtrx3700/mp/camera/quartus/vga_sink/synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading quartus/vga_sink.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding video_vga_controller_0 [altera_up_avalon_video_vga_controller 18.0]
+Progress: Parameterizing module video_vga_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: vga_sink.video_vga_controller_0: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info: vga_sink: Generating vga_sink "vga_sink" for QUARTUS_SYNTH
+Info: video_vga_controller_0: Starting Generation of VGA Controller
+Info: video_vga_controller_0: "vga_sink" instantiated altera_up_avalon_video_vga_controller "video_vga_controller_0"
+Info: vga_sink: Done "vga_sink" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

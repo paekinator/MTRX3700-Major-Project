@@ -1,0 +1,22 @@
+Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-152745-993673\sonarSafety_tb\simlib sonarSafety_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 15:28:21 on Oct 23,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-152745-993673\sonarSafety_tb\simlib.sonarSafety_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-152745-993673\sonarSafety_tb\simlib.dualSonar
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-152745-993673\sonarSafety_tb\simlib.sonar_pll
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-152745-993673\sonarSafety_tb\simlib.sonar_range
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-152745-993673\sonarSafety_tb\simlib.sonarSampleCdc
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# PASS sonarSafety_tb: actual dual echo measurements, units, phase staggering, CDC, out-of-range and reset
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/safety/sonarSafety_tb.sv(24)
+#    Time: 124541491 ns  Iteration: 0  Instance: /sonarSafety_tb
+# End time: 15:28:38 on Oct 23,2026, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0

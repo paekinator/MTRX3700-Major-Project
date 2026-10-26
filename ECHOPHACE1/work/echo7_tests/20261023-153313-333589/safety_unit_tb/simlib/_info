@@ -1,0 +1,454 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Quartus_Projects/Majortut/ECHOPHACE1/work/echo7_tests/20261023-153313-333589/safety_unit_tb
+vcontrolWatchdog
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1792729993
+!i10b 1
+!s100 2EjJXa6LRjYj5jF7G^94P0
+IK0C5lP1EV_c>:7=QD7bCo1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 controlWatchdog_sv_unit
+S1
+R0
+Z4 w1792729180
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\controlWatchdog.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\controlWatchdog.sv
+L0 2
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1792729993.000000
+Z7 !s107 C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\safety\safety_unit_tb.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_pll.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_range.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\uart_rx.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\ir_drive.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\necDecoderSafe.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetySystem.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetyHex.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\dualSonar.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\sonarSampleCdc.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safeChassisCommand.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irMotionControl.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyController.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyArbiter.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\ultrasonicSafety.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\controlWatchdog.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irEmergencyStop.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\uart_tx.sv|
+Z8 !s90 -sv|-work|C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153313-333589\safety_unit_tb\simlib|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\uart_tx.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irEmergencyStop.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\controlWatchdog.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\ultrasonicSafety.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyArbiter.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyController.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irMotionControl.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safeChassisCommand.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\sonarSampleCdc.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\dualSonar.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetyHex.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetySystem.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\necDecoderSafe.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\ir_drive.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\uart_rx.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_range.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_pll.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\safety\safety_unit_tb.sv|
+!i113 1
+Z9 o-sv -work {C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153313-333589\safety_unit_tb\simlib}
+Z10 tCvgOpt 0
+ncontrol@watchdog
+vdualSonar
+R1
+R2
+!i10b 1
+!s100 OVZW9Im`k8nkI@72YD=HW0
+I@9hiTA8NQZJ8lb_gnY;Bh0
+R3
+!s105 dualSonar_sv_unit
+S1
+R0
+w1792729285
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\dualSonar.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\dualSonar.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+ndual@sonar
+vir_drive
+R1
+R2
+!i10b 1
+!s100 2CTgjjaoYLi?R1f1F>P^I1
+I?CJ2Zg95P17IGbn>co2IF0
+R3
+!s105 ir_drive_sv_unit
+S1
+R0
+Z11 w1792510034
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\ir_drive.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\ir_drive.sv
+L0 18
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+virEmergencyStop
+R1
+R2
+!i10b 1
+!s100 _E[fgc=VeZ8JBY1M:YhZ[1
+IoGCTAj?G^5Bbjij]6:^O51
+R3
+!s105 irEmergencyStop_sv_unit
+S1
+R0
+w1792729179
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irEmergencyStop.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irEmergencyStop.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nir@emergency@stop
+virMotionControl
+R1
+R2
+!i10b 1
+!s100 mGfSX^C1<T6283_zaLZ7z3
+I1Mn65TzDzzb3FMS63bciQ0
+R3
+!s105 irMotionControl_sv_unit
+S1
+R0
+Z12 w1792729182
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irMotionControl.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irMotionControl.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nir@motion@control
+vmotorSafetyArbiter
+R1
+R2
+!i10b 1
+!s100 ecGAPHLTk`QeiS=_QI^5;1
+IbE93B_f^50iEKQWY2ccjI0
+R3
+!s105 motorSafetyArbiter_sv_unit
+S1
+R0
+w1792729181
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyArbiter.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyArbiter.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nmotor@safety@arbiter
+vmotorSafetyController
+R1
+R2
+!i10b 1
+!s100 E79dH]GY8fF9flB=fV7@Q3
+IG8d9XHa20AH:@O<Q[G@GW2
+R3
+!s105 motorSafetyController_sv_unit
+S1
+R0
+R12
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyController.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyController.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nmotor@safety@controller
+vnecDecoderSafe
+R1
+R2
+!i10b 1
+!s100 00=MRW6F9ROVf72kB==HU2
+Iho5BQYbXSKj]1SRnjA@fl0
+R3
+!s105 necDecoderSafe_sv_unit
+S1
+R0
+w1792729303
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\necDecoderSafe.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\necDecoderSafe.sv
+L0 19
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nnec@decoder@safe
+vsafeChassisCommand
+R1
+R2
+!i10b 1
+!s100 Leg;76z?mO?7a__]E25D01
+Il4FBJUOEOJk6H?AL2fa0]2
+R3
+!s105 safeChassisCommand_sv_unit
+S1
+R0
+w1792729887
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safeChassisCommand.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safeChassisCommand.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nsafe@chassis@command
+vsafety_unit_tb
+R1
+R2
+!i10b 1
+!s100 RhM>4VWTVGZc=TX3oTZV90
+IDI[:9k;j?j8Ve_i`e3L>53
+R3
+!s105 safety_unit_tb_sv_unit
+S1
+R0
+w1792729526
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\safety\safety_unit_tb.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\tb\safety\safety_unit_tb.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vsafetyHex
+R1
+R2
+!i10b 1
+!s100 PDMkSX5X@lULiJ5Nba9gz0
+I:fQ0Sk;_W3XQaI@G:zTlG0
+R3
+!s105 safetyHex_sv_unit
+S1
+R0
+Z13 w1792729286
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetyHex.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetyHex.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nsafety@hex
+vsafetySystem
+R1
+R2
+!i10b 1
+!s100 kEaSe]CUNkXzeA6b4IQH[3
+IgNCM];k9DC3A229=^cGLg3
+R3
+!s105 safetySystem_sv_unit
+S1
+R0
+R13
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetySystem.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetySystem.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nsafety@system
+vsonar_pll
+R1
+R2
+!i10b 1
+!s100 @Z_<^@R94<4:ADL=7Ummj1
+Ikk6Z<76<V=J3ebR2<llJY1
+R3
+!s105 sonar_pll_sv_unit
+S1
+R0
+R11
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_pll.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_pll.sv
+L0 22
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vsonar_range
+R1
+R2
+!i10b 1
+!s100 2Y_Kk=S>E`_m0@T[N]]h`0
+IBU961]Eh@VFzB:2gAbbg20
+R3
+!s105 sonar_range_sv_unit
+S1
+R0
+R11
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_range.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_range.sv
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vsonarSampleCdc
+R1
+R2
+!i10b 1
+!s100 G8LaQl5>;=j0T2G28N?RO0
+I?iVR_b4TY<XSaa>aZDfeh3
+R3
+!s105 sonarSampleCdc_sv_unit
+S1
+R0
+w1792729284
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\sonarSampleCdc.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\sonarSampleCdc.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nsonar@sample@cdc
+vuart_rx
+R1
+R2
+!i10b 1
+!s100 lOW0zjM<4CP<H7[AE@jSK2
+INQX2BHPciQ41G:Yo^_b9J3
+R3
+!s105 uart_rx_sv_unit
+S1
+R0
+R11
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\uart_rx.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\uart_rx.sv
+L0 30
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vuart_tx
+R1
+R2
+!i10b 1
+!s100 3]l;GMOJ9F8UK><j^U4KP1
+Ik2njcjG8__JS_Fi3gM^bb2
+R3
+!s105 uart_tx_sv_unit
+S1
+R0
+w1792450348
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\uart_tx.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\uart_tx.sv
+L0 5
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vultrasonicSafety
+R1
+R2
+!i10b 1
+!s100 O^]kgYfgT>hW4g=WC;VL71
+IkZ]jzCG]I7JhI`1Kj5m^:2
+R3
+!s105 ultrasonicSafety_sv_unit
+S1
+R0
+R4
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\ultrasonicSafety.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\ultrasonicSafety.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+nultrasonic@safety

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "Python mathematical checks only; NOT RTL simulation",
+  "cases": 65536,
+  "checks": [
+    "HSV cross-products vs exact rational HSV",
+    "19-bit hue range",
+    "RGB565/30-bit round trip",
+    "fixed mask counts"
+  ],
+  "counts_background_red_blue": {
+    "fixed": [
+      57736,
+      3900,
+      3900
+    ],
+    "ratio": [
+      46190,
+      9673,
+      9673
+    ],
+    "hsv": [
+      50234,
+      6086,
+      9216
+    ]
+  }
+}

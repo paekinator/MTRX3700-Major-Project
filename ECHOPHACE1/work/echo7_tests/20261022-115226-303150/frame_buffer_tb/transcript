@@ -1,0 +1,18 @@
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\frame_buffer_tb\simlib frame_buffer_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 11:54:02 on Oct 22,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\frame_buffer_tb\simlib.frame_buffer_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\frame_buffer_tb\simlib.frame_buffer
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# frame 0: 76800 of 76800 stored pixels read back correctly
+# frame 1: 76800 of 76800 stored pixels read back correctly
+# part 2: reader completed 67 frames; 3 banks: 0 torn, camera frames shown in order '{0, 1, 2, 3, 4, 5}; 3 banks packed: 0 torn, shown '{0, 1, 2, 3, 4, 5}; 2 banks: 0 torn, shown '{0, 2, 4}
+# PASS: frame_buffer keeps every second pixel of every second row, addressed as y*320+x, across two clocks (packed: the top 4 bits of each channel); 3 banks (packed or not) show every frame whole, 2 banks every other frame whole
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/frame_buffer_tb.sv(170)
+#    Time: 251398442128 ps  Iteration: 1  Instance: /frame_buffer_tb
+# End time: 11:55:50 on Oct 22,2026, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 0

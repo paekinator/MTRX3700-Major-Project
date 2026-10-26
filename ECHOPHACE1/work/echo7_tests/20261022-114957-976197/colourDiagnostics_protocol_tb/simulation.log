@@ -1,0 +1,27 @@
+Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib colourDiagnostics_protocol_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 11:50:02 on Oct 22,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.echo7_ref_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.echo7_diag_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.colourDiagnostics_protocol_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.colourDiagnostics
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.colourRegionStats
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.colourMeanHsv
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.unsignedDivider
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.diagnosticRenderer
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.diagnosticFont
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\colourDiagnostics_protocol_tb\simlib.vgaMaskOverlay
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# PASS colourDiagnostics_protocol_tb: invalid/stray markers, boundary backpressure, snapshot, original-pixel means, mode switch, reset in arithmetic/stall, raw mode; transfers=17958
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/colourDiagnostics_protocol_tb.sv(80)
+#    Time: 1499280 ns  Iteration: 1  Instance: /colourDiagnostics_protocol_tb
+# End time: 11:50:02 on Oct 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

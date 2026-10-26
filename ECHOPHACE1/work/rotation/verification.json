@@ -1,0 +1,69 @@
+{
+  "status": "PASS_SOFTWARE_CHECKS_BOARD_NOT_TESTED",
+  "recorded_at": "2026-10-23T14:09:10.4688751+11:00",
+  "simulator": "Model Technology ModelSim ALTERA STARTER EDITION vsim 10.5b Simulator 2016.10 Oct  5 2016",
+  "final_run": "work/echo7_tests/20261023-140136-398386/summary.json",
+  "tests": [
+    {
+      "test": "rotation_tb",
+      "status": "PASS"
+    },
+    {
+      "test": "ov7670_capture_tb",
+      "status": "PASS"
+    },
+    {
+      "test": "frame_buffer_tb",
+      "status": "PASS"
+    },
+    {
+      "test": "camera_display_tb",
+      "status": "PASS"
+    },
+    {
+      "test": "camera_system_tb",
+      "status": "PASS"
+    },
+    {
+      "test": "roiCalibration_protocol_tb",
+      "status": "PASS"
+    }
+  ],
+  "protocol_run": "work/echo7_tests/20261023-135950-570680/summary.json",
+  "initial_failure": "rotation_tb failed to load with DECIMATE=1 test fixture; corrected fixture to actual board DECIMATE=2 and reran successfully; frame_buffer RTL unchanged",
+  "quartus": {
+    "registers": 2831,
+    "log": "work/rotation/quartus.log",
+    "worst_hold_slack_ns": 0.12,
+    "warnings": 87,
+    "status": "SUCCESS",
+    "display_clock_mhz": 25,
+    "memory_bits": 1228800,
+    "worst_setup_slack_ns": 5.292,
+    "slow_corner_display_fmax_mhz": [
+      29.47,
+      28.81
+    ],
+    "timing": "quartus/output_files/Camera.sta.rpt",
+    "alm": 3328,
+    "errors": 0,
+    "dsp": 8,
+    "ram_blocks": 152
+  },
+  "camera_mvfp": "0x1E=0x07; configuration source unchanged; no physical readback",
+  "sha256": {
+    "rtl/top_level.sv": "D0E6E66D45270CF06FABA66C3F30A66E2B873A9593C702490DBF153DC03B8FDD",
+    "rtl/camera_display.sv": "4774F7D496B598A000DEE1FA70CC4F1B2C8B1C4BD69313989FB3CF4011373D6A",
+    "rtl/ov7670_config.sv": "5C679F7A5F638CDEB9E38A5147E5EDC8FFF75490200506629AC1B121CD78C9AE",
+    "tools/echo7/run_tests.py": "F5F3BC287C0CC265694FD63147BF7DC2789694BF3E3D5885D23AC6630404B898",
+    "quartus/output_files/Camera.sof": "98555BAEBC13E13E4782D972F4A1FBDD7A49221CD88FB4130EA8AF858EDA8AEC",
+    "tb/echo7/rotation_tb.sv": "EDB884EB4FB4A0CAD2A19714040126548D50DB20EFC5618D67DE23BB9D2A90B5"
+  },
+  "limitations": [
+    "No physical DE1-SoC test performed",
+    "Verilator unavailable; ModelSim used",
+    "Existing single-buffer tearing risk remains",
+    "Nearest-neighbour 1.5x scale; area units are display pixels",
+    "Diagnostic text may overlay black video side bars"
+  ]
+}

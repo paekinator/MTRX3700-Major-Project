@@ -1,0 +1,5 @@
+Info (10281): Verilog HDL Declaration information at i2c_master.sv(9): object "reg_addr" differs only in case from object "REG_ADDR" in the same scope File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 9
+Info (10281): Verilog HDL Declaration information at ov7670_config.sv(61): object "done" differs only in case from object "DONE" in the same scope File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/ov7670_config.sv Line: 61
+Warning (10268): Verilog HDL information at frame_buffer.sv(100): always construct contains both blocking and non-blocking assignments File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 100
+Info (10281): Verilog HDL Declaration information at uart_rx.sv(53): object "PARITY_BIT" differs only in case from object "parity_bit" in the same scope File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/uart_rx.sv Line: 53
+Info (10281): Verilog HDL Declaration information at sonar_range.sv(12): object "trig" differs only in case from object "TRIG" in the same scope File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_range.sv Line: 12

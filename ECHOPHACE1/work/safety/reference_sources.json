@@ -1,0 +1,32 @@
+[
+  {
+    "source": "C:\\Quartus_Projects\\Majortut\\Chassis + emergencystop\\mtrx3700-hwtest-src\\ir\\rtl\\nec_decoder.sv",
+    "target": "C:\\Quartus_Projects\\Majortut\\ECHOPHACE1\\rtl\\safety\\reference\\nec_decoder.sv",
+    "sha256": "D98E00B37EB011BF03A1D1A80B657037B6A67C4915B187DC813CA146F364E577"
+  },
+  {
+    "source": "C:\\Quartus_Projects\\Majortut\\Chassis + emergencystop\\mtrx3700-hwtest-src\\hwtest\\rtl\\ir_drive.sv",
+    "target": "C:\\Quartus_Projects\\Majortut\\ECHOPHACE1\\rtl\\safety\\reference\\ir_drive.sv",
+    "sha256": "6419D71550C41CF0299514576F5240BDC15460BE1F2A037E2C14935819F03977"
+  },
+  {
+    "source": "C:\\Quartus_Projects\\Majortut\\Chassis + emergencystop\\mtrx3700-hwtest-src\\hwtest\\rtl\\chassis_command.sv",
+    "target": "C:\\Quartus_Projects\\Majortut\\ECHOPHACE1\\rtl\\safety\\reference\\chassis_command.sv",
+    "sha256": "DC006B50D1A4F8A48B6922492B3BA6A3D1A1313290F26138592AB0037B65155A"
+  },
+  {
+    "source": "C:\\Quartus_Projects\\Majortut\\Chassis + emergencystop\\mtrx3700-hwtest-src\\hwtest\\rtl\\uart_rx.sv",
+    "target": "C:\\Quartus_Projects\\Majortut\\ECHOPHACE1\\rtl\\safety\\reference\\uart_rx.sv",
+    "sha256": "9F85EC23EA4770E2C6E31C2591BCD9E1A1FF61910B785B270BD4B194C987DA6A"
+  },
+  {
+    "source": "C:\\Quartus_Projects\\Majortut\\Chassis + emergencystop\\mtrx3700-hwtest-src\\sonar\\rtl\\sonar_range.sv",
+    "target": "C:\\Quartus_Projects\\Majortut\\ECHOPHACE1\\rtl\\safety\\reference\\sonar_range.sv",
+    "sha256": "8B98255D0740CFD5EBC388F4D2F9F17FEB26EDD525CCCB5CDAB25D7EF691122D"
+  },
+  {
+    "source": "C:\\Quartus_Projects\\Majortut\\Chassis + emergencystop\\mtrx3700-hwtest-src\\sonar\\rtl\\sonar_pll.sv",
+    "target": "C:\\Quartus_Projects\\Majortut\\ECHOPHACE1\\rtl\\safety\\reference\\sonar_pll.sv",
+    "sha256": "C1CC454AF5EE33A00BA3A8E16D963C4CD37B5A0ED9A2E3033B6BF8443C615E73"
+  }
+]

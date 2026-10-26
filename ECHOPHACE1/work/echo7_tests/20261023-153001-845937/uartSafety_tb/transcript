@@ -1,0 +1,19 @@
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153001-845937\uartSafety_tb\simlib uartSafety_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 15:30:02 on Oct 23,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153001-845937\uartSafety_tb\simlib.uartSafety_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153001-845937\uartSafety_tb\simlib.irEmergencyStop
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153001-845937\uartSafety_tb\simlib.motorSafetyArbiter
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153001-845937\uartSafety_tb\simlib.safeChassisCommand
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153001-845937\uartSafety_tb\simlib.uart_tx
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# ** Fatal: FAIL independent signed wheel values
+#    Time: 189831700 ns  Scope: uartSafety_tb.check File: C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/safety/uartSafety_tb.sv Line: 27
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/safety/uartSafety_tb.sv(27)
+#    Time: 189831700 ns  Iteration: 1  Instance: /uartSafety_tb
+# End time: 15:30:18 on Oct 23,2026, Elapsed time: 0:00:16
+# Errors: 1, Warnings: 0

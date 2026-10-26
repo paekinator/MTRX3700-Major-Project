@@ -1,0 +1,297 @@
+{
+  "compiled": true,
+  "errors": 0,
+  "warnings": 86,
+  "critical_warnings": [],
+  "resources": {
+    "Fitter Status": "Successful - Thu Oct 22 11:54:09 2026",
+    "Quartus Prime Version": "18.1.0 Build 625 09/12/2018 SJ Lite Edition",
+    "Revision Name": "Camera",
+    "Top-level Entity Name": "top_level",
+    "Family": "Cyclone V",
+    "Device": "5CSEMA5F31C6",
+    "Timing Models": "Final",
+    "Logic utilization (in ALMs)": "2,178 / 32,070 ( 7 % )",
+    "Total registers": "2093",
+    "Total pins": "84 / 457 ( 18 % )",
+    "Total virtual pins": "0",
+    "Total block memory bits": "1,228,800 / 4,065,280 ( 30 % )",
+    "Total RAM Blocks": "152 / 397 ( 38 % )",
+    "Total DSP Blocks": "7 / 87 ( 8 % )",
+    "Total HSSI RX PCSs": "0",
+    "Total HSSI PMA RX Deserializers": "0",
+    "Total HSSI TX PCSs": "0",
+    "Total HSSI PMA TX Serializers": "0",
+    "Total PLLs": "1 / 6 ( 17 % )",
+    "Total DLLs": "0 / 4 ( 0 % )"
+  },
+  "timing": [
+    {
+      "type": "Slow 1100mV 85C Model Setup 'PCLK'",
+      "slack_ns": 7.323,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 7.553,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Setup 'sccb_clk'",
+      "slack_ns": 9992.082,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 0.272,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Hold 'PCLK'",
+      "slack_ns": 0.308,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Hold 'sccb_clk'",
+      "slack_ns": 0.53,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'",
+      "slack_ns": 1.666,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'",
+      "slack_ns": 9.67,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Minimum Pulse Width 'PCLK'",
+      "slack_ns": 11.204,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 18.763,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 85C Model Minimum Pulse Width 'sccb_clk'",
+      "slack_ns": 4999.293,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 6.778,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Setup 'PCLK'",
+      "slack_ns": 7.458,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Setup 'sccb_clk'",
+      "slack_ns": 9992.29,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 0.234,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Hold 'PCLK'",
+      "slack_ns": 0.295,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Hold 'sccb_clk'",
+      "slack_ns": 0.514,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'",
+      "slack_ns": 1.666,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'",
+      "slack_ns": 9.673,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Minimum Pulse Width 'PCLK'",
+      "slack_ns": 11.19,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 18.74,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Slow 1100mV 0C Model Minimum Pulse Width 'sccb_clk'",
+      "slack_ns": 4999.281,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Setup 'PCLK'",
+      "slack_ns": 5.608,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 22.327,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Setup 'sccb_clk'",
+      "slack_ns": 9995.138,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 0.176,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Hold 'PCLK'",
+      "slack_ns": 0.187,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Hold 'sccb_clk'",
+      "slack_ns": 0.24,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'",
+      "slack_ns": 1.666,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'",
+      "slack_ns": 9.336,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Minimum Pulse Width 'PCLK'",
+      "slack_ns": 10.765,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 18.881,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 85C Model Minimum Pulse Width 'sccb_clk'",
+      "slack_ns": 4999.522,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Setup 'PCLK'",
+      "slack_ns": 5.864,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 23.632,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Setup 'sccb_clk'",
+      "slack_ns": 9995.606,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 0.158,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Hold 'PCLK'",
+      "slack_ns": 0.166,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Hold 'sccb_clk'",
+      "slack_ns": 0.211,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'",
+      "slack_ns": 1.666,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'",
+      "slack_ns": 9.286,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Minimum Pulse Width 'PCLK'",
+      "slack_ns": 10.724,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+      "slack_ns": 18.881,
+      "tns_ns": 0.0
+    },
+    {
+      "type": "Fast 1100mV 0C Model Minimum Pulse Width 'sccb_clk'",
+      "slack_ns": 4999.542,
+      "tns_ns": 0.0
+    }
+  ],
+  "all_reported_slacks_nonnegative": true,
+  "min_setup_slack_ns": 5.608,
+  "min_hold_slack_ns": 0.158,
+  "display_min_setup_slack_ns": 6.778,
+  "fmax": [
+    {
+      "fmax": "30.82 MHz",
+      "restricted_fmax": "30.82 MHz",
+      "clock": "video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk",
+      "note": ""
+    },
+    {
+      "fmax": "96.58 MHz",
+      "restricted_fmax": "71.95 MHz",
+      "clock": "PCLK",
+      "note": "limit due to hold check"
+    },
+    {
+      "fmax": "126.29 MHz",
+      "restricted_fmax": "126.29 MHz",
+      "clock": "sccb_clk",
+      "note": ""
+    },
+    {
+      "fmax": "30.1 MHz",
+      "restricted_fmax": "30.1 MHz",
+      "clock": "video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk",
+      "note": ""
+    },
+    {
+      "fmax": "99.17 MHz",
+      "restricted_fmax": "72.03 MHz",
+      "clock": "PCLK",
+      "note": "limit due to hold check"
+    },
+    {
+      "fmax": "129.7 MHz",
+      "restricted_fmax": "129.7 MHz",
+      "clock": "sccb_clk",
+      "note": ""
+    }
+  ],
+  "sof_sha256": "1611f6b312fa67d603a772d9bf6d4fae2acacb3d0106076a0d6a13e2b3f1fb3f",
+  "limitations": [
+    "Existing SDC false paths and external-interface assumptions retained.",
+    "Timing closure does not verify board operation."
+  ]
+}

@@ -1,0 +1,29 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 15:37:48 on Oct 23,2026
+vlog -sv -work C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-153748-540821\uartSafety_tb\simlib C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\uart_tx.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irEmergencyStop.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\controlWatchdog.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\ultrasonicSafety.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyArbiter.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\motorSafetyController.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\irMotionControl.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safeChassisCommand.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\sonarSampleCdc.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\dualSonar.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetyHex.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\safetySystem.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\necDecoderSafe.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\ir_drive.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\uart_rx.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_range.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\safety\reference\sonar_pll.sv C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\safety\uartSafety_tb.sv 
+-- Compiling module uart_tx
+-- Compiling module irEmergencyStop
+-- Compiling module controlWatchdog
+-- Compiling module ultrasonicSafety
+-- Compiling module motorSafetyArbiter
+-- Compiling module motorSafetyController
+-- Compiling module irMotionControl
+-- Compiling module safeChassisCommand
+-- Compiling module sonarSampleCdc
+-- Compiling module dualSonar
+-- Compiling module safetyHex
+-- Compiling module safetySystem
+-- Compiling module necDecoderSafe
+-- Compiling module ir_drive
+-- Compiling module uart_rx
+-- Compiling module sonar_range
+-- Compiling module sonar_pll
+-- Compiling module uartSafety_tb
+
+Top level modules:
+	dualSonar
+	safetyHex
+	safetySystem
+	uartSafety_tb
+End time: 15:37:48 on Oct 23,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

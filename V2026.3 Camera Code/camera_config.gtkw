@@ -1,0 +1,36 @@
+[*] GTKWave save file: the camera configuration sequence (ov7670_config_tb).
+[dumpfile] "waveform.fst"
+[timestart] 0
+*-24.0 3000000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ov7670_config_tb.
+[sst_width] 260
+[signals_width] 300
+[sst_expanded] 1
+[sst_vpaned_height] 200
+@28
+ov7670_config_tb.dut.clk
+@22
+ov7670_config_tb.dut.state[2:0]
+ov7670_config_tb.dut.index[6:0]
+ov7670_config_tb.dut.cmd[15:0]
+@28
+ov7670_config_tb.dut.cam_reset_n
+ov7670_config_tb.dut.valid
+ov7670_config_tb.dut.ready
+ov7670_config_tb.dut.m_error
+ov7670_config_tb.dut.done
+@200
+-the SCCB bus (SIO_C / SIO_D) and what the camera made of it
+@28
+ov7670_config_tb.dut.sioc
+ov7670_config_tb.dut.siod
+@22
+ov7670_config_tb.cam.ctrl.bit_cnt[31:0]
+ov7670_config_tb.cam.ctrl.byte_idx[31:0]
+ov7670_config_tb.cam.ctrl.sub_addr[7:0]
+ov7670_config_tb.cam.ctrl.write_count[31:0]
+ov7670_config_tb.cam.ctrl.dropped_count[31:0]
+@28
+ov7670_config_tb.cam.ctrl.acking
+[pattern_trace] 1
+[pattern_trace] 0

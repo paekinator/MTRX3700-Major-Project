@@ -1,0 +1,39 @@
+[*]
+[*] MTRX3700 Major Project: chassis_drive sending its first command (./simulate.sh wave)
+[*]
+[dumpfile] "waveform.fst"
+[savefile] "chassis.gtkw"
+[timestart] 4990000000
+[size] 1600 924
+[pos] -1 -1
+*-21.000000 4990000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] chassis_drive_tb.
+[treeopen] chassis_drive_tb.dut1.
+[sst_width] 273
+[signals_width] 300
+[sst_expanded] 1
+[sst_vpaned_height] 328
+@200
+-chassis_drive's inputs
+@28
+chassis_drive_tb.dut1.enable
+@424
+chassis_drive_tb.dut1.left[9:0]
+chassis_drive_tb.dut1.right[9:0]
+@200
+-The command, one byte per uart_tx handshake (NULs skipped)
+@24
+chassis_drive_tb.dut1.remaining[4:0]
+@820
+chassis_drive_tb.dut1.uart_u.data_tx[7:0]
+@28
+chassis_drive_tb.dut1.tx_valid
+chassis_drive_tb.dut1.tx_ready
+@200
+-The UART line to the chassis (GPIO_1[31] on the board)
+@28
+[color] 2
+chassis_drive_tb.dut1.tx
+chassis_drive_tb.dut1.busy
+[pattern_trace] 1
+[pattern_trace] 0

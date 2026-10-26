@@ -1,0 +1,29 @@
+Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_stream_tb\simlib echo7_stream_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 01:06:57 on Oct 23,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_stream_tb\simlib.echo7_ref_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_stream_tb\simlib.echo7_stream_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_stream_tb\simlib.segmentationSelector
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_stream_tb\simlib.camera_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_stream_tb\simlib.rgbFixedSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_stream_tb\simlib.rgbRatioSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_stream_tb\simlib.hsvSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_stream_tb\simlib.vgaMaskOverlay
+# ** Warning: (vsim-3017) C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/echo7_stream_tb.sv(17): [TFMPC] - Too few port connections. Expected 17, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /echo7_stream_tb/dut File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/segmentationSelector.sv
+# ** Warning: (vsim-3722) C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/echo7_stream_tb.sv(17): [TFMPC] - Missing connection for port 'out_mode'.
+# ** Warning: (vsim-3722) C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/echo7_stream_tb.sv(17): [TFMPC] - Missing connection for port 'out_calibration'.
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# PASS echo7_stream_tb: selector/overlay, all modes, frame latch, debounce, backpressure, reset, full throughput; in=904 out=902
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/echo7_stream_tb.sv(98)
+#    Time: 76880 ns  Iteration: 1  Instance: /echo7_stream_tb
+# End time: 01:06:57 on Oct 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3

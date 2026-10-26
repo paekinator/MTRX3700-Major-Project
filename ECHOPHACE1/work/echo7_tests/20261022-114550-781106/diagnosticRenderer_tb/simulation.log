@@ -1,0 +1,23 @@
+Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114550-781106\diagnosticRenderer_tb\simlib diagnosticRenderer_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 11:45:51 on Oct 22,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114550-781106\diagnosticRenderer_tb\simlib.echo7_diag_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114550-781106\diagnosticRenderer_tb\simlib.echo7_diag_ref_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114550-781106\diagnosticRenderer_tb\simlib.diagnosticRenderer_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114550-781106\diagnosticRenderer_tb\simlib.diagnosticRenderer
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114550-781106\diagnosticRenderer_tb\simlib.diagnosticFont
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# ** Fatal: Renderer mismatch at (178,82), mode=0 got=7fcff3fc expected=40000000 char=0 digits=211062057 reference=RED  R:211 G: 62 B: 57
+#    Time: 368051 ns  Scope: diagnosticRenderer_tb.scan File: C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/diagnosticRenderer_tb.sv Line: 25
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/diagnosticRenderer_tb.sv(25)
+#    Time: 368051 ns  Iteration: 0  Instance: /diagnosticRenderer_tb
+# End time: 11:45:52 on Oct 22,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

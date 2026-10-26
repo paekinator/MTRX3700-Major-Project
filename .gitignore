@@ -1,0 +1,8 @@
+# Simulation waveforms
+*.vcd
+*.fst
+*.wlf
+
+# Quartus generated databases
+**/db/
+**/incremental_db/

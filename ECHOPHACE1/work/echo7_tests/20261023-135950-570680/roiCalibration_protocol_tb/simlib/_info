@@ -1,0 +1,441 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Quartus_Projects/Majortut/ECHOPHACE1/work/echo7_tests/20261023-135950-570680/roiCalibration_protocol_tb
+Xcamera_pkg
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1792724392
+!i10b 1
+!s100 6fPO63:C7bBn0AM>XTYUe1
+IU=7JZ2D=JR_cJizbaGZHI1
+VU=7JZ2D=JR_cJizbaGZHI1
+S1
+R0
+w1792414946
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_pkg.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_pkg.sv
+L0 11
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1792724392.000000
+Z5 !s107 C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\echo7\roiCalibration_protocol_tb.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\videoDiagnostics.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\roiCalibration.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\roiCalibrationRenderer.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourDiagnostics.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\diagnosticRenderer.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\diagnosticFont.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourMeanHsv.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourRegionStats.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\unsignedDivider.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\echo7_diag_pkg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\vgaMaskOverlay.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\segmentationSelector.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\hsvSeg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\rgbRatioSeg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\rgbFixedSeg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_pkg.sv|
+Z6 !s90 -sv|-work|C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-135950-570680\roiCalibration_protocol_tb\simlib|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_pkg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\rgbFixedSeg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\rgbRatioSeg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\hsvSeg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\segmentationSelector.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\vgaMaskOverlay.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\echo7_diag_pkg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\unsignedDivider.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourRegionStats.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourMeanHsv.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\diagnosticFont.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\diagnosticRenderer.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourDiagnostics.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\roiCalibrationRenderer.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\roiCalibration.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\videoDiagnostics.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\echo7\roiCalibration_protocol_tb.sv|
+!i113 1
+Z7 o-sv -work {C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-135950-570680\roiCalibration_protocol_tb\simlib}
+Z8 tCvgOpt 0
+vcolourDiagnostics
+R1
+Z9 DXx4 work 14 echo7_diag_pkg 0 22 DZjIgXFKm5VYaHWT60gME1
+R2
+!i10b 1
+!s100 DA_Nc2Wz8D2i[C4aDRdoA1
+IMU?iJ<[f`nlOL[n4jNW472
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+!s105 colourDiagnostics_sv_unit
+S1
+R0
+Z11 w1792629235
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourDiagnostics.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourDiagnostics.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+ncolour@diagnostics
+vcolourMeanHsv
+R1
+R9
+R2
+!i10b 1
+!s100 e@]i=EZzC9ZVoFAb_j]mi3
+Iz>_HnZK18d4@QE4hX9CJO0
+R10
+!s105 colourMeanHsv_sv_unit
+S1
+R0
+w1792628908
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourMeanHsv.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourMeanHsv.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+ncolour@mean@hsv
+vcolourRegionStats
+R1
+R9
+R2
+!i10b 1
+!s100 LIf0BL@Ycf6B]UPo7FfdU1
+IU99;X[mjWVa9mT_284USS1
+R10
+!s105 colourRegionStats_sv_unit
+S1
+R0
+R11
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourRegionStats.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\colourRegionStats.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+ncolour@region@stats
+vdiagnosticFont
+R1
+R2
+!i10b 1
+!s100 kQ=n8TQ2]kRTN9>beE<Fe1
+Ii0lj@EnIXO7BZk3FzzTJo3
+R10
+!s105 diagnosticFont_sv_unit
+S1
+R0
+Z12 w1792677149
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\diagnosticFont.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\diagnosticFont.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+ndiagnostic@font
+vdiagnosticRenderer
+R1
+R9
+R2
+!i10b 1
+!s100 lPBU1MbmClH6D>cL2g4]80
+Id`lPN=oC4DT?BiYY_oSI=2
+R10
+!s105 diagnosticRenderer_sv_unit
+S1
+R0
+w1792628980
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\diagnosticRenderer.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\diagnosticRenderer.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+ndiagnostic@renderer
+Xecho7_diag_pkg
+R1
+R2
+!i10b 1
+!s100 lKSWgVIQ6[B9Dkzi<M5LX0
+IDZjIgXFKm5VYaHWT60gME1
+VDZjIgXFKm5VYaHWT60gME1
+S1
+R0
+w1792628871
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\echo7_diag_pkg.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\echo7_diag_pkg.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vhsvSeg
+R1
+Z13 DXx4 work 10 camera_pkg 0 22 U=7JZ2D=JR_cJizbaGZHI1
+R2
+!i10b 1
+!s100 7D<MNhCo1SMPOmF^L?:Tm3
+IUmX:1OI;ig_4jI`<X5MQC3
+R10
+!s105 hsvSeg_sv_unit
+S1
+R0
+Z14 w1792596320
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\hsvSeg.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\hsvSeg.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nhsv@seg
+vrgbFixedSeg
+R1
+R13
+R2
+!i10b 1
+!s100 3Y6D9JWPf7^N2X2VPCAhC0
+IVJJ6T=?O_5LhWZF4>JXQT2
+R10
+!s105 rgbFixedSeg_sv_unit
+S1
+R0
+R14
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\rgbFixedSeg.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\rgbFixedSeg.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nrgb@fixed@seg
+vrgbRatioSeg
+R1
+R13
+R2
+!i10b 1
+!s100 Y4196dXKh<mCaanJS1GP?3
+I@_9lOK]JPmKl=RAzc8IQ12
+R10
+!s105 rgbRatioSeg_sv_unit
+S1
+R0
+R14
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\rgbRatioSeg.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\rgbRatioSeg.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nrgb@ratio@seg
+vroiCalibration
+R1
+R9
+R2
+!i10b 1
+!s100 46k<A5DnY6C_?<BOlg4a03
+I=X=;D@Qdn0LnPb;]m8X8O2
+R10
+!s105 roiCalibration_sv_unit
+S1
+R0
+w1792717097
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\roiCalibration.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\roiCalibration.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nroi@calibration
+vroiCalibration_protocol_tb
+R1
+R9
+R2
+!i10b 1
+!s100 L5VfCNkom<Z<oEJDd@ID51
+I7OeeIo=KMZb`:=H4[m`P;2
+R10
+!s105 roiCalibration_protocol_tb_sv_unit
+S1
+R0
+Z15 w1792717098
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\echo7\roiCalibration_protocol_tb.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\tb\echo7\roiCalibration_protocol_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nroi@calibration_protocol_tb
+vroiCalibrationRenderer
+R1
+R9
+R2
+!i10b 1
+!s100 mRUa:>z61`V9H^:dZh]?53
+Ifa6adJjJIMjgA2c1bOkMh1
+R10
+!s105 roiCalibrationRenderer_sv_unit
+S1
+R0
+w1792677243
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\roiCalibrationRenderer.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\roiCalibrationRenderer.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nroi@calibration@renderer
+vsegmentationSelector
+R1
+R2
+!i10b 1
+!s100 An7KNf=Z3n^AIMLWbX[ca1
+I=@=9oWAKB_InzkJ?`Y]KW2
+R10
+!s105 segmentationSelector_sv_unit
+S1
+R0
+R12
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\segmentationSelector.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\segmentationSelector.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nsegmentation@selector
+vunsignedDivider
+R1
+R2
+!i10b 1
+!s100 SQ^`[RPYQ8X37lEhYOQEl1
+IPk9QJK>RQkb7OQ7hoOGG02
+R10
+!s105 unsignedDivider_sv_unit
+S1
+R0
+w1792628872
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\unsignedDivider.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\unsignedDivider.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nunsigned@divider
+vvgaMaskOverlay
+R1
+R2
+!i10b 1
+!s100 IzdDNig5kH:cWY`>1o_kb3
+Ic[o<i?o=nlK4`bCCI4>eK3
+R10
+!s105 vgaMaskOverlay_sv_unit
+S1
+R0
+R14
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\vgaMaskOverlay.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\vgaMaskOverlay.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nvga@mask@overlay
+vvideoDiagnostics
+R1
+R2
+!i10b 1
+!s100 98dz8IXF7kjcO?;LTf56z1
+ILd;6::TjSQWoaY?gH0Sa`0
+R10
+!s105 videoDiagnostics_sv_unit
+S1
+R0
+R15
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\videoDiagnostics.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\echo7\videoDiagnostics.sv
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+nvideo@diagnostics

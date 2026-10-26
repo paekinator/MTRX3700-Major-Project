@@ -1,0 +1,53 @@
+{
+  "status": "PASS_SOFTWARE_CHECKS_BOARD_NOT_TESTED",
+  "date": "2026-10-23",
+  "modified_files": [
+    "rtl/echo7/roiCalibration.sv",
+    "rtl/echo7/videoDiagnostics.sv",
+    "tb/echo7/roiCalibration_tb.sv",
+    "tb/echo7/roiCalibration_protocol_tb.sv",
+    "OWNERS.md",
+    "AI_STATEMENT.md"
+  ],
+  "tests": [
+    {
+      "test": "roiCalibration_tb",
+      "status": "PASS"
+    },
+    {
+      "test": "roiCalibration_protocol_tb",
+      "status": "PASS"
+    }
+  ],
+  "test_summary": "work/echo7_tests/20261023-115826-242802/summary.json",
+  "checked_frames": 21,
+  "checked_pixels": 6451200,
+  "quartus": {
+    "errors": 0,
+    "warnings": 87,
+    "alm": 3227,
+    "registers": 2818,
+    "ram_blocks": 152,
+    "memory_bits": 1228800,
+    "dsp": 8,
+    "min_setup_slack_ns": 4.777,
+    "min_hold_slack_ns": 0.167,
+    "display_fmax_mhz": [
+      29.02,
+      28.39
+    ],
+    "log": "work/roi_mask/quartus.log"
+  },
+  "source_sha256": {
+    "rtl/echo7/roiCalibration.sv": "06b456e4058a6147cf32bddebe4f177dd1079d3d4a78557b1a543138be6c94f0",
+    "rtl/echo7/videoDiagnostics.sv": "3d77af39c635334e37e18f218f34db751aeb643701f1f24e11c0e855d3ea4b0a",
+    "tb/echo7/roiCalibration_tb.sv": "cae40138202f57eaf829c91547ad9b45b7e68bcf30b211c514a9f69f089bec94",
+    "tb/echo7/roiCalibration_protocol_tb.sv": "e9b6d1af6fa498d4125f15c41b1548f1b02a33f1eff6f0a4848baf214c8f8164",
+    "OWNERS.md": "933a5b39339822dd6107ff0fef3e67ed2ade13b80fdf7b5553b506eb14fbfcb7",
+    "AI_STATEMENT.md": "3e7df8234a2a72e6c1190f5e0b1046fc103e60d2b1644c3d9b8d6abdb9d8a646"
+  },
+  "sof_sha256": "1aa5d854e768503c4c1f1276a75532665bb4e7c881c0906ae375b7dd4dacfa4a",
+  "board_test": "NOT_RUN",
+  "verilator_5_050": "NOT_RUN",
+  "notes": "No threshold, camera, filtering or extra pipeline changes. Existing Camera.qsf modifications were preserved."
+}

@@ -1,0 +1,44 @@
+%Warning-VARHIDDEN: tb/ov7670_model.sv:1827:50: Declaration of signal hides declaration in upper scope: 'ln'
+ 1827 |     function automatic logic vsync_for(input int ln);
+      |                                                  ^~
+                    tb/ov7670_model.sv:1668:13: ... Location of original declaration
+ 1668 |     int kn, ln;                           
+      |             ^~
+                    ... For warning description see https://verilator.org/warn/VARHIDDEN?v=5.052
+                    ... Use "/* verilator lint_off VARHIDDEN */" and lint_on around source to disable this message.
+%Warning-VARHIDDEN: tb/ov7670_model.sv:1832:44: Declaration of signal hides declaration in upper scope: 'kn'
+ 1832 |     task automatic drive_outputs(input int kn, input int ln);
+      |                                            ^~
+                    tb/ov7670_model.sv:1668:9: ... Location of original declaration
+ 1668 |     int kn, ln;                           
+      |         ^~
+%Warning-VARHIDDEN: tb/ov7670_model.sv:1832:58: Declaration of signal hides declaration in upper scope: 'ln'
+ 1832 |     task automatic drive_outputs(input int kn, input int ln);
+      |                                                          ^~
+                    tb/ov7670_model.sv:1668:13: ... Location of original declaration
+ 1668 |     int kn, ln;                           
+      |             ^~
+%Error: tb/ov7670_model.sv:1445:80: Function Argument expects 'real$[0:8]', got 'real'
+                                  : ... note: In instance 'ov7670_config_tb.cam2.video'
+ 1445 |             kout[k] = cfg.raw ? ((k % 4 == 0) ? 1.0 : 0.0) : mul3(bi, (est_mtx ? an : ac), k);
+      |                                                                                ^
+        ... See the manual at https://verilator.org/verilator_doc.html?v=5.052 for more assistance.
+%Warning-WIDTHEXPAND: rtl/clock_divider.sv:20:19: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 7 bits.
+                                                : ... note: In instance 'ov7670_config_tb.div_u'
+   20 |         if (count == HALF - 1) begin
+      |                   ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.052
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl/ov7670_config.sv:233:49: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'wait_count' generates 8 bits.
+                                                 : ... note: In instance 'ov7670_config_tb.dut2'
+  233 |             RESET_LOW: next_state = (wait_count == T_RESET - 1)  ? SETTLE : RESET_LOW;
+      |                                                 ^~
+%Warning-WIDTHEXPAND: rtl/ov7670_config.sv:234:49: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'wait_count' generates 8 bits.
+                                                 : ... note: In instance 'ov7670_config_tb.dut2'
+  234 |             SETTLE:    next_state = (wait_count == T_SETTLE - 1 || refused) ? LOAD : SETTLE;
+      |                                                 ^~
+%Warning-WIDTHEXPAND: rtl/ov7670_config.sv:237:44: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'index' generates 7 bits.
+                                                 : ... note: In instance 'ov7670_config_tb.dut2'
+  237 |             NEXT:      next_state = (index == N - 1) ? LAST : (settle_after ? SETTLE : LOAD);
+      |                                            ^~
+%Error: Exiting due to 1 error(s)

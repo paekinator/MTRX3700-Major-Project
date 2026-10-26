@@ -1,0 +1,152 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Fri Oct 23 15:30:15 2026
+Info: Command: quartus_sh --flow compile Camera
+Info: Quartus(args): compile Camera
+Info: Project Name = C:/Quartus_Projects/Majortut/ECHOPHACE1/quartus/Camera
+Info: Revision Name = Camera
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Oct 23 15:30:17 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Camera -c Camera
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12248): Elaborating Platform Designer system entity "vga_sink.qsys"
+Info (12250): 2026.10.23.15:30:31 Progress: Loading quartus/vga_sink.qsys
+Info (12250): 2026.10.23.15:30:32 Progress: Reading input file
+Info (12250): 2026.10.23.15:30:32 Progress: Adding clk_0 [clock_source 18.1]
+Info (12250): 2026.10.23.15:30:33 Progress: Parameterizing module clk_0
+Info (12250): 2026.10.23.15:30:33 Progress: Adding video_vga_controller_0 [altera_up_avalon_video_vga_controller 18.0]
+Info (12250): 2026.10.23.15:30:33 Progress: Parameterizing module video_vga_controller_0
+Info (12250): 2026.10.23.15:30:33 Progress: Building connections
+Info (12250): 2026.10.23.15:30:33 Progress: Parameterizing connections
+Info (12250): 2026.10.23.15:30:33 Progress: Validating
+Info (12250): 2026.10.23.15:30:33 Progress: Done reading input file
+Info (12250): Vga_sink.video_vga_controller_0: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info (12250): Vga_sink: Generating vga_sink "vga_sink" for QUARTUS_SYNTH
+Info (12250): Video_vga_controller_0: Starting Generation of VGA Controller
+Info (12250): Video_vga_controller_0: "vga_sink" instantiated altera_up_avalon_video_vga_controller "video_vga_controller_0"
+Info (12250): Vga_sink: Done "vga_sink" with 2 modules, 3 files
+Info (12249): Finished elaborating Platform Designer system entity "vga_sink.qsys"
+Info (12021): Found 1 design units, including 0 entities, in source file /quartus_projects/majortut/echophace1/rtl/camera_pkg.sv
+    Info (12022): Found design unit 1: camera_pkg (SystemVerilog) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_pkg.sv Line: 11
+Info (12021): Found 1 design units, including 0 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/echo7_diag_pkg.sv
+    Info (12022): Found design unit 1: echo7_diag_pkg (SystemVerilog) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/echo7_diag_pkg.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/clock_divider.sv
+    Info (12023): Found entity 1: clock_divider File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/clock_divider.sv Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/i2c_master.sv
+    Info (12023): Found entity 1: i2c_master File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/ov7670_config.sv
+    Info (12023): Found entity 1: ov7670_config File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/ov7670_config.sv Line: 50
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/ov7670_capture.sv
+    Info (12023): Found entity 1: ov7670_capture File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/ov7670_capture.sv Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/frame_buffer.sv
+    Info (12023): Found entity 1: frame_buffer File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 53
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/camera_display.sv
+    Info (12023): Found entity 1: camera_display File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_display.sv Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/video_pll.sv
+    Info (12023): Found entity 1: video_pll File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/video_pll.sv Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/top_level.sv
+    Info (12023): Found entity 1: top_level File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/rgbfixedseg.sv
+    Info (12023): Found entity 1: rgbFixedSeg File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/rgbFixedSeg.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/rgbratioseg.sv
+    Info (12023): Found entity 1: rgbRatioSeg File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/rgbRatioSeg.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/hsvseg.sv
+    Info (12023): Found entity 1: hsvSeg File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/hsvSeg.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/segmentationselector.sv
+    Info (12023): Found entity 1: segmentationSelector File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/segmentationSelector.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/vgamaskoverlay.sv
+    Info (12023): Found entity 1: vgaMaskOverlay File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/vgaMaskOverlay.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/unsigneddivider.sv
+    Info (12023): Found entity 1: unsignedDivider File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/unsignedDivider.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/colourregionstats.sv
+    Info (12023): Found entity 1: colourRegionStats File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourRegionStats.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/colourmeanhsv.sv
+    Info (12023): Found entity 1: colourMeanHsv File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourMeanHsv.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/diagnosticfont.sv
+    Info (12023): Found entity 1: diagnosticFont File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticFont.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/diagnosticrenderer.sv
+    Info (12023): Found entity 1: diagnosticRenderer File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticRenderer.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/colourdiagnostics.sv
+    Info (12023): Found entity 1: colourDiagnostics File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourDiagnostics.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/roicalibrationrenderer.sv
+    Info (12023): Found entity 1: roiCalibrationRenderer File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/roicalibration.sv
+    Info (12023): Found entity 1: roiCalibration File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibration.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/videodiagnostics.sv
+    Info (12023): Found entity 1: videoDiagnostics File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/videoDiagnostics.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/uart_tx.sv
+    Info (12023): Found entity 1: uart_tx File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/uart_tx.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/iremergencystop.sv
+    Info (12023): Found entity 1: irEmergencyStop File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/irEmergencyStop.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/controlwatchdog.sv
+    Info (12023): Found entity 1: controlWatchdog File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/controlWatchdog.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/ultrasonicsafety.sv
+    Info (12023): Found entity 1: ultrasonicSafety File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/ultrasonicSafety.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/motorsafetyarbiter.sv
+    Info (12023): Found entity 1: motorSafetyArbiter File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/motorSafetyArbiter.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/motorsafetycontroller.sv
+    Info (12023): Found entity 1: motorSafetyController File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/motorSafetyController.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/irmotioncontrol.sv
+    Info (12023): Found entity 1: irMotionControl File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/irMotionControl.sv Line: 3
+Error (10170): Verilog HDL syntax error at safeChassisCommand.sv(25) near text: "int";  expecting "(". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safeChassisCommand.sv Line: 25
+Error (10170): Verilog HDL syntax error at safeChassisCommand.sv(26) near text: "int";  expecting "(". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safeChassisCommand.sv Line: 26
+Error (10112): Ignored design unit "safeChassisCommand" at safeChassisCommand.sv(4) due to previous errors File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safeChassisCommand.sv Line: 4
+Info (12021): Found 0 design units, including 0 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/safechassiscommand.sv
+Warning (10335): Unrecognized synthesis attribute "async_reg" at ../rtl/safety/sonarSampleCdc.sv(12) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/sonarSampleCdc.sv Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/sonarsamplecdc.sv
+    Info (12023): Found entity 1: sonarSampleCdc File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/sonarSampleCdc.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/dualsonar.sv
+    Info (12023): Found entity 1: dualSonar File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/dualSonar.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/safetyhex.sv
+    Info (12023): Found entity 1: safetyHex File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetyHex.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/safetysystem.sv
+    Info (12023): Found entity 1: safetySystem File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetySystem.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/necdecodersafe.sv
+    Info (12023): Found entity 1: necDecoderSafe File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/necDecoderSafe.sv Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/reference/ir_drive.sv
+    Info (12023): Found entity 1: ir_drive File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/ir_drive.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/reference/uart_rx.sv
+    Info (12023): Found entity 1: uart_rx File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/uart_rx.sv Line: 30
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/reference/sonar_range.sv
+    Info (12023): Found entity 1: sonar_range File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_range.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/reference/sonar_pll.sv
+    Info (12023): Found entity 1: sonar_pll File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_pll.sv Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/vga_sink/submodules/altera_up_avalon_video_vga_timing.v
+    Info (12023): Found entity 1: altera_up_avalon_video_vga_timing File: C:/Quartus_Projects/Majortut/ECHOPHACE1/quartus/db/ip/vga_sink/submodules/altera_up_avalon_video_vga_timing.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/vga_sink/submodules/vga_sink_video_vga_controller_0.v
+    Info (12023): Found entity 1: vga_sink_video_vga_controller_0 File: C:/Quartus_Projects/Majortut/ECHOPHACE1/quartus/db/ip/vga_sink/submodules/vga_sink_video_vga_controller_0.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/vga_sink/vga_sink.v
+    Info (12023): Found entity 1: vga_sink File: C:/Quartus_Projects/Majortut/ECHOPHACE1/quartus/db/ip/vga_sink/vga_sink.v Line: 6
+Info (144001): Generated suppressed messages file C:/Quartus_Projects/Majortut/ECHOPHACE1/quartus/output_files/Camera.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
+    Error: Peak virtual memory: 4792 megabytes
+    Error: Processing ended: Fri Oct 23 15:30:37 2026
+    Error: Elapsed time: 00:00:20
+    Error: Total CPU time (on all processors): 00:00:38
+Error (293001): Quartus Prime Full Compilation was unsuccessful. 5 errors, 2 warnings
+Error: Flow compile (for project C:/Quartus_Projects/Majortut/ECHOPHACE1/quartus/Camera) was not successful
+Error: ERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.
+
+Error (23031): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/qsh_flow.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 12 errors, 2 warnings
+    Error: Peak virtual memory: 4656 megabytes
+    Error: Processing ended: Fri Oct 23 15:30:37 2026
+    Error: Elapsed time: 00:00:22
+    Error: Total CPU time (on all processors): 00:00:40

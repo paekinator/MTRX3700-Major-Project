@@ -1,0 +1,59 @@
+ECHO-7 Fixed ROI Calibration — Implementation notes (2026-10-23)
+
+本次仅修改 ECHOPHACE1。新增源码由 ECHO-7 团队负责，OpenAI Codex AI 辅助生成，等待人工工程审核。
+
+新增 RTL：rtl/echo7/roiCalibration.sv、roiCalibrationRenderer.sv、videoDiagnostics.sv。
+新增测试：tb/echo7/roiCalibration_tb.sv、roiCalibration_protocol_tb.sv。
+修改：rtl/top_level.sv、rtl/echo7/segmentationSelector.sv、diagnosticFont.sv、quartus/Camera.qsf、
+tools/echo7/run_tests.py、simulate.sh、tb/camera_system_tb.sv、tb/echo7/echo7_diag_ref_pkg.sv、OWNERS.md、AI_STATEMENT.md。
+
+数据流：Camera PCLK capture → 原有双时钟 Frame Buffer → 25 MHz camera_display → 三拍算法选择器
+→ videoDiagnostics（原动态路径和新增校准路径并行接收同一事务，输出握手汇合）→ VGA sink。
+没有新增帧缓存。正常吞吐一像素/时钟，算法后三拍加显示输出一拍；统计除法期间只在帧边界等待。
+上下游暂停时数据、SOP/EOP 和模式标签均保持。原动态框模块、算法、Camera 配置及采集没有改动。
+
+SW4=0：原动态检测，SW3=0 原始画面，SW3=1 Mask + 动态框 + 检测像素颜色均值。
+SW4=1：固定 ROI 校准，始终显示原始像素、固定红框和底部四行诊断；此时 SW3 不染色原始画面。
+SW[2:1]=00 Fixed RGB、01 RGB Ratio、10 HSV、11 安全回退 Fixed RGB。
+SW0 保留。KEY0 复位。SW4=AD11，依据当前工程 chassis.qsf:141，且 Camera.pin 已确认落在 AD11。
+整个 SW[4:1] 经两级同步、10 ms 稳定检查，在接受 SOP 时一次性锁存，再随像素流水传递。
+
+固定 ROI 含边界：(220,160)–(419,319)，200×160。
+平均值采样区含边界：(310,230)–(329,249)，中央 20×20 显示像素，共 400 个；不依赖检测结果。
+这对应 320×240 framebuffer 中 10×10 独立存储像素，当前 2× 放大使每个存储像素显示四次。
+RGB888 来自原始 RGB565 位复制展开。均值采用 (sum + floor(area/2))/area，最近舍入，半数向上。
+HSV 从平均 RGB 计算：H=0..359 度，S/V=0..255；无彩色 H=0、黑色 S=0，Hue 360 回绕到 0。
+复用已有 27 位恢复除法器，逐帧计算；不在逐像素路径使用可变除法或浮点运算。
+
+DETECT 统计整个固定 ROI 内红色与蓝色命中像素的合计数量，默认 >=32 为 YES，否则 NO。
+参数是 roiCalibration.MIN_DETECT_PIXELS，可配置 1..32000；计数到 32000 饱和。
+32 个显示像素通常对应 8 个 framebuffer 像素；一个独立噪声像素放大为 4 个显示像素，不会触发。
+框外颜色不参与 DETECT；中心没有目标时仍显示原始测量值。
+无完整帧、复位后或算法改变后旧统计不匹配时，数值和 DETECT 显示 ---；有效空场景显示实测值和 NO。
+MODE 表示本帧已锁存算法，不直接显示异步开关电平。统计结果来自上一完整显示帧，约 16.8 ms 延迟。
+RGB、HSV、DETECT 共享帧快照，SOP 更新一次，避免一帧中文字撕裂。
+框外除文字区域仍是实时视频；文字面板位于 x=16..243、y=408..471。没有 MASK 百分比。
+
+Quartus 18.1 完整编译：0 errors、87 warnings，3,221 ALM、2,818 registers、8 DSP；
+1,228,800 memory bits、152 RAM blocks（与原工程相同）。
+显示时钟 Fmax：Slow 85C 28.23 MHz，Slow 0C 27.72 MHz；目标为 25 MHz。
+最差 Setup Slack +3.923 ns、Hold Slack +0.123 ns，报告 TNS 均为 0。
+新增 renderer 的 integer case 产生 completeness 检查能力警告，已有 default 分支；
+其余警告包括原有 PLL reset、异步 RAM 同址读写、GPIO/时钟路由等。未修改无关核心模块以消除它们。
+具体仿真结果及源码/SOF SHA256：work/roi_calibration/verification.json。
+
+未验证：Verilator 5.050（环境未找到可执行文件）、真实摄像头色彩稳定性、VGA 实屏和实际拨码响应。
+原单帧缓存的读写撕裂风险仍在；平均值来自显示流水接受的实际像素，不保证是同一曝光帧。
+不将仿真或 Quartus 成功等同于硬件成功。
+
+上板步骤：
+1. 打开 quartus/Camera.qpf，确认器件 5CSEMA5F31C6，使用本次 quartus/output_files/Camera.sof。
+2. 人工用 Programmer 下载，接摄像头/VGA，SW4=0、SW3=0，按 KEY0，先确认原视频正常。
+3. SW3=1 检查动态 Mask/框/原有均值，切换三种算法。
+4. SW4=1，确认固定红框端点与中央位置、底部 MODE/RGB/HSV/DETECT，无 MASK 百分比。
+5. 把红蓝物体移入 ROI，检查 YES；移出 ROI 后只保留框外红蓝干扰，应为 NO。
+6. 改变中央采样区颜色，确认 RGB/HSV 实时变化；无目标也有数值。遮光、灰卡与微小噪声应不误触发。
+7. 改变 SW[2:1]，检查帧边界切换及短暂 --- 后更新；反复切换 SW4、SW3 并复位。
+8. 记录光照、距离、算法及读数，人工评估门限；不要将本次默认门限当作已完成摄像头标定。
+
+最终验证：16/16 ModelSim Self-checking Testbench PASS；新增 ROI 测试核对 15 帧、4,608,000 像素。整机 Camera 测试在配置后检查 4 帧，VGA 模型共观察到 8 完整帧、0 问题。Verilator 与上板测试未执行。

@@ -1,0 +1,49 @@
+{
+  "tool": null,
+  "simulator": "verilator",
+  "course_preferred": "Verilator 5.050",
+  "results": [
+    {
+      "test": "echo7_algorithms_tb",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "vgaMaskOverlay_tb",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "echo7_stream_tb",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "echo7_integration_tb",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "unsignedDivider_tb",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "colourMeanHsv_tb",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "colourRegionStats_tb",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "diagnosticRenderer_tb",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "echo7_diagnostics_tb",
+      "status": "NOT_RUN"
+    },
+    {
+      "test": "colourDiagnostics_protocol_tb",
+      "status": "NOT_RUN"
+    }
+  ],
+  "rtl_simulation_executed": false,
+  "status": "BLOCKED: verilator executable not found; no RTL test executed"
+}

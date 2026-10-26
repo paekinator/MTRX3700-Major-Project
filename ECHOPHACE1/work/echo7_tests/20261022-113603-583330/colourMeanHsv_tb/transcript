@@ -1,0 +1,18 @@
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-113603-583330\colourMeanHsv_tb\simlib colourMeanHsv_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 11:36:09 on Oct 22,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-113603-583330\colourMeanHsv_tb\simlib.echo7_diag_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-113603-583330\colourMeanHsv_tb\simlib.echo7_diag_ref_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-113603-583330\colourMeanHsv_tb\simlib.colourMeanHsv_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-113603-583330\colourMeanHsv_tb\simlib.colourMeanHsv
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-113603-583330\colourMeanHsv_tb\simlib.unsignedDivider
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# PASS colourMeanHsv_tb: mean rounding, max sums, HSV sectors/wrap/grey/black, BCD, random, reset, frame tags, <=310 clocks
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/colourMeanHsv_tb.sv(59)
+#    Time: 6009600 ns  Iteration: 1  Instance: /colourMeanHsv_tb
+# End time: 11:36:10 on Oct 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

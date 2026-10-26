@@ -1,0 +1,17 @@
+Fixed ROI Mask update — 2026-10-23
+
+SW4=1: fixed ROI calibration. SW3=1 enables red/blue pixel replacement inside the ROI only; SW3=0 shows original pixels.
+HSV: SW4=1, SW3=1, SW2=1, SW1=0, SW0=0.
+The red border and text have priority. Original RGB/HSV measurement, DETECT threshold, algorithm selection and frame synchronization remain unchanged.
+SW4=0 retains the existing dynamic detection mode. No new area/noise filter is implemented.
+
+Modified RTL: rtl/echo7/roiCalibration.sv, rtl/echo7/videoDiagnostics.sv.
+Modified tests: tb/echo7/roiCalibration_tb.sv, tb/echo7/roiCalibration_protocol_tb.sv.
+Updated attribution: OWNERS.md, AI_STATEMENT.md.
+Camera.qsf had changes relative to the previous delivery BEFORE this task (mtime 2026-10-23 11:44:05); it was preserved and not edited by this task.
+
+ModelSim 10.5b: both updated self-checking tests PASS. See verification.json for logs and final Quartus results.
+Tests cover all algorithms, SW3 off/on, non-primary target colours, all four ROI edges, original-pixel means, malformed frames, reset and randomized backpressure; dynamic/raw mode regression is included.
+Board validation and Verilator 5.050 were not performed. Existing camera colour instability or mask flicker is not claimed to be fixed.
+
+Reprogram the board with quartus/output_files/Camera.sof after reviewing the updated build; saving RTL alone does not update the board.

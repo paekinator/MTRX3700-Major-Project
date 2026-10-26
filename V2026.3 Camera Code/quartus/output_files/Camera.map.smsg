@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at i2c_master.sv(9): object "reg_addr" differs only in case from object "REG_ADDR" in the same scope File: C:/Quartus_Projects/Majortut/V2026.3 Camera Code/rtl/i2c_master.sv Line: 9
+Info (10281): Verilog HDL Declaration information at ov7670_config.sv(61): object "done" differs only in case from object "DONE" in the same scope File: C:/Quartus_Projects/Majortut/V2026.3 Camera Code/rtl/ov7670_config.sv Line: 61
+Warning (10268): Verilog HDL information at frame_buffer.sv(100): always construct contains both blocking and non-blocking assignments File: C:/Quartus_Projects/Majortut/V2026.3 Camera Code/rtl/frame_buffer.sv Line: 100

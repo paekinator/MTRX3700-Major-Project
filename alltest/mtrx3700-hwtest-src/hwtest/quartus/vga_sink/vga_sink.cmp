@@ -1,0 +1,20 @@
+	component vga_sink is
+		port (
+			clk_clk                : in  std_logic                     := 'X';             -- clk
+			reset_reset_n          : in  std_logic                     := 'X';             -- reset_n
+			vga_CLK                : out std_logic;                                        -- CLK
+			vga_HS                 : out std_logic;                                        -- HS
+			vga_VS                 : out std_logic;                                        -- VS
+			vga_BLANK              : out std_logic;                                        -- BLANK
+			vga_SYNC               : out std_logic;                                        -- SYNC
+			vga_R                  : out std_logic_vector(7 downto 0);                     -- R
+			vga_G                  : out std_logic_vector(7 downto 0);                     -- G
+			vga_B                  : out std_logic_vector(7 downto 0);                     -- B
+			video_in_data          : in  std_logic_vector(29 downto 0) := (others => 'X'); -- data
+			video_in_startofpacket : in  std_logic                     := 'X';             -- startofpacket
+			video_in_endofpacket   : in  std_logic                     := 'X';             -- endofpacket
+			video_in_valid         : in  std_logic                     := 'X';             -- valid
+			video_in_ready         : out std_logic                                         -- ready
+		);
+	end component vga_sink;
+

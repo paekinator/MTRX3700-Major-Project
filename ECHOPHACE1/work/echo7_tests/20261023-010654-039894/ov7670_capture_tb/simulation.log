@@ -1,0 +1,96 @@
+Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\ov7670_capture_tb\simlib ov7670_capture_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 01:09:54 on Oct 23,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\ov7670_capture_tb\simlib.ov7670_capture_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\ov7670_capture_tb\simlib.ov7670_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\ov7670_capture_tb\simlib.ov7670_model
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\ov7670_capture_tb\simlib.ov7670_sccb_if
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\ov7670_capture_tb\simlib.ov7670_video
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\ov7670_capture_tb\simlib.ov7670_capture
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# [OV7670 @0] RESET# low: all registers back to their defaults
+# [OV7670-VIDEO @10000000] output: YUV 4:2:2 640x480, PCLK = XCLK = 10.000 MHz, 12.5 fps (line 156.8 us, frame 79.97 ms), estimated: colour matrix changed
+# [OV7670-VIDEO @10000000]   note: 2 bytes of each line of the window fall where the chip sends no HREF (207 to 273 half-slots into the line, measured on a board) and do not come out.
+# [OV7670 @1510000000] WRITE COM7 (0x12) <= 0x04: VGA, RGB output (bit 2), colour bar overlay off (bit 1)
+# [OV7670 @1510000000] WRITE COM15 (0x40) <= 0xd0: output range 00 to FF (bits 7:6), RGB565 (bits 5:4)
+# [OV7670 @1510000000] WRITE HSTART (0x17) <= 0x14: window start column, high 8 bits: 20 x 8 = 160, plus HREF[2:0]
+# [OV7670 @1510000000] WRITE HSTOP (0x18) <= 0x02: window end column, high 8 bits: 2 x 8 = 16, plus HREF[5:3]
+# [OV7670 @1510000000] WRITE HREF (0x32) <= 0x80: HREF edge offset to the data = 2 (bits 7:6, not simulated), window end column low 3 bits = 0 (bits 5:3), start column low 3 bits = 0 (bits 2:0)
+# [OV7670 @1510000000] WRITE VSTRT (0x19) <= 0x02: window start row, high 8 bits: 2 x 4 = 8, plus VREF[1:0]
+# [OV7670 @1510000000] WRITE VSTOP (0x1a) <= 0x7a: window end row, high 8 bits: 122 x 4 = 488, plus VREF[3:2]
+# [OV7670 @1510000000] WRITE VREF (0x03) <= 0x0f: AGC[9:8] = 0 (bits 7:6, not simulated), window end row low 2 bits = 3 (bits 3:2), start row low 2 bits = 3 (bits 1:0)
+# [OV7670 @1510000000] WRITE COM9 (0x14) <= 0x48: AGC ceiling 32x (bits 6:4), AGC/AEC freeze off (bit 0); reserved bit 1 clear (default 0x4a); not simulated
+# [OV7670 @1510000000] WRITE COM13 (0x3d) <= 0xc0: gamma on (bit 7, estimated), UV saturation auto-adjust on (bit 6, not simulated), UV swap off (bit 0, with TSLB[3] it sets the YUV byte order); reserved bit 3 clear (default 0x88)
+# [OV7670 @1510000000] WRITE COM5 (0x0e) <= 0x61: reserved: OmniVision's tuning value (default 0x01)
+# [OV7670 @1510000000] WRITE COM6 (0x0f) <= 0x4b: no HREF at the optical black lines (bit 7), timing reset when the format changes (bit 1); reserved bit 3 set (default 0x43); BBIAS, GbBIAS and RBIAS work only with bit 3 set (Table 5); not simulated
+# [OV7670 @1510000000] WRITE RSVD (0x16) <= 0x02: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE ADCCTR2 (0x22) <= 0x91: reserved: OmniVision's tuning value (default 0x01)
+# [OV7670 @1510000000] WRITE RSVD (0x29) <= 0x07: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE CHLF (0x33) <= 0x0b: array current control, all bits reserved: OmniVision's tuning value (default 0x08)
+# [OV7670 @1510000000] WRITE RSVD (0x35) <= 0x0b: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE ADC (0x37) <= 0x1d: ADC control, all bits reserved: OmniVision's tuning value (default 0x3f)
+# [OV7670 @1510000000] WRITE ACOM (0x38) <= 0x71: ADC and analogue common mode control, all bits reserved: OmniVision's tuning value (default 0x01)
+# [OV7670 @1510000000] WRITE OFON (0x39) <= 0x2a: ADC offset control, all bits reserved: OmniVision's tuning value (default 0x00)
+# [OV7670 @1510000000] WRITE COM12 (0x3c) <= 0x78: no HREF when VSYNC is low (bit 7); reserved bit 4 set (default 0x68); not simulated
+# [OV7670 @1510000000] WRITE RSVD (0x4d) <= 0x40: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x4e) <= 0x20: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE REG74 (0x74) <= 0x10: digital gain set by bits 1:0 (bit 4); bits 1:0 = 00, bypass; estimated
+# [OV7670 @1510000000] WRITE RSVD (0x8d) <= 0x4f: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0xb0) <= 0x84: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE ABLC1 (0xb1) <= 0x0c: automatic black level calibration on (bit 2); reserved bit 3 set (default 0x00); not simulated
+# [OV7670 @1510000000] WRITE RSVD (0xb2) <= 0x0e: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE THL_ST (0xb3) <= 0x82: black level calibration target 130; not simulated
+# [OV7670 @1510000000] WRITE RSVD (0xb8) <= 0x0a: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x59) <= 0x88: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x5a) <= 0x88: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x5b) <= 0x44: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x5c) <= 0x67: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x5d) <= 0x49: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x5e) <= 0x0e: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE AWBCTR3 (0x6c) <= 0x0a: AWB control 3 (Table 5 does not describe its bits): OmniVision's tuning value (default 0x02)
+# [OV7670 @1510000000] WRITE AWBCTR2 (0x6d) <= 0x55: AWB control 2 (Table 5 does not describe its bits): OmniVision's tuning value, the same as the default (0x55)
+# [OV7670 @1510000000] WRITE AWBCTR1 (0x6e) <= 0x11: AWB control 1 (Table 5 does not describe its bits): OmniVision's tuning value (default 0xc0)
+# [OV7670 @1510000000] WRITE AWBCTR0 (0x6f) <= 0x9f: AWB control 0 (Table 5 does not describe its bits): OmniVision's tuning value (default 0x9a)
+# [OV7670 @1510000000] WRITE GGAIN (0x6a) <= 0x40: AWB green channel gain 64: with AWB off (COM8[1] = 0) a fixed gain, x1.00 (0x40 is x1, measured on a board); with AWB on the chip sets it (not simulated)
+# [OV7670 @1510000000] WRITE BLUE (0x01) <= 0x40: AWB blue channel gain 64: with AWB off (COM8[1] = 0) a fixed gain, estimated as x1.00 (the course's 0x40 is x1); with AWB on the chip sets it (not simulated)
+# [OV7670 @1510000000] WRITE RED (0x02) <= 0x60: AWB red channel gain 96: with AWB off (COM8[1] = 0) a fixed gain, estimated as x1.00 (the course's 0x60 is x1); with AWB on the chip sets it (not simulated)
+# [OV7670 @1510000000] WRITE MTX1 (0x4f) <= 0x80: colour matrix coefficient 1 = 128, red into V (its sign is in MTXS); estimated
+# [OV7670 @1510000000] WRITE MTX2 (0x50) <= 0x80: colour matrix coefficient 2 = 128, green into V (its sign is in MTXS); estimated
+# [OV7670 @1510000000] WRITE MTX3 (0x51) <= 0x00: colour matrix coefficient 3 = 0, blue into V (its sign is in MTXS); estimated
+# [OV7670 @1510000000] WRITE MTX4 (0x52) <= 0x22: colour matrix coefficient 4 = 34, red into U (its sign is in MTXS); estimated
+# [OV7670 @1510000000] WRITE MTX5 (0x53) <= 0x5e: colour matrix coefficient 5 = 94, green into U (its sign is in MTXS); estimated
+# [OV7670 @1510000000] WRITE MTX6 (0x54) <= 0x80: colour matrix coefficient 6 = 128, blue into U (its sign is in MTXS); estimated
+# [OV7670 @1510000000] WRITE MTXS (0x58) <= 0x9e: contrast centre automatic (bit 7: the picture's mean luma), colour matrix signs 011110 (bits 5:0, 1 = minus; estimated)
+# [OV7670 @1510000000] WRITE COM16 (0x41) <= 0x18: edge enhancement auto-adjust off (bit 5), de-noise auto-adjust on (bit 4), AWB gain on (bit 3): not simulated; colour matrix not doubled (bit 1): estimated
+# [OV7670 @1510000000] WRITE EDGE (0x3f) <= 0x00: edge enhancement factor 0 (bits 4:0); not simulated
+# [OV7670 @1510000000] WRITE REG75 (0x75) <= 0x05: edge enhancement lower limit 5 (bits 4:0); not simulated
+# [OV7670 @1510000000] WRITE REG76 (0x76) <= 0xe1: black pixel correction on (bit 7), white pixel correction on (bit 6), edge enhancement upper limit 1 (bits 4:0); reserved bit 5 set (default 0x01); not simulated
+# [OV7670 @1510000000] WRITE DNSTH (0x4c) <= 0x00: de-noise strength 0; not simulated
+# [OV7670 @1510000000] WRITE REG77 (0x77) <= 0x01: de-noise offset 1; not simulated
+# [OV7670 @1510000000] WRITE REG4B (0x4b) <= 0x09: UV average on (bit 0); reserved bit 3 set (default 0x00); not simulated
+# [OV7670 @1510000000] WRITE SATCTR (0xc9) <= 0x60: UV saturation minimum 6 (bits 7:4); bits 3:0 hold the chip's own result (COM13[6]); not simulated
+# [OV7670 @1510000000] WRITE CONTRAS (0x56) <= 0x40: contrast x1.00 (64/64; 0x40 is x1)
+# [OV7670 @1510000000] WRITE ARBLM (0x34) <= 0x11: array reference control, all bits reserved: OmniVision's tuning value, the same as the default (0x11)
+# [OV7670 @1510000000] WRITE NT_CTRL (0xa4) <= 0x88: automatic frame rate adjustment halves the frame rate (bit 3), dummy rows inserted at 2x gain (bits 1:0); reserved bit 7 set (default 0x00); not simulated
+# [OV7670 @1510000000] WRITE RSVD (0x96) <= 0x00: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x97) <= 0x30: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x98) <= 0x20: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x99) <= 0x30: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x9a) <= 0x84: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x9b) <= 0x29: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x9c) <= 0x03: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @1510000000] WRITE RSVD (0x78) <= 0x04: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670-VIDEO @1577955000] output: RGB565 640x480, PCLK = XCLK = 10.000 MHz, 12.5 fps (line 156.8 us, frame 79.97 ms)
+# PASS: ov7670_capture delivered 2 x 307200 pixels with the right values and coordinates, 1 frame_start per frame
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/ov7670_capture_tb.sv(103)
+#    Time: 240384500 ns  Iteration: 2  Instance: /ov7670_capture_tb
+# End time: 01:10:44 on Oct 23,2026, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 0

@@ -1,0 +1,25 @@
+Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-115826-242802\roiCalibration_protocol_tb\simlib roiCalibration_protocol_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 11:59:56 on Oct 23,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-115826-242802\roiCalibration_protocol_tb\simlib.echo7_diag_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-115826-242802\roiCalibration_protocol_tb\simlib.roiCalibration_protocol_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-115826-242802\roiCalibration_protocol_tb\simlib.roiCalibration
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-115826-242802\roiCalibration_protocol_tb\simlib.colourRegionStats
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-115826-242802\roiCalibration_protocol_tb\simlib.colourMeanHsv
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-115826-242802\roiCalibration_protocol_tb\simlib.unsignedDivider
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-115826-242802\roiCalibration_protocol_tb\simlib.roiCalibrationRenderer
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-115826-242802\roiCalibration_protocol_tb\simlib.diagnosticFont
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# PASS roiCalibration_protocol_tb: invalid/orphan markers, malformed frame, full ROI count, reset in division, CE/backpressure
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/roiCalibration_protocol_tb.sv(53)
+#    Time: 24606960 ns  Iteration: 1  Instance: /roiCalibration_protocol_tb
+# End time: 11:59:59 on Oct 23,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

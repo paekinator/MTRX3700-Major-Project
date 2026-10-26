@@ -1,0 +1,551 @@
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib camera_system_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 11:55:53 on Oct 22,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.camera_system_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.top_level
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.video_pll
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.clock_divider
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.ov7670_config
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.i2c_master
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.ov7670_capture
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.frame_buffer
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.camera_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.camera_display
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.segmentationSelector
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.rgbFixedSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.rgbRatioSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.hsvSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.echo7_diag_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.colourDiagnostics
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.colourRegionStats
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.colourMeanHsv
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.unsignedDivider
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.diagnosticRenderer
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.diagnosticFont
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.vgaMaskOverlay
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.vga_sink
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.vga_monitor_model
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.ov7670_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.ov7670_model
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.ov7670_sccb_if
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-115226-303150\camera_system_tb\simlib.ov7670_video
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# [OV7670 @0] RESET# low: all registers back to their defaults
+# [OV7670-VIDEO @1044980000] chip running: RESET# high, PWDN low, XCLK 10.000 MHz
+# [OV7670-VIDEO @1044980000] output: YUV 4:2:2 640x480, PCLK = XCLK = 10.000 MHz, 12.5 fps (line 156.8 us, frame 79.97 ms), estimated: colour matrix changed
+# [OV7670-VIDEO @1044980000]   note: 2 bytes of each line of the window fall where the chip sends no HREF (207 to 273 half-slots into the line, measured on a board) and do not come out.
+# [OV7670 @1044980000] RESET# released: the chip needs up to 1.0 ms to settle before it will take SCCB writes (tS:RESET, Table 4 p.6)
+# [OV7670 @3065030000] START
+# [OV7670 @3155030000] ID 0x42 (write) -> ACK
+# [OV7670 @3245030000] sub-address 0x12 (COM7) -> ACK
+# [OV7670 @3335030000] data 0x80 -> ACK
+# [OV7670 @3335030000] WRITE COM7 (0x12) <= 0x80: software reset (bit 7): every register goes back to its default, COM7 included
+# [OV7670 @3335030000]   -> all registers reset to defaults; nothing written in the next 1.0 ms will count
+# [OV7670 @3365030000] STOP
+# [OV7670 @5095030000] START
+# [OV7670 @5185030000] ID 0x42 (write) -> ACK
+# [OV7670 @5275030000] sub-address 0x3a (TSLB) -> ACK
+# [OV7670 @5365030000] data 0x04 -> ACK
+# [OV7670 @5365030000] WRITE TSLB (0x3a) <= 0x04: normal image (bit 5), normal U and V (bit 4), YUV byte order: bit 3 = 0 (with COM13[0]), output window not set automatically (bit 0, not simulated)
+# [OV7670 @5395030000] STOP
+# [OV7670 @5415030000] START
+# [OV7670 @5505030000] ID 0x42 (write) -> ACK
+# [OV7670 @5595030000] sub-address 0x11 (CLKRC) -> ACK
+# [OV7670 @5685030000] data 0x80 -> ACK
+# [OV7670 @5685030000] WRITE CLKRC (0x11) <= 0x80: prescaler /1 (bits 5:0), bit 7 set, as after reset: the clock is not halved
+# [OV7670 @5715030000] STOP
+# [OV7670 @5735030000] START
+# [OV7670 @5825030000] ID 0x42 (write) -> ACK
+# [OV7670 @5915030000] sub-address 0x6b (DBLV) -> ACK
+# [OV7670 @6005030000] data 0x4a -> ACK
+# [OV7670 @6005030000] WRITE DBLV (0x6b) <= 0x4a: PLL x4 (bits 7:6), internal regulator on (bit 4, not simulated)
+# [OV7670 @6035030000] STOP
+# [OV7670 @6055030000] START
+# [OV7670-VIDEO @6062535000] output: YUV 4:2:2 640x480, PCLK = XCLK x 4 = 40.000 MHz, 50.0 fps (line 39.2 us, frame 19.99 ms), estimated: colour matrix changed
+# [OV7670-VIDEO @6062535000]   note: 2 bytes of each line of the window fall where the chip sends no HREF (207 to 273 half-slots into the line, measured on a board) and do not come out.
+# [OV7670 @6145030000] ID 0x42 (write) -> ACK
+# [OV7670 @6235030000] sub-address 0x12 (COM7) -> ACK
+# [OV7670 @6325030000] data 0x04 -> ACK
+# [OV7670 @6325030000] WRITE COM7 (0x12) <= 0x04: VGA, RGB output (bit 2), colour bar overlay off (bit 1)
+# [OV7670-VIDEO @6336935000] output: GRB 4:2:2 ("normal RGB") 640x480, PCLK = XCLK x 4 = 40.000 MHz, 50.0 fps (line 39.2 us, frame 19.99 ms), estimated: colour matrix changed
+# [OV7670-VIDEO @6336935000]   note: 2 bytes of each line of the window fall where the chip sends no HREF (207 to 273 half-slots into the line, measured on a board) and do not come out.
+# [OV7670-VIDEO @6336935000]   note: COM15[5:4]=x0 with RGB output is "normal RGB" (GRB 4:2:2); most designs want RGB565 (COM15 = 0xD0).
+# [OV7670 @6355030000] STOP
+# [OV7670 @6375030000] START
+# [OV7670 @6465030000] ID 0x42 (write) -> ACK
+# [OV7670 @6555030000] sub-address 0x40 (COM15) -> ACK
+# [OV7670 @6645030000] data 0xd0 -> ACK
+# [OV7670 @6645030000] WRITE COM15 (0x40) <= 0xd0: output range 00 to FF (bits 7:6), RGB565 (bits 5:4)
+# [OV7670-VIDEO @6650535000] output: RGB565 640x480, PCLK = XCLK x 4 = 40.000 MHz, 50.0 fps (line 39.2 us, frame 19.99 ms), estimated: colour matrix changed
+# [OV7670-VIDEO @6650535000]   note: 2 bytes of each line of the window fall where the chip sends no HREF (207 to 273 half-slots into the line, measured on a board) and do not come out.
+# [OV7670 @6675030000] STOP
+# [OV7670 @6695030000] START
+# [OV7670 @6785030000] ID 0x42 (write) -> ACK
+# [OV7670 @6875030000] sub-address 0x17 (HSTART) -> ACK
+# [OV7670 @6965030000] data 0x14 -> ACK
+# [OV7670 @6965030000] WRITE HSTART (0x17) <= 0x14: window start column, high 8 bits: 20 x 8 = 160, plus HREF[2:0]
+# [OV7670 @6995030000] STOP
+# [OV7670-VIDEO @7003335000] output: RGB565 640x480, PCLK = XCLK x 4 = 40.000 MHz, 50.0 fps (line 39.2 us, frame 19.99 ms), estimated: colour matrix changed, window 616 columns x 480 rows from (160,12)
+# [OV7670 @7015030000] START
+# [OV7670 @7105030000] ID 0x42 (write) -> ACK
+# [OV7670 @7195030000] sub-address 0x18 (HSTOP) -> ACK
+# [OV7670 @7285030000] data 0x02 -> ACK
+# [OV7670 @7285030000] WRITE HSTOP (0x18) <= 0x02: window end column, high 8 bits: 2 x 8 = 16, plus HREF[5:3]
+# [OV7670 @7315030000] STOP
+# [OV7670-VIDEO @7316935000] output: RGB565 640x480, PCLK = XCLK x 4 = 40.000 MHz, 50.0 fps (line 39.2 us, frame 19.99 ms), estimated: colour matrix changed
+# [OV7670 @7335030000] START
+# [OV7670 @7425030000] ID 0x42 (write) -> ACK
+# [OV7670 @7515030000] sub-address 0x32 (HREF) -> ACK
+# [OV7670 @7605030000] data 0x80 -> ACK
+# [OV7670 @7605030000] WRITE HREF (0x32) <= 0x80: HREF edge offset to the data = 2 (bits 7:6, not simulated), window end column low 3 bits = 0 (bits 5:3), start column low 3 bits = 0 (bits 2:0)
+# [OV7670 @7635030000] STOP
+# [OV7670 @7655030000] START
+# [OV7670 @7745030000] ID 0x42 (write) -> ACK
+# [OV7670 @7835030000] sub-address 0x19 (VSTRT) -> ACK
+# [OV7670 @7925030000] data 0x02 -> ACK
+# [OV7670 @7925030000] WRITE VSTRT (0x19) <= 0x02: window start row, high 8 bits: 2 x 4 = 8, plus VREF[1:0]
+# [OV7670-VIDEO @7944135000] output: RGB565 640x480, PCLK = XCLK x 4 = 40.000 MHz, 50.0 fps (line 39.2 us, frame 19.99 ms), estimated: colour matrix changed, window 640 columns x 484 rows from (160,8)
+# [OV7670 @7955030000] STOP
+# [OV7670 @7975030000] START
+# [OV7670 @8065030000] ID 0x42 (write) -> ACK
+# [OV7670 @8155030000] sub-address 0x1a (VSTOP) -> ACK
+# [OV7670 @8245030000] data 0x7a -> ACK
+# [OV7670 @8245030000] WRITE VSTOP (0x1a) <= 0x7a: window end row, high 8 bits: 122 x 4 = 488, plus VREF[3:2]
+# [OV7670-VIDEO @8257735000] output: RGB565 640x480, PCLK = XCLK x 4 = 40.000 MHz, 50.0 fps (line 39.2 us, frame 19.99 ms), estimated: colour matrix changed
+# [OV7670 @8275030000] STOP
+# [OV7670 @8295030000] START
+# [OV7670 @8385030000] ID 0x42 (write) -> ACK
+# [OV7670 @8475030000] sub-address 0x03 (VREF) -> ACK
+# [OV7670 @8565030000] data 0x0f -> ACK
+# [OV7670 @8565030000] WRITE VREF (0x03) <= 0x0f: AGC[9:8] = 0 (bits 7:6, not simulated), window end row low 2 bits = 3 (bits 3:2), start row low 2 bits = 3 (bits 1:0)
+# [OV7670 @8595030000] STOP
+# [OV7670 @8615030000] START
+# [OV7670 @8705030000] ID 0x42 (write) -> ACK
+# [OV7670 @8795030000] sub-address 0x1e (MVFP) -> ACK
+# [OV7670 @8885030000] data 0x07 -> ACK
+# [OV7670 @8885030000] WRITE MVFP (0x1e) <= 0x07: mirror off (bit 5), vertical flip off (bit 4), black sun enable on (bit 2, not simulated); reserved bit 1 set (default 0x01)
+# [OV7670 @8915030000] STOP
+# [OV7670 @8935030000] START
+# [OV7670 @9025030000] ID 0x42 (write) -> ACK
+# [OV7670 @9115030000] sub-address 0x13 (COM8) -> ACK
+# [OV7670 @9205030000] data 0xe7 -> ACK
+# [OV7670 @9205030000] WRITE COM8 (0x13) <= 0xe7: fast AGC/AEC on (bit 7), AEC step unlimited (bit 6), banding filter on (bit 5), AGC on (bit 2), AWB on (bit 1), AEC on (bit 0); reserved bit 3 clear (default 0x8f); not simulated
+# [OV7670 @9235030000] STOP
+# [OV7670 @9255030000] START
+# [OV7670 @9345030000] ID 0x42 (write) -> ACK
+# [OV7670 @9435030000] sub-address 0x3b (COM11) -> ACK
+# [OV7670 @9525030000] data 0x0a -> ACK
+# [OV7670 @9525030000] WRITE COM11 (0x3b) <= 0x0a: night mode off (bit 7), 50/60 Hz auto detection off (bit 4), banding filter value from BD50ST, 50 Hz (bit 3), exposure may go below the banding step in strong light (bit 1); not simulated
+# [OV7670 @9555030000] STOP
+# [OV7670 @9575030000] START
+# [OV7670 @9665030000] ID 0x42 (write) -> ACK
+# [OV7670 @9755030000] sub-address 0x9d (BD50ST) -> ACK
+# [OV7670 @9845030000] data 0xff -> ACK
+# [OV7670 @9845030000] WRITE BD50ST (0x9d) <= 0xff: 50 Hz banding filter value 255 (used when COM8[5] and COM11[3] are 1); not simulated
+# [OV7670 @9875030000] STOP
+# [OV7670 @9895030000] START
+# [OV7670 @9985030000] ID 0x42 (write) -> ACK
+# [OV7670 @10075030000] sub-address 0x9e (BD60ST) -> ACK
+# [OV7670 @10165030000] data 0xd5 -> ACK
+# [OV7670 @10165030000] WRITE BD60ST (0x9e) <= 0xd5: 60 Hz banding filter value 213 (used when COM8[5] is 1 and COM11[3] is 0); not simulated
+# [OV7670 @10195030000] STOP
+# [OV7670 @10215030000] START
+# [OV7670 @10305030000] ID 0x42 (write) -> ACK
+# [OV7670 @10395030000] sub-address 0x14 (COM9) -> ACK
+# [OV7670 @10485030000] data 0x48 -> ACK
+# [OV7670 @10485030000] WRITE COM9 (0x14) <= 0x48: AGC ceiling 32x (bits 6:4), AGC/AEC freeze off (bit 0); reserved bit 1 clear (default 0x4a); not simulated
+# [OV7670 @10515030000] STOP
+# [OV7670 @10535030000] START
+# [OV7670 @10625030000] ID 0x42 (write) -> ACK
+# [OV7670 @10715030000] sub-address 0x3d (COM13) -> ACK
+# [OV7670 @10805030000] data 0xc0 -> ACK
+# [OV7670 @10805030000] WRITE COM13 (0x3d) <= 0xc0: gamma on (bit 7, estimated), UV saturation auto-adjust on (bit 6, not simulated), UV swap off (bit 0, with TSLB[3] it sets the YUV byte order); reserved bit 3 clear (default 0x88)
+# [OV7670 @10835030000] STOP
+# [OV7670 @10855030000] START
+# [OV7670 @10945030000] ID 0x42 (write) -> ACK
+# [OV7670 @11035030000] sub-address 0x0e (COM5) -> ACK
+# [OV7670 @11125030000] data 0x61 -> ACK
+# [OV7670 @11125030000] WRITE COM5 (0x0e) <= 0x61: reserved: OmniVision's tuning value (default 0x01)
+# [OV7670 @11155030000] STOP
+# [OV7670 @11175030000] START
+# [OV7670 @11265030000] ID 0x42 (write) -> ACK
+# [OV7670 @11355030000] sub-address 0x0f (COM6) -> ACK
+# [OV7670 @11445030000] data 0x4b -> ACK
+# [OV7670 @11445030000] WRITE COM6 (0x0f) <= 0x4b: no HREF at the optical black lines (bit 7), timing reset when the format changes (bit 1); reserved bit 3 set (default 0x43); BBIAS, GbBIAS and RBIAS work only with bit 3 set (Table 5); not simulated
+# [OV7670 @11475030000] STOP
+# [OV7670 @11495030000] START
+# [OV7670 @11585030000] ID 0x42 (write) -> ACK
+# [OV7670 @11675030000] sub-address 0x16 (RSVD) -> ACK
+# [OV7670 @11765030000] data 0x02 -> ACK
+# [OV7670 @11765030000] WRITE RSVD (0x16) <= 0x02: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @11795030000] STOP
+# [OV7670 @11815030000] START
+# [OV7670 @11905030000] ID 0x42 (write) -> ACK
+# [OV7670 @11995030000] sub-address 0x22 (ADCCTR2) -> ACK
+# [OV7670 @12085030000] data 0x91 -> ACK
+# [OV7670 @12085030000] WRITE ADCCTR2 (0x22) <= 0x91: reserved: OmniVision's tuning value (default 0x01)
+# [OV7670 @12115030000] STOP
+# [OV7670 @12135030000] START
+# [OV7670 @12225030000] ID 0x42 (write) -> ACK
+# [OV7670 @12315030000] sub-address 0x29 (RSVD) -> ACK
+# [OV7670 @12405030000] data 0x07 -> ACK
+# [OV7670 @12405030000] WRITE RSVD (0x29) <= 0x07: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @12435030000] STOP
+# [OV7670 @12455030000] START
+# [OV7670 @12545030000] ID 0x42 (write) -> ACK
+# [OV7670 @12635030000] sub-address 0x33 (CHLF) -> ACK
+# [OV7670 @12725030000] data 0x0b -> ACK
+# [OV7670 @12725030000] WRITE CHLF (0x33) <= 0x0b: array current control, all bits reserved: OmniVision's tuning value (default 0x08)
+# [OV7670 @12755030000] STOP
+# [OV7670 @12775030000] START
+# [OV7670 @12865030000] ID 0x42 (write) -> ACK
+# [OV7670 @12955030000] sub-address 0x35 (RSVD) -> ACK
+# [OV7670 @13045030000] data 0x0b -> ACK
+# [OV7670 @13045030000] WRITE RSVD (0x35) <= 0x0b: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @13075030000] STOP
+# [OV7670 @13095030000] START
+# [OV7670 @13185030000] ID 0x42 (write) -> ACK
+# [OV7670 @13275030000] sub-address 0x37 (ADC) -> ACK
+# [OV7670 @13365030000] data 0x1d -> ACK
+# [OV7670 @13365030000] WRITE ADC (0x37) <= 0x1d: ADC control, all bits reserved: OmniVision's tuning value (default 0x3f)
+# [OV7670 @13395030000] STOP
+# [OV7670 @13415030000] START
+# [OV7670 @13505030000] ID 0x42 (write) -> ACK
+# [OV7670 @13595030000] sub-address 0x38 (ACOM) -> ACK
+# [OV7670 @13685030000] data 0x71 -> ACK
+# [OV7670 @13685030000] WRITE ACOM (0x38) <= 0x71: ADC and analogue common mode control, all bits reserved: OmniVision's tuning value (default 0x01)
+# [OV7670 @13715030000] STOP
+# [OV7670 @13735030000] START
+# [OV7670 @13825030000] ID 0x42 (write) -> ACK
+# [OV7670 @13915030000] sub-address 0x39 (OFON) -> ACK
+# [OV7670 @14005030000] data 0x2a -> ACK
+# [OV7670 @14005030000] WRITE OFON (0x39) <= 0x2a: ADC offset control, all bits reserved: OmniVision's tuning value (default 0x00)
+# [OV7670 @14035030000] STOP
+# [OV7670 @14055030000] START
+# [OV7670 @14145030000] ID 0x42 (write) -> ACK
+# [OV7670 @14235030000] sub-address 0x3c (COM12) -> ACK
+# [OV7670 @14325030000] data 0x78 -> ACK
+# [OV7670 @14325030000] WRITE COM12 (0x3c) <= 0x78: no HREF when VSYNC is low (bit 7); reserved bit 4 set (default 0x68); not simulated
+# [OV7670 @14355030000] STOP
+# [OV7670 @14375030000] START
+# [OV7670 @14465030000] ID 0x42 (write) -> ACK
+# [OV7670 @14555030000] sub-address 0x4d (RSVD) -> ACK
+# [OV7670 @14645030000] data 0x40 -> ACK
+# [OV7670 @14645030000] WRITE RSVD (0x4d) <= 0x40: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @14675030000] STOP
+# [OV7670 @14695030000] START
+# [OV7670 @14785030000] ID 0x42 (write) -> ACK
+# [OV7670 @14875030000] sub-address 0x4e (RSVD) -> ACK
+# [OV7670 @14965030000] data 0x20 -> ACK
+# [OV7670 @14965030000] WRITE RSVD (0x4e) <= 0x20: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @14995030000] STOP
+# [OV7670 @15015030000] START
+# [OV7670 @15105030000] ID 0x42 (write) -> ACK
+# [OV7670 @15195030000] sub-address 0x74 (REG74) -> ACK
+# [OV7670 @15285030000] data 0x10 -> ACK
+# [OV7670 @15285030000] WRITE REG74 (0x74) <= 0x10: digital gain set by bits 1:0 (bit 4); bits 1:0 = 00, bypass; estimated
+# [OV7670 @15315030000] STOP
+# [OV7670 @15335030000] START
+# [OV7670 @15425030000] ID 0x42 (write) -> ACK
+# [OV7670 @15515030000] sub-address 0x8d (RSVD) -> ACK
+# [OV7670 @15605030000] data 0x4f -> ACK
+# [OV7670 @15605030000] WRITE RSVD (0x8d) <= 0x4f: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @15635030000] STOP
+# [OV7670 @15655030000] START
+# [OV7670 @15745030000] ID 0x42 (write) -> ACK
+# [OV7670 @15835030000] sub-address 0xb0 (RSVD) -> ACK
+# [OV7670 @15925030000] data 0x84 -> ACK
+# [OV7670 @15925030000] WRITE RSVD (0xb0) <= 0x84: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @15955030000] STOP
+# [OV7670 @15975030000] START
+# [OV7670 @16065030000] ID 0x42 (write) -> ACK
+# [OV7670 @16155030000] sub-address 0xb1 (ABLC1) -> ACK
+# [OV7670 @16245030000] data 0x0c -> ACK
+# [OV7670 @16245030000] WRITE ABLC1 (0xb1) <= 0x0c: automatic black level calibration on (bit 2); reserved bit 3 set (default 0x00); not simulated
+# [OV7670 @16275030000] STOP
+# [OV7670 @16295030000] START
+# [OV7670 @16385030000] ID 0x42 (write) -> ACK
+# [OV7670 @16475030000] sub-address 0xb2 (RSVD) -> ACK
+# [OV7670 @16565030000] data 0x0e -> ACK
+# [OV7670 @16565030000] WRITE RSVD (0xb2) <= 0x0e: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @16595030000] STOP
+# [OV7670 @16615030000] START
+# [OV7670 @16705030000] ID 0x42 (write) -> ACK
+# [OV7670 @16795030000] sub-address 0xb3 (THL_ST) -> ACK
+# [OV7670 @16885030000] data 0x82 -> ACK
+# [OV7670 @16885030000] WRITE THL_ST (0xb3) <= 0x82: black level calibration target 130; not simulated
+# [OV7670 @16915030000] STOP
+# [OV7670 @16935030000] START
+# [OV7670 @17025030000] ID 0x42 (write) -> ACK
+# [OV7670 @17115030000] sub-address 0xb8 (RSVD) -> ACK
+# [OV7670 @17205030000] data 0x0a -> ACK
+# [OV7670 @17205030000] WRITE RSVD (0xb8) <= 0x0a: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @17235030000] STOP
+# [OV7670 @17255030000] START
+# [OV7670 @17345030000] ID 0x42 (write) -> ACK
+# [OV7670 @17435030000] sub-address 0x59 (RSVD) -> ACK
+# [OV7670 @17525030000] data 0x88 -> ACK
+# [OV7670 @17525030000] WRITE RSVD (0x59) <= 0x88: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @17555030000] STOP
+# [OV7670 @17575030000] START
+# [OV7670 @17665030000] ID 0x42 (write) -> ACK
+# [OV7670 @17755030000] sub-address 0x5a (RSVD) -> ACK
+# [OV7670 @17845030000] data 0x88 -> ACK
+# [OV7670 @17845030000] WRITE RSVD (0x5a) <= 0x88: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @17875030000] STOP
+# [OV7670 @17895030000] START
+# [OV7670 @17985030000] ID 0x42 (write) -> ACK
+# [OV7670 @18075030000] sub-address 0x5b (RSVD) -> ACK
+# [OV7670 @18165030000] data 0x44 -> ACK
+# [OV7670 @18165030000] WRITE RSVD (0x5b) <= 0x44: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @18195030000] STOP
+# [OV7670 @18215030000] START
+# [OV7670 @18305030000] ID 0x42 (write) -> ACK
+# [OV7670 @18395030000] sub-address 0x5c (RSVD) -> ACK
+# [OV7670 @18485030000] data 0x67 -> ACK
+# [OV7670 @18485030000] WRITE RSVD (0x5c) <= 0x67: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @18515030000] STOP
+# [OV7670 @18535030000] START
+# [OV7670 @18625030000] ID 0x42 (write) -> ACK
+# [OV7670 @18715030000] sub-address 0x5d (RSVD) -> ACK
+# [OV7670 @18805030000] data 0x49 -> ACK
+# [OV7670 @18805030000] WRITE RSVD (0x5d) <= 0x49: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @18835030000] STOP
+# [OV7670 @18855030000] START
+# [OV7670 @18945030000] ID 0x42 (write) -> ACK
+# [OV7670 @19035030000] sub-address 0x5e (RSVD) -> ACK
+# [OV7670 @19125030000] data 0x0e -> ACK
+# [OV7670 @19125030000] WRITE RSVD (0x5e) <= 0x0e: reserved, AWB control: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @19155030000] STOP
+# [OV7670 @19175030000] START
+# [OV7670 @19265030000] ID 0x42 (write) -> ACK
+# [OV7670 @19355030000] sub-address 0x6c (AWBCTR3) -> ACK
+# [OV7670 @19445030000] data 0x0a -> ACK
+# [OV7670 @19445030000] WRITE AWBCTR3 (0x6c) <= 0x0a: AWB control 3 (Table 5 does not describe its bits): OmniVision's tuning value (default 0x02)
+# [OV7670 @19475030000] STOP
+# [OV7670 @19495030000] START
+# [OV7670 @19585030000] ID 0x42 (write) -> ACK
+# [OV7670 @19675030000] sub-address 0x6d (AWBCTR2) -> ACK
+# [OV7670 @19765030000] data 0x55 -> ACK
+# [OV7670 @19765030000] WRITE AWBCTR2 (0x6d) <= 0x55: AWB control 2 (Table 5 does not describe its bits): OmniVision's tuning value, the same as the default (0x55)
+# [OV7670 @19795030000] STOP
+# [OV7670 @19815030000] START
+# [OV7670 @19905030000] ID 0x42 (write) -> ACK
+# [OV7670 @19995030000] sub-address 0x6e (AWBCTR1) -> ACK
+# [OV7670 @20085030000] data 0x11 -> ACK
+# [OV7670 @20085030000] WRITE AWBCTR1 (0x6e) <= 0x11: AWB control 1 (Table 5 does not describe its bits): OmniVision's tuning value (default 0xc0)
+# [OV7670 @20115030000] STOP
+# [OV7670 @20135030000] START
+# [OV7670 @20225030000] ID 0x42 (write) -> ACK
+# [OV7670 @20315030000] sub-address 0x6f (AWBCTR0) -> ACK
+# [OV7670 @20405030000] data 0x9f -> ACK
+# [OV7670 @20405030000] WRITE AWBCTR0 (0x6f) <= 0x9f: AWB control 0 (Table 5 does not describe its bits): OmniVision's tuning value (default 0x9a)
+# [OV7670 @20435030000] STOP
+# [OV7670 @20455030000] START
+# [OV7670 @20545030000] ID 0x42 (write) -> ACK
+# [OV7670 @20635030000] sub-address 0x6a (GGAIN) -> ACK
+# [OV7670 @20725030000] data 0x40 -> ACK
+# [OV7670 @20725030000] WRITE GGAIN (0x6a) <= 0x40: AWB green channel gain 64: with AWB off (COM8[1] = 0) a fixed gain, x1.00 (0x40 is x1, measured on a board); with AWB on the chip sets it (not simulated)
+# [OV7670 @20755030000] STOP
+# [OV7670 @20775030000] START
+# [OV7670 @20865030000] ID 0x42 (write) -> ACK
+# [OV7670 @20955030000] sub-address 0x01 (BLUE) -> ACK
+# [OV7670 @21045030000] data 0x40 -> ACK
+# [OV7670 @21045030000] WRITE BLUE (0x01) <= 0x40: AWB blue channel gain 64: with AWB off (COM8[1] = 0) a fixed gain, estimated as x1.00 (the course's 0x40 is x1); with AWB on the chip sets it (not simulated)
+# [OV7670 @21075030000] STOP
+# [OV7670 @21095030000] START
+# [OV7670 @21185030000] ID 0x42 (write) -> ACK
+# [OV7670 @21275030000] sub-address 0x02 (RED) -> ACK
+# [OV7670 @21365030000] data 0x60 -> ACK
+# [OV7670 @21365030000] WRITE RED (0x02) <= 0x60: AWB red channel gain 96: with AWB off (COM8[1] = 0) a fixed gain, estimated as x1.00 (the course's 0x60 is x1); with AWB on the chip sets it (not simulated)
+# [OV7670 @21395030000] STOP
+# [OV7670 @21415030000] START
+# [OV7670 @21505030000] ID 0x42 (write) -> ACK
+# [OV7670 @21595030000] sub-address 0x4f (MTX1) -> ACK
+# [OV7670 @21685030000] data 0x80 -> ACK
+# [OV7670 @21685030000] WRITE MTX1 (0x4f) <= 0x80: colour matrix coefficient 1 = 128, red into V (its sign is in MTXS); estimated
+# [OV7670 @21715030000] STOP
+# [OV7670 @21735030000] START
+# [OV7670 @21825030000] ID 0x42 (write) -> ACK
+# [OV7670 @21915030000] sub-address 0x50 (MTX2) -> ACK
+# [OV7670 @22005030000] data 0x80 -> ACK
+# [OV7670 @22005030000] WRITE MTX2 (0x50) <= 0x80: colour matrix coefficient 2 = 128, green into V (its sign is in MTXS); estimated
+# [OV7670 @22035030000] STOP
+# [OV7670 @22055030000] START
+# [OV7670 @22145030000] ID 0x42 (write) -> ACK
+# [OV7670 @22235030000] sub-address 0x51 (MTX3) -> ACK
+# [OV7670 @22325030000] data 0x00 -> ACK
+# [OV7670 @22325030000] WRITE MTX3 (0x51) <= 0x00: colour matrix coefficient 3 = 0, blue into V (its sign is in MTXS); estimated
+# [OV7670 @22355030000] STOP
+# [OV7670 @22375030000] START
+# [OV7670 @22465030000] ID 0x42 (write) -> ACK
+# [OV7670 @22555030000] sub-address 0x52 (MTX4) -> ACK
+# [OV7670 @22645030000] data 0x22 -> ACK
+# [OV7670 @22645030000] WRITE MTX4 (0x52) <= 0x22: colour matrix coefficient 4 = 34, red into U (its sign is in MTXS); estimated
+# [OV7670 @22675030000] STOP
+# [OV7670 @22695030000] START
+# [OV7670 @22785030000] ID 0x42 (write) -> ACK
+# [OV7670 @22875030000] sub-address 0x53 (MTX5) -> ACK
+# [OV7670 @22965030000] data 0x5e -> ACK
+# [OV7670 @22965030000] WRITE MTX5 (0x53) <= 0x5e: colour matrix coefficient 5 = 94, green into U (its sign is in MTXS); estimated
+# [OV7670 @22995030000] STOP
+# [OV7670 @23015030000] START
+# [OV7670 @23105030000] ID 0x42 (write) -> ACK
+# [OV7670 @23195030000] sub-address 0x54 (MTX6) -> ACK
+# [OV7670 @23285030000] data 0x80 -> ACK
+# [OV7670 @23285030000] WRITE MTX6 (0x54) <= 0x80: colour matrix coefficient 6 = 128, blue into U (its sign is in MTXS); estimated
+# [OV7670-VIDEO @23310535000] output: RGB565 640x480, PCLK = XCLK x 4 = 40.000 MHz, 50.0 fps (line 39.2 us, frame 19.99 ms)
+# [OV7670 @23315030000] STOP
+# [OV7670 @23335030000] START
+# [OV7670 @23425030000] ID 0x42 (write) -> ACK
+# [OV7670 @23515030000] sub-address 0x58 (MTXS) -> ACK
+# [OV7670 @23605030000] data 0x9e -> ACK
+# [OV7670 @23605030000] WRITE MTXS (0x58) <= 0x9e: contrast centre automatic (bit 7: the picture's mean luma), colour matrix signs 011110 (bits 5:0, 1 = minus; estimated)
+# [OV7670 @23635030000] STOP
+# [OV7670 @23655030000] START
+# [OV7670 @23745030000] ID 0x42 (write) -> ACK
+# [OV7670 @23835030000] sub-address 0x41 (COM16) -> ACK
+# [OV7670 @23925030000] data 0x18 -> ACK
+# [OV7670 @23925030000] WRITE COM16 (0x41) <= 0x18: edge enhancement auto-adjust off (bit 5), de-noise auto-adjust on (bit 4), AWB gain on (bit 3): not simulated; colour matrix not doubled (bit 1): estimated
+# [OV7670 @23955030000] STOP
+# [OV7670 @23975030000] START
+# [OV7670 @24065030000] ID 0x42 (write) -> ACK
+# [OV7670 @24155030000] sub-address 0x3f (EDGE) -> ACK
+# [OV7670 @24245030000] data 0x00 -> ACK
+# [OV7670 @24245030000] WRITE EDGE (0x3f) <= 0x00: edge enhancement factor 0 (bits 4:0); not simulated
+# [OV7670 @24275030000] STOP
+# [OV7670 @24295030000] START
+# [OV7670 @24385030000] ID 0x42 (write) -> ACK
+# [OV7670 @24475030000] sub-address 0x75 (REG75) -> ACK
+# [OV7670 @24565030000] data 0x05 -> ACK
+# [OV7670 @24565030000] WRITE REG75 (0x75) <= 0x05: edge enhancement lower limit 5 (bits 4:0); not simulated
+# [OV7670 @24595030000] STOP
+# [OV7670 @24615030000] START
+# [OV7670 @24705030000] ID 0x42 (write) -> ACK
+# [OV7670 @24795030000] sub-address 0x76 (REG76) -> ACK
+# [OV7670-VIDEO @24800135000] frame 1 done (510 lines of 1568 PCLK); frame 2 starts
+# [OV7670 @24885030000] data 0xe1 -> ACK
+# [OV7670 @24885030000] WRITE REG76 (0x76) <= 0xe1: black pixel correction on (bit 7), white pixel correction on (bit 6), edge enhancement upper limit 1 (bits 4:0); reserved bit 5 set (default 0x01); not simulated
+# [OV7670 @24915030000] STOP
+# [OV7670 @24935030000] START
+# [OV7670 @25025030000] ID 0x42 (write) -> ACK
+# [OV7670 @25115030000] sub-address 0x4c (DNSTH) -> ACK
+# [OV7670 @25205030000] data 0x00 -> ACK
+# [OV7670 @25205030000] WRITE DNSTH (0x4c) <= 0x00: de-noise strength 0; not simulated
+# [OV7670 @25235030000] STOP
+# [OV7670 @25255030000] START
+# [OV7670 @25345030000] ID 0x42 (write) -> ACK
+# [OV7670 @25435030000] sub-address 0x77 (REG77) -> ACK
+# [OV7670 @25525030000] data 0x01 -> ACK
+# [OV7670 @25525030000] WRITE REG77 (0x77) <= 0x01: de-noise offset 1; not simulated
+# [OV7670 @25555030000] STOP
+# [OV7670 @25575030000] START
+# [OV7670 @25665030000] ID 0x42 (write) -> ACK
+# [OV7670 @25755030000] sub-address 0x4b (REG4B) -> ACK
+# [OV7670 @25845030000] data 0x09 -> ACK
+# [OV7670 @25845030000] WRITE REG4B (0x4b) <= 0x09: UV average on (bit 0); reserved bit 3 set (default 0x00); not simulated
+# [OV7670 @25875030000] STOP
+# [OV7670 @25895030000] START
+# [OV7670 @25985030000] ID 0x42 (write) -> ACK
+# [OV7670 @26075030000] sub-address 0xc9 (SATCTR) -> ACK
+# [OV7670 @26165030000] data 0x60 -> ACK
+# [OV7670 @26165030000] WRITE SATCTR (0xc9) <= 0x60: UV saturation minimum 6 (bits 7:4); bits 3:0 hold the chip's own result (COM13[6]); not simulated
+# [OV7670 @26195030000] STOP
+# [OV7670 @26215030000] START
+# [OV7670 @26305030000] ID 0x42 (write) -> ACK
+# [OV7670 @26395030000] sub-address 0x56 (CONTRAS) -> ACK
+# [OV7670 @26485030000] data 0x40 -> ACK
+# [OV7670 @26485030000] WRITE CONTRAS (0x56) <= 0x40: contrast x1.00 (64/64; 0x40 is x1)
+# [OV7670 @26515030000] STOP
+# [OV7670 @26535030000] START
+# [OV7670 @26625030000] ID 0x42 (write) -> ACK
+# [OV7670 @26715030000] sub-address 0x34 (ARBLM) -> ACK
+# [OV7670 @26805030000] data 0x11 -> ACK
+# [OV7670 @26805030000] WRITE ARBLM (0x34) <= 0x11: array reference control, all bits reserved: OmniVision's tuning value, the same as the default (0x11)
+# [OV7670 @26835030000] STOP
+# [OV7670 @26855030000] START
+# [OV7670 @26945030000] ID 0x42 (write) -> ACK
+# [OV7670 @27035030000] sub-address 0xa4 (NT_CTRL) -> ACK
+# [OV7670 @27125030000] data 0x88 -> ACK
+# [OV7670 @27125030000] WRITE NT_CTRL (0xa4) <= 0x88: automatic frame rate adjustment halves the frame rate (bit 3), dummy rows inserted at 2x gain (bits 1:0); reserved bit 7 set (default 0x00); not simulated
+# [OV7670 @27155030000] STOP
+# [OV7670 @27175030000] START
+# [OV7670 @27265030000] ID 0x42 (write) -> ACK
+# [OV7670 @27355030000] sub-address 0x96 (RSVD) -> ACK
+# [OV7670 @27445030000] data 0x00 -> ACK
+# [OV7670 @27445030000] WRITE RSVD (0x96) <= 0x00: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @27475030000] STOP
+# [OV7670 @27495030000] START
+# [OV7670 @27585030000] ID 0x42 (write) -> ACK
+# [OV7670 @27675030000] sub-address 0x97 (RSVD) -> ACK
+# [OV7670 @27765030000] data 0x30 -> ACK
+# [OV7670 @27765030000] WRITE RSVD (0x97) <= 0x30: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @27795030000] STOP
+# [OV7670 @27815030000] START
+# [OV7670 @27905030000] ID 0x42 (write) -> ACK
+# [OV7670 @27995030000] sub-address 0x98 (RSVD) -> ACK
+# [OV7670 @28085030000] data 0x20 -> ACK
+# [OV7670 @28085030000] WRITE RSVD (0x98) <= 0x20: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @28115030000] STOP
+# [OV7670 @28135030000] START
+# [OV7670 @28225030000] ID 0x42 (write) -> ACK
+# [OV7670 @28315030000] sub-address 0x99 (RSVD) -> ACK
+# [OV7670 @28405030000] data 0x30 -> ACK
+# [OV7670 @28405030000] WRITE RSVD (0x99) <= 0x30: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @28435030000] STOP
+# [OV7670 @28455030000] START
+# [OV7670 @28545030000] ID 0x42 (write) -> ACK
+# [OV7670 @28635030000] sub-address 0x9a (RSVD) -> ACK
+# [OV7670 @28725030000] data 0x84 -> ACK
+# [OV7670 @28725030000] WRITE RSVD (0x9a) <= 0x84: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @28755030000] STOP
+# [OV7670 @28775030000] START
+# [OV7670 @28865030000] ID 0x42 (write) -> ACK
+# [OV7670 @28955030000] sub-address 0x9b (RSVD) -> ACK
+# [OV7670 @29045030000] data 0x29 -> ACK
+# [OV7670 @29045030000] WRITE RSVD (0x9b) <= 0x29: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @29075030000] STOP
+# [OV7670 @29095030000] START
+# [OV7670 @29185030000] ID 0x42 (write) -> ACK
+# [OV7670 @29275030000] sub-address 0x9c (RSVD) -> ACK
+# [OV7670 @29365030000] data 0x03 -> ACK
+# [OV7670 @29365030000] WRITE RSVD (0x9c) <= 0x03: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @29395030000] STOP
+# [OV7670 @29415030000] START
+# [OV7670 @29505030000] ID 0x42 (write) -> ACK
+# [OV7670 @29595030000] sub-address 0x78 (RSVD) -> ACK
+# [OV7670 @29685030000] data 0x04 -> ACK
+# [OV7670 @29685030000] WRITE RSVD (0x78) <= 0x04: reserved: OmniVision's tuning value (Table 5 gives no default)
+# [OV7670 @29715030000] STOP
+# [tb @29734980000] camera configured; LEDR = 0000000001
+#   [config] note: PLL x4: PCLK = 40.0 MHz.
+#   [config] OK: RGB565 640x480 at 40.000 MHz PCLK, 50.0 fps.
+# [OV7670-VIDEO @44792135000] frame 2 done (510 lines of 1568 PCLK); frame 3 starts
+# [OV7670-VIDEO @64784135000] frame 3 done (510 lines of 1568 PCLK); frame 4 starts
+# [OV7670-VIDEO @84776135000] frame 4 done (510 lines of 1568 PCLK); frame 5 starts
+# [tb @122891260000] 5 camera frames, 8 monitor frames, VGA protocol errors 0, SCCB errors 0
+# ---------------------------------------------------------------
+# OV7670 model state at 122891260000: 78 register write(s) accepted, 0 read(s), 2 reset(s), 0 protocol error(s), 0 dropped write(s), 5 frame(s) output.
+#   COM7   (0x12) = 0x04  VGA, RGB output (bit 2), colour bar overlay off (bit 1)
+#   CLKRC  (0x11) = 0x80  prescaler /1 (bits 5:0), bit 7 set, as after reset: the clock is not halved
+#   DBLV   (0x6B) = 0x4a  PLL x4 (bits 7:6), internal regulator on (bit 4, not simulated)
+#   COM14  (0x3E) = 0x00  DCW and scaling PCLK off (bit 4), manual scaling off (bit 3, not simulated), PCLK divider /1 (bits 2:0, used when bit 4 is on)
+#   COM15  (0x40) = 0xd0  output range 00 to FF (bits 7:6), RGB565 (bits 5:4)
+#   RGB444 (0x8C) = 0x00  RGB444 off (bit 1, used when COM15[4] = 1), word format xR GB (bit 0)
+#   TSLB   (0x3A) = 0x04  normal image (bit 5), normal U and V (bit 4), YUV byte order: bit 3 = 0 (with COM13[0]), output window not set automatically (bit 0, not simulated)
+#   COM10  (0x15) = 0x00  HREF pin gives HREF (bit 6), PCLK runs all the time (bit 5), PCLK normal (bit 4), HREF normal (bit 3), VSYNC changes on the falling edge of PCLK (bit 2), VSYNC positive (bit 1), HSYNC positive (bit 0)
+#   MVFP   (0x1E) = 0x07  mirror off (bit 5), vertical flip off (bit 4), black sun enable on (bit 2, not simulated); reserved bit 1 set (default 0x01)
+#   window: columns 160..16 (HSTART/HSTOP/HREF), rows 11..491 (VSTRT/VSTOP/VREF)
+#   => video port: RGB565 640x480, PCLK = XCLK x 4 = 40.000 MHz, 50.0 fps (line 39.2 us, frame 19.99 ms)
+#   => AEC on, AGC on, AWB on (COM8); these only affect the real picture, not the model's
+# ---------------------------------------------------------------
+# PASS: camera -> capture -> frame buffer -> display -> monitor: 4 frames drawn after configuration, no errors; see frame_*.png / camera.gif
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/camera_system_tb.sv(77)
+#    Time: 122891260 ns  Iteration: 0  Instance: /camera_system_tb
+# [VGA] end of simulation: 8 complete frame(s), 0 problem(s) reported.
+# End time: 11:57:28 on Oct 22,2026, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 0

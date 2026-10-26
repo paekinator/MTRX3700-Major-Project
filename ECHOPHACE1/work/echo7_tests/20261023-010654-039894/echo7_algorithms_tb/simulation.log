@@ -1,0 +1,23 @@
+Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_algorithms_tb\simlib echo7_algorithms_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 01:06:55 on Oct 23,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_algorithms_tb\simlib.echo7_ref_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_algorithms_tb\simlib.echo7_algorithms_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_algorithms_tb\simlib.camera_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_algorithms_tb\simlib.rgbFixedSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_algorithms_tb\simlib.rgbRatioSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-010654-039894\echo7_algorithms_tb\simlib.hsvSeg
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# PASS echo7_algorithms_tb: all 65536 RGB565 values per algorithm; CE/reset/bubbles/equality/overlap; checks=75544
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/echo7_algorithms_tb.sv(52)
+#    Time: 3021781 ns  Iteration: 0  Instance: /echo7_algorithms_tb
+# End time: 01:06:56 on Oct 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

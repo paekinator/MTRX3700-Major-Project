@@ -1,0 +1,178 @@
+{
+  "status": "SOFTWARE_VERIFIED_POWER_CODE_UNCONFIRMED_BOARD_NOT_TESTED",
+  "recorded_at": "2026-10-23T15:43:57.799043",
+  "power_key_verified": false,
+  "default_power_key_configured": false,
+  "default_image": "SAFE_CODE_READER_ZERO_SPEED_ONLY",
+  "tests": {
+    "safety_unit_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153313-333589/summary.json"
+    },
+    "uartSafety_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153748-540821/summary.json"
+    },
+    "irSafety_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153313-333589/summary.json"
+    },
+    "sonarSafety_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153313-333589/summary.json"
+    },
+    "rotation_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153001-845937/summary.json"
+    },
+    "roiCalibration_protocol_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153001-845937/summary.json"
+    },
+    "ov7670_capture_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153001-845937/summary.json"
+    },
+    "frame_buffer_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153001-845937/summary.json"
+    },
+    "camera_display_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153001-845937/summary.json"
+    },
+    "camera_system_tb": {
+      "status": "PASS",
+      "source_summary": "work/echo7_tests/20261023-153001-845937/summary.json"
+    }
+  },
+  "simulator": "ModelSim Altera Starter Edition 10.5b",
+  "verilator_executed": false,
+  "hardware_tested": false,
+  "failed_attempts": [
+    {
+      "run": "work/echo7_tests/20261023-153001-845937/summary.json",
+      "test": "uartSafety_tb",
+      "reason": "Enhanced test expected movement before queued reset-zero frames drained; corrected test wait; subsequent run PASS"
+    },
+    {
+      "log": "work/safety/quartus_initial_syntax_failure.log",
+      "reason": "Quartus 18.1 unary int-cast parsing; replaced with equivalent fixed-width magnitude and digit arithmetic"
+    }
+  ],
+  "quartus": {
+    "full_compile": "PASS",
+    "configuration": "POWER_KEY_CONFIGURED=0; code reader; ultrasonic safety disabled",
+    "errors": 0,
+    "warnings": 93,
+    "alm": 3779,
+    "registers": 3495,
+    "memory_bits": 1228800,
+    "ram_blocks": 152,
+    "dsp": 8,
+    "plls": 2,
+    "worst_setup_slack_ns": 5.157,
+    "worst_hold_slack_ns": 0.144,
+    "min_reported_display_fmax_mhz": 28.7,
+    "min_reported_clock50_fmax_mhz": 152.53,
+    "log": "work/safety/quartus.log"
+  },
+  "active_path_synthesis": {
+    "status": "PASS",
+    "synthetic_test_power_code": "A5",
+    "errors": 0,
+    "warnings": 78,
+    "stage": "Analysis & Synthesis only; no fitting/timing/no SOF",
+    "log": "work/safety/active_synthesis.log"
+  },
+  "uart_latency": {
+    "scope": "ModelSim; decoded POWER event; 26 byte phases during longest nonzero line; 50MHz / 434 cycles per bit",
+    "max_zero_first_start_bit_ns": 2257350,
+    "max_zero_final_stop_bit_complete_ns": 4341030,
+    "conservative_first_bit_bound_ns": 2258000,
+    "conservative_complete_bound_ns": 4342000,
+    "does_not_measure": "IR acquisition, delivery acknowledgement, ESP32 processing or physical wheel stop"
+  },
+  "camera_baseline_unchanged_files": [
+    "rtl/seven_seg.sv",
+    "rtl/clock_divider.sv",
+    "rtl/ov7670_config.sv",
+    "rtl/video_pll.sv",
+    "rtl/echo7/diagnosticRenderer.sv",
+    "rtl/echo7/videoDiagnostics.sv",
+    "rtl/live/cdc_latch.sv",
+    "rtl/echo7/rgbFixedSeg.sv",
+    "rtl/echo7/roiCalibrationRenderer.sv",
+    "rtl/echo7/colourMeanHsv.sv",
+    "rtl/i2c_master.sv",
+    "rtl/camera_display.sv",
+    "rtl/live/hdiff.sv",
+    "rtl/live/col_profile.sv",
+    "rtl/echo7/roiCalibration.sv",
+    "rtl/live/bar_decode.sv",
+    "rtl/live/pick_runs.sv",
+    "rtl/echo7/segmentationSelector.sv",
+    "rtl/ov7670_config.sv.bak",
+    "rtl/ov7670_capture.sv",
+    "rtl/echo7/colourDiagnostics.sv",
+    "rtl/live/live_reader.sv",
+    "rtl/echo7/rgbRatioSeg.sv",
+    "rtl/echo7/hsvSeg.sv",
+    "rtl/frame_buffer.sv",
+    "rtl/echo7/unsignedDivider.sv",
+    "rtl/display.sv",
+    "rtl/echo7/echo7_diag_pkg.sv",
+    "rtl/echo7/diagnosticFont.sv",
+    "rtl/live/camera_barcode_display.sv",
+    "rtl/top_level.sv.bak",
+    "rtl/echo7/vgaMaskOverlay.sv",
+    "rtl/live/hex_glyph.sv",
+    "rtl/echo7/colourRegionStats.sv",
+    "rtl/uart_tx.sv",
+    "rtl/camera_pkg.sv"
+  ],
+  "modified_existing_rtl": [
+    "rtl/top_level.sv"
+  ],
+  "sha256": {
+    "rtl/safety/controlWatchdog.sv": "329a5bbf3af8c3281378b509121c2d81e1536aab73cdc3de8082dcb9903be12a",
+    "rtl/safety/dualSonar.sv": "fc61fa49e65e37dcc46f69f7be4a93f5e2c7d8e820ecad384b886b66eaa21bed",
+    "rtl/safety/irEmergencyStop.sv": "64a8c97a065c1b63851bdad08996b9a4221a63fc5e68847aec1c18af5f1f8e42",
+    "rtl/safety/irMotionControl.sv": "281c3b024a0dfbf4ddf013f6fcf48f29e18396d9fa9bfda6fd5a9610410598a7",
+    "rtl/safety/motorSafetyArbiter.sv": "1babb273d28ad5808a5e0778ae029f996189469281d34e2b4d323b4ffc343ff5",
+    "rtl/safety/motorSafetyController.sv": "7fc29179dd0adc7e1e6750cb1cc08c41d35a71ac77c3f79fbfe88f219bde9a83",
+    "rtl/safety/necDecoderSafe.sv": "e9fdeaf4ca36e0668fcbca1a643e809b9599451cba9a3f0387fe1e1000641d47",
+    "rtl/safety/safeChassisCommand.sv": "c1ec9bb3f1c8de7601db13487ef0ef55e9e32a392b13d653c437117d7adf62e3",
+    "rtl/safety/safetyHex.sv": "e2167755326f4b02f3241fe97f3d193910c901b696c53184abc5b9fbef153afa",
+    "rtl/safety/safetySystem.sv": "127e4f306010f5b3414a9f5e2dae14aafe0eb3902764482f46ae268c9646e300",
+    "rtl/safety/sonarSampleCdc.sv": "89315dd87237e8559912012cfd9742993eb6c5c9dde10f8b5dda40be2ee88067",
+    "rtl/safety/ultrasonicSafety.sv": "3cd41b5feacc5fa135bc4085ecb70755257da4d7864fd99956ad87f1102a2f48",
+    "rtl/safety/reference/chassis_command.sv": "dc006b50d1a4f8a48b6922492b3ba6a3d1a1313290f26138592ab0037b65155a",
+    "rtl/safety/reference/ir_drive.sv": "6419d71550c41cf0299514576f5240bdc15460be1f2a037e2c14935819f03977",
+    "rtl/safety/reference/nec_decoder.sv": "d98e00b37eb011bf03a1d1a80b657037b6a67c4915b187dc813ca146f364e577",
+    "rtl/safety/reference/sonar_pll.sv": "c1cc454af5ee33a00ba3a8e16d963c4cd37b5a0ed9a2e3033b6bf8443c615e73",
+    "rtl/safety/reference/sonar_range.sv": "8b98255d0740cfd5ebc388f4d2f9f17feb26edd525cccb5cdab25d7ef691122d",
+    "rtl/safety/reference/uart_rx.sv": "9f85ec23ea4770e2c6e31c2591bcd9e1a1ff61910b785b270bd4b194c987da6a",
+    "tb/safety/irSafety_tb.sv": "47b7d9a3e2dac400d35536e7276951614a5379ffc33b0f5dab7ed79fe2647837",
+    "tb/safety/safety_unit_tb.sv": "06e7503cd2ff3762abfaf3a07a70ca9a030826ded3504882689597c8ff932e8f",
+    "tb/safety/sonarSafety_tb.sv": "298242987a519ce62f35a9a118a2376a3c25b3de6d1036b19db8b0310efb4e08",
+    "tb/safety/uartSafety_tb.sv": "aee5ca0d3d1297719b895f5fa6abc0670f4f7c8136cc3a034c6d09a3041fcb51",
+    "rtl/top_level.sv": "3ecef1b2d17bde2971eccf17e0b75b323a241a848002d81aeababa9868016dbc",
+    "rtl/uart_tx.sv": "657a31a8d4afcf7c38f21a5597d773eec4222492978d0985854f8906cc4a9f20",
+    "quartus/Camera.qsf": "a0759280e3a0220153db1f8a2aa1f5d0894826fad03bd45186b33067f390740e",
+    "quartus/Camera.sdc": "2fc8c24a110fbfa293219bb5425e5bf1fb75da3418d2adb626e09dc42f2a6048",
+    "tb/camera_system_tb.sv": "d1aaad8de83192b97c73ad7d791b104d7eefffb0790b893a1138865f722c2877",
+    "simulate.sh": "46d3854d4584cb3962c0c2c04ca9717f01fbc094a8e4d0dee6fe05166846386f",
+    "tools/echo7/run_tests.py": "215717ce0b712f29a841df1b0cf5aae251f3dd5b7ae48f232c83b396b30f4fb6",
+    "quartus/output_files/Camera.sof": "cd706331b6369c5c5997ff88af75fc56669685c162afdaaa409925b8d9b768b7"
+  },
+  "official_heartbeat_source": "https://www.waveshare.com/wiki/UGV02",
+  "installed_chassis_firmware_timeout_confirmed": false,
+  "sonar": {
+    "safety_enabled": false,
+    "stop_mm": 200,
+    "release_mm": 230,
+    "stale_ms": 300,
+    "second_sensor_mapping": "2026 port2 J4 GPIO_1[35]/[34], user confirmed"
+  }
+}

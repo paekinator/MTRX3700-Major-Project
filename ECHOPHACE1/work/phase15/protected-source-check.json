@@ -1,0 +1,54 @@
+[
+  {
+    "File": "rtl\\ov7670_config.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\ov7670_capture.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\camera_pkg.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\frame_buffer.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\camera_display.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\video_pll.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\uart_tx.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\chassis_drive.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\echo7\\rgbFixedSeg.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\echo7\\rgbRatioSeg.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\echo7\\hsvSeg.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "rtl\\echo7\\vgaMaskOverlay.sv",
+    "Unchanged": true
+  },
+  {
+    "File": "quartus\\Camera.sdc",
+    "Unchanged": true
+  }
+]

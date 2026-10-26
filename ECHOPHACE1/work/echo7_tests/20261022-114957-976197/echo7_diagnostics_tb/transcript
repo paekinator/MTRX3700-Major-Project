@@ -1,0 +1,31 @@
+# vsim -c -onfinish exit -lib C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib echo7_diagnostics_tb -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 11:50:03 on Oct 22,2026
+# Loading sv_std.std
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.echo7_ref_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.echo7_diag_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.echo7_diag_ref_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.echo7_diagnostics_tb
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.frame_buffer
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.camera_pkg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.camera_display
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.segmentationSelector
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.rgbFixedSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.rgbRatioSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.hsvSeg
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.colourDiagnostics
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.colourRegionStats
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.colourMeanHsv
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.unsignedDivider
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.diagnosticRenderer
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.diagnosticFont
+# Loading C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261022-114957-976197\echo7_diagnostics_tb\simlib.vgaMaskOverlay
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# PASS echo7_diagnostics_tb: 10 complete frames, framebuffer/dual clocks/2x scale, exact boxes and text, original/overlay, all modes, frame tags, continuous VGA timing, random backpressure, live movement/empty; max boundary wait=296
+# ** Note: $finish    : C:/Quartus_Projects/Majortut/ECHOPHACE1/tb/echo7/echo7_diagnostics_tb.sv(128)
+#    Time: 179035380 ns  Iteration: 1  Instance: /echo7_diagnostics_tb
+# End time: 11:50:57 on Oct 22,2026, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0

@@ -1,0 +1,429 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Fri Oct 23 15:40:12 2026
+Info: Command: quartus_map C:\Quartus_Projects\Majortut\ECHOPHACE1\work\safety\active_synthesis\SafetyActive --read_settings_files=on --write_settings_files=off
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12248): Elaborating Platform Designer system entity "vga_sink.qsys"
+Info (12250): 2026.10.23.15:40:23 Progress: Loading quartus/vga_sink.qsys
+Info (12250): 2026.10.23.15:40:23 Progress: Reading input file
+Info (12250): 2026.10.23.15:40:23 Progress: Adding clk_0 [clock_source 18.1]
+Info (12250): 2026.10.23.15:40:24 Progress: Parameterizing module clk_0
+Info (12250): 2026.10.23.15:40:24 Progress: Adding video_vga_controller_0 [altera_up_avalon_video_vga_controller 18.0]
+Info (12250): 2026.10.23.15:40:24 Progress: Parameterizing module video_vga_controller_0
+Info (12250): 2026.10.23.15:40:24 Progress: Building connections
+Info (12250): 2026.10.23.15:40:24 Progress: Parameterizing connections
+Info (12250): 2026.10.23.15:40:24 Progress: Validating
+Info (12250): 2026.10.23.15:40:24 Progress: Done reading input file
+Info (12250): Vga_sink.video_vga_controller_0: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info (12250): Vga_sink: Generating vga_sink "vga_sink" for QUARTUS_SYNTH
+Info (12250): Video_vga_controller_0: Starting Generation of VGA Controller
+Info (12250): Video_vga_controller_0: "vga_sink" instantiated altera_up_avalon_video_vga_controller "video_vga_controller_0"
+Info (12250): Vga_sink: Done "vga_sink" with 2 modules, 3 files
+Info (12249): Finished elaborating Platform Designer system entity "vga_sink.qsys"
+Info (12021): Found 1 design units, including 0 entities, in source file /quartus_projects/majortut/echophace1/rtl/camera_pkg.sv
+    Info (12022): Found design unit 1: camera_pkg (SystemVerilog) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_pkg.sv Line: 11
+Info (12021): Found 1 design units, including 0 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/echo7_diag_pkg.sv
+    Info (12022): Found design unit 1: echo7_diag_pkg (SystemVerilog) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/echo7_diag_pkg.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/clock_divider.sv
+    Info (12023): Found entity 1: clock_divider File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/clock_divider.sv Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/i2c_master.sv
+    Info (12023): Found entity 1: i2c_master File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/ov7670_config.sv
+    Info (12023): Found entity 1: ov7670_config File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/ov7670_config.sv Line: 50
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/ov7670_capture.sv
+    Info (12023): Found entity 1: ov7670_capture File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/ov7670_capture.sv Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/frame_buffer.sv
+    Info (12023): Found entity 1: frame_buffer File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 53
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/camera_display.sv
+    Info (12023): Found entity 1: camera_display File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_display.sv Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/video_pll.sv
+    Info (12023): Found entity 1: video_pll File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/video_pll.sv Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/top_level.sv
+    Info (12023): Found entity 1: top_level File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/rgbfixedseg.sv
+    Info (12023): Found entity 1: rgbFixedSeg File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/rgbFixedSeg.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/rgbratioseg.sv
+    Info (12023): Found entity 1: rgbRatioSeg File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/rgbRatioSeg.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/hsvseg.sv
+    Info (12023): Found entity 1: hsvSeg File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/hsvSeg.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/segmentationselector.sv
+    Info (12023): Found entity 1: segmentationSelector File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/segmentationSelector.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/vgamaskoverlay.sv
+    Info (12023): Found entity 1: vgaMaskOverlay File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/vgaMaskOverlay.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/unsigneddivider.sv
+    Info (12023): Found entity 1: unsignedDivider File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/unsignedDivider.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/colourregionstats.sv
+    Info (12023): Found entity 1: colourRegionStats File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourRegionStats.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/colourmeanhsv.sv
+    Info (12023): Found entity 1: colourMeanHsv File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourMeanHsv.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/diagnosticfont.sv
+    Info (12023): Found entity 1: diagnosticFont File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticFont.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/diagnosticrenderer.sv
+    Info (12023): Found entity 1: diagnosticRenderer File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticRenderer.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/colourdiagnostics.sv
+    Info (12023): Found entity 1: colourDiagnostics File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourDiagnostics.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/roicalibrationrenderer.sv
+    Info (12023): Found entity 1: roiCalibrationRenderer File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/roicalibration.sv
+    Info (12023): Found entity 1: roiCalibration File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibration.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/echo7/videodiagnostics.sv
+    Info (12023): Found entity 1: videoDiagnostics File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/videoDiagnostics.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/uart_tx.sv
+    Info (12023): Found entity 1: uart_tx File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/uart_tx.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/iremergencystop.sv
+    Info (12023): Found entity 1: irEmergencyStop File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/irEmergencyStop.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/controlwatchdog.sv
+    Info (12023): Found entity 1: controlWatchdog File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/controlWatchdog.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/ultrasonicsafety.sv
+    Info (12023): Found entity 1: ultrasonicSafety File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/ultrasonicSafety.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/motorsafetyarbiter.sv
+    Info (12023): Found entity 1: motorSafetyArbiter File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/motorSafetyArbiter.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/motorsafetycontroller.sv
+    Info (12023): Found entity 1: motorSafetyController File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/motorSafetyController.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/irmotioncontrol.sv
+    Info (12023): Found entity 1: irMotionControl File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/irMotionControl.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/safechassiscommand.sv
+    Info (12023): Found entity 1: safeChassisCommand File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safeChassisCommand.sv Line: 4
+Warning (10335): Unrecognized synthesis attribute "async_reg" at ../../../rtl/safety/sonarSampleCdc.sv(12) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/sonarSampleCdc.sv Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/sonarsamplecdc.sv
+    Info (12023): Found entity 1: sonarSampleCdc File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/sonarSampleCdc.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/dualsonar.sv
+    Info (12023): Found entity 1: dualSonar File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/dualSonar.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/safetyhex.sv
+    Info (12023): Found entity 1: safetyHex File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetyHex.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/safetysystem.sv
+    Info (12023): Found entity 1: safetySystem File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetySystem.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/necdecodersafe.sv
+    Info (12023): Found entity 1: necDecoderSafe File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/necDecoderSafe.sv Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/reference/ir_drive.sv
+    Info (12023): Found entity 1: ir_drive File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/ir_drive.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/reference/uart_rx.sv
+    Info (12023): Found entity 1: uart_rx File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/uart_rx.sv Line: 30
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/reference/sonar_range.sv
+    Info (12023): Found entity 1: sonar_range File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_range.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_projects/majortut/echophace1/rtl/safety/reference/sonar_pll.sv
+    Info (12023): Found entity 1: sonar_pll File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_pll.sv Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/vga_sink/submodules/altera_up_avalon_video_vga_timing.v
+    Info (12023): Found entity 1: altera_up_avalon_video_vga_timing File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/ip/vga_sink/submodules/altera_up_avalon_video_vga_timing.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/vga_sink/submodules/vga_sink_video_vga_controller_0.v
+    Info (12023): Found entity 1: vga_sink_video_vga_controller_0 File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/ip/vga_sink/submodules/vga_sink_video_vga_controller_0.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/vga_sink/vga_sink.v
+    Info (12023): Found entity 1: vga_sink File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/ip/vga_sink/vga_sink.v Line: 6
+Info (12127): Elaborating entity "top_level" for the top level hierarchy
+Info (12128): Elaborating entity "video_pll" for hierarchy "video_pll:video_pll_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 41
+Info (12128): Elaborating entity "altera_pll" for hierarchy "video_pll:video_pll_u|altera_pll:altera_pll_i" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/video_pll.sv Line: 58
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Info (12130): Elaborated megafunction instantiation "video_pll:video_pll_u|altera_pll:altera_pll_i" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/video_pll.sv Line: 58
+Info (12133): Instantiated megafunction "video_pll:video_pll_u|altera_pll:altera_pll_i" with the following parameter: File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/video_pll.sv Line: 58
+    Info (12134): Parameter "fractional_vco_multiplier" = "false"
+    Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
+    Info (12134): Parameter "operation_mode" = "normal"
+    Info (12134): Parameter "number_of_clocks" = "2"
+    Info (12134): Parameter "output_clock_frequency0" = "25.000000 MHz"
+    Info (12134): Parameter "phase_shift0" = "0 ps"
+    Info (12134): Parameter "duty_cycle0" = "50"
+    Info (12134): Parameter "output_clock_frequency1" = "10.000000 MHz"
+    Info (12134): Parameter "phase_shift1" = "0 ps"
+    Info (12134): Parameter "duty_cycle1" = "50"
+    Info (12134): Parameter "pll_type" = "General"
+    Info (12134): Parameter "pll_subtype" = "General"
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:sccb_clk_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 43
+Info (12128): Elaborating entity "ov7670_config" for hierarchy "ov7670_config:cfg_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 67
+Info (10264): Verilog HDL Case Statement information at ov7670_config.sv(248): all case item expressions in this case statement are onehot File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/ov7670_config.sv Line: 248
+Info (12128): Elaborating entity "i2c_master" for hierarchy "ov7670_config:cfg_u|i2c_master:u_master" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/ov7670_config.sv Line: 207
+Warning (10230): Verilog HDL assignment warning at i2c_master.sv(28): truncated value with size 32 to match size of target (1) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 28
+Info (10264): Verilog HDL Case Statement information at i2c_master.sv(60): all case item expressions in this case statement are onehot File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 60
+Warning (10230): Verilog HDL assignment warning at i2c_master.sv(67): truncated value with size 32 to match size of target (3) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 67
+Warning (10270): Verilog HDL Case Statement warning at i2c_master.sv(82): incomplete case statement has no default case item File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 82
+Info (10264): Verilog HDL Case Statement information at i2c_master.sv(82): all case item expressions in this case statement are onehot File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 82
+Warning (10034): Output port "read_data" at i2c_master.sv(15) has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 15
+Warning (10034): Output port "read_valid" at i2c_master.sv(16) has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/i2c_master.sv Line: 16
+Info (12128): Elaborating entity "ov7670_capture" for hierarchy "ov7670_capture:cap_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 76
+Info (12128): Elaborating entity "frame_buffer" for hierarchy "frame_buffer:fb_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 84
+Warning (10036): Verilog HDL or VHDL warning at frame_buffer.sv(84): object "done_bank" assigned a value but never read File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 84
+Warning (10036): Verilog HDL or VHDL warning at frame_buffer.sv(86): object "done_tgl" assigned a value but never read File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 86
+Warning (10036): Verilog HDL or VHDL warning at frame_buffer.sv(86): object "done_set" assigned a value but never read File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 86
+Warning (10036): Verilog HDL or VHDL warning at frame_buffer.sv(87): object "rd_tgl_s" assigned a value but never read File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 87
+Warning (10036): Verilog HDL or VHDL warning at frame_buffer.sv(88): object "rd_bank_w" assigned a value but never read File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 88
+Warning (10036): Verilog HDL or VHDL warning at frame_buffer.sv(90): object "rd_tgl" assigned a value but never read File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 90
+Warning (10036): Verilog HDL or VHDL warning at frame_buffer.sv(167): object "done_tgl_s" assigned a value but never read File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 167
+Warning (10036): Verilog HDL or VHDL warning at frame_buffer.sv(169): object "rd_set" assigned a value but never read File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/frame_buffer.sv Line: 169
+Info (12128): Elaborating entity "camera_display" for hierarchy "camera_display:disp_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 91
+Info (12128): Elaborating entity "segmentationSelector" for hierarchy "segmentationSelector:seg_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 102
+Info (10264): Verilog HDL Case Statement information at segmentationSelector.sv(79): all case item expressions in this case statement are onehot File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/segmentationSelector.sv Line: 79
+Info (12128): Elaborating entity "rgbFixedSeg" for hierarchy "segmentationSelector:seg_u|rgbFixedSeg:fixed_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/segmentationSelector.sv Line: 44
+Info (12128): Elaborating entity "rgbRatioSeg" for hierarchy "segmentationSelector:seg_u|rgbRatioSeg:ratio_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/segmentationSelector.sv Line: 45
+Info (12128): Elaborating entity "hsvSeg" for hierarchy "segmentationSelector:seg_u|hsvSeg:hsv_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/segmentationSelector.sv Line: 46
+Info (12128): Elaborating entity "videoDiagnostics" for hierarchy "videoDiagnostics:overlay_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 106
+Info (12128): Elaborating entity "colourDiagnostics" for hierarchy "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/videoDiagnostics.sv Line: 24
+Info (12128): Elaborating entity "colourRegionStats" for hierarchy "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|colourRegionStats:stats_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourDiagnostics.sv Line: 36
+Info (12128): Elaborating entity "colourMeanHsv" for hierarchy "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|colourMeanHsv:metrics_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourDiagnostics.sv Line: 39
+Info (12128): Elaborating entity "unsignedDivider" for hierarchy "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|colourMeanHsv:metrics_u|unsignedDivider:divider_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourMeanHsv.sv Line: 29
+Info (12128): Elaborating entity "diagnosticRenderer" for hierarchy "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|diagnosticRenderer:renderer_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourDiagnostics.sv Line: 66
+Info (12128): Elaborating entity "diagnosticFont" for hierarchy "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|diagnosticRenderer:renderer_u|diagnosticFont:font_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticRenderer.sv Line: 84
+Info (12128): Elaborating entity "vgaMaskOverlay" for hierarchy "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|vgaMaskOverlay:mask_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/colourDiagnostics.sv Line: 70
+Info (10264): Verilog HDL Case Statement information at vgaMaskOverlay.sv(24): all case item expressions in this case statement are onehot File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/vgaMaskOverlay.sv Line: 24
+Info (12128): Elaborating entity "roiCalibration" for hierarchy "videoDiagnostics:overlay_u|roiCalibration:calibration_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/videoDiagnostics.sv Line: 28
+Info (10264): Verilog HDL Case Statement information at roiCalibration.sv(48): all case item expressions in this case statement are onehot File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibration.sv Line: 48
+Info (12128): Elaborating entity "colourRegionStats" for hierarchy "videoDiagnostics:overlay_u|roiCalibration:calibration_u|colourRegionStats:sample_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibration.sv Line: 40
+Info (12128): Elaborating entity "roiCalibrationRenderer" for hierarchy "videoDiagnostics:overlay_u|roiCalibration:calibration_u|roiCalibrationRenderer:renderer_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibration.sv Line: 67
+Info (10264): Verilog HDL Case Statement information at roiCalibrationRenderer.sv(29): all case item expressions in this case statement are onehot File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 29
+Warning (10762): Verilog HDL Case Statement warning at roiCalibrationRenderer.sv(39): can't check case statement for completeness because the case expression has too many possible states File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 39
+Info (12128): Elaborating entity "vga_sink" for hierarchy "vga_sink:vga_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 113
+Info (12128): Elaborating entity "vga_sink_video_vga_controller_0" for hierarchy "vga_sink:vga_u|vga_sink_video_vga_controller_0:video_vga_controller_0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/ip/vga_sink/vga_sink.v Line: 40
+Info (12128): Elaborating entity "altera_up_avalon_video_vga_timing" for hierarchy "vga_sink:vga_u|vga_sink_video_vga_controller_0:video_vga_controller_0|altera_up_avalon_video_vga_timing:VGA_Timing" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/ip/vga_sink/submodules/vga_sink_video_vga_controller_0.v Line: 264
+Warning (10230): Verilog HDL assignment warning at altera_up_avalon_video_vga_timing.v(199): truncated value with size 32 to match size of target (10) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/ip/vga_sink/submodules/altera_up_avalon_video_vga_timing.v Line: 199
+Warning (10230): Verilog HDL assignment warning at altera_up_avalon_video_vga_timing.v(200): truncated value with size 32 to match size of target (10) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/ip/vga_sink/submodules/altera_up_avalon_video_vga_timing.v Line: 200
+Info (12128): Elaborating entity "dualSonar" for hierarchy "dualSonar:sonar_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 127
+Info (12128): Elaborating entity "sonar_pll" for hierarchy "dualSonar:sonar_u|sonar_pll:pll_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/dualSonar.sv Line: 9
+Info (12128): Elaborating entity "altera_pll" for hierarchy "dualSonar:sonar_u|sonar_pll:pll_u|altera_pll:altera_pll_i" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_pll.sv Line: 59
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Info (12130): Elaborated megafunction instantiation "dualSonar:sonar_u|sonar_pll:pll_u|altera_pll:altera_pll_i" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_pll.sv Line: 59
+Info (12133): Instantiated megafunction "dualSonar:sonar_u|sonar_pll:pll_u|altera_pll:altera_pll_i" with the following parameter: File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_pll.sv Line: 59
+    Info (12134): Parameter "fractional_vco_multiplier" = "true"
+    Info (12134): Parameter "pll_fractional_cout" = "32"
+    Info (12134): Parameter "pll_dsm_out_sel" = "1st_order"
+    Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
+    Info (12134): Parameter "operation_mode" = "normal"
+    Info (12134): Parameter "number_of_clocks" = "1"
+    Info (12134): Parameter "output_clock_frequency0" = "43.904000 MHz"
+    Info (12134): Parameter "phase_shift0" = "0 ps"
+    Info (12134): Parameter "duty_cycle0" = "50"
+    Info (12134): Parameter "pll_type" = "General"
+    Info (12134): Parameter "pll_subtype" = "General"
+Info (12128): Elaborating entity "sonar_range" for hierarchy "dualSonar:sonar_u|sonar_range:s1" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/dualSonar.sv Line: 19
+Info (10264): Verilog HDL Case Statement information at sonar_range.sv(61): all case item expressions in this case statement are onehot File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_range.sv Line: 61
+Warning (10230): Verilog HDL assignment warning at sonar_range.sv(112): truncated value with size 32 to match size of target (12) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/sonar_range.sv Line: 112
+Info (12128): Elaborating entity "sonarSampleCdc" for hierarchy "dualSonar:sonar_u|sonarSampleCdc:c1" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/dualSonar.sv Line: 22
+Info (12128): Elaborating entity "safetySystem" for hierarchy "safetySystem:safety_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 135
+Info (12128): Elaborating entity "necDecoderSafe" for hierarchy "safetySystem:safety_u|necDecoderSafe:decoder_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetySystem.sv Line: 21
+Info (12128): Elaborating entity "irEmergencyStop" for hierarchy "safetySystem:safety_u|irEmergencyStop:emergency_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetySystem.sv Line: 23
+Info (12128): Elaborating entity "irMotionControl" for hierarchy "safetySystem:safety_u|irMotionControl:manual_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetySystem.sv Line: 26
+Info (12128): Elaborating entity "ir_drive" for hierarchy "safetySystem:safety_u|irMotionControl:manual_u|ir_drive:drive_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/irMotionControl.sv Line: 17
+Info (12128): Elaborating entity "motorSafetyController" for hierarchy "safetySystem:safety_u|motorSafetyController:controller_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetySystem.sv Line: 34
+Info (12128): Elaborating entity "controlWatchdog" for hierarchy "safetySystem:safety_u|motorSafetyController:controller_u|controlWatchdog:watchdog_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/motorSafetyController.sv Line: 19
+Info (12128): Elaborating entity "ultrasonicSafety" for hierarchy "safetySystem:safety_u|motorSafetyController:controller_u|ultrasonicSafety:sonar_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/motorSafetyController.sv Line: 24
+Info (12128): Elaborating entity "motorSafetyArbiter" for hierarchy "safetySystem:safety_u|motorSafetyController:controller_u|motorSafetyArbiter:arbiter_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/motorSafetyController.sv Line: 34
+Info (12128): Elaborating entity "safeChassisCommand" for hierarchy "safetySystem:safety_u|safeChassisCommand:sender_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetySystem.sv Line: 37
+Info (12128): Elaborating entity "uart_tx" for hierarchy "safetySystem:safety_u|safeChassisCommand:sender_u|uart_tx:tx_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safeChassisCommand.sv Line: 41
+Warning (10230): Verilog HDL assignment warning at uart_tx.sv(54): truncated value with size 32 to match size of target (9) File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/uart_tx.sv Line: 54
+Warning (10270): Verilog HDL Case Statement warning at uart_tx.sv(71): incomplete case statement has no default case item File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/uart_tx.sv Line: 71
+Info (12128): Elaborating entity "uart_rx" for hierarchy "safetySystem:safety_u|uart_rx:rx_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/safetySystem.sv Line: 40
+Info (10264): Verilog HDL Case Statement information at uart_rx.sv(91): all case item expressions in this case statement are onehot File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/safety/reference/uart_rx.sv Line: 91
+Info (12128): Elaborating entity "safetyHex" for hierarchy "safetyHex:hex0_u" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 144
+Warning (276027): Inferred dual-clock RAM node "frame_buffer:fb_u|mem_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "frame_buffer:fb_u|mem_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 16
+        Info (286033): Parameter WIDTHAD_A set to 17
+        Info (286033): Parameter NUMWORDS_A set to 76800
+        Info (286033): Parameter WIDTH_B set to 16
+        Info (286033): Parameter WIDTHAD_B set to 17
+        Info (286033): Parameter NUMWORDS_B set to 76800
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+Info (278001): Inferred 6 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "camera_display:disp_u|Div0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_display.sv Line: 75
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "camera_display:disp_u|Div1" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_display.sv Line: 76
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoDiagnostics:overlay_u|roiCalibration:calibration_u|roiCalibrationRenderer:renderer_u|Mod0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 24
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoDiagnostics:overlay_u|roiCalibration:calibration_u|roiCalibrationRenderer:renderer_u|Div0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 23
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|diagnosticRenderer:renderer_u|Mod0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticRenderer.sv Line: 56
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|diagnosticRenderer:renderer_u|Div0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticRenderer.sv Line: 55
+Info (12130): Elaborated megafunction instantiation "frame_buffer:fb_u|altsyncram:mem_rtl_0"
+Info (12133): Instantiated megafunction "frame_buffer:fb_u|altsyncram:mem_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "16"
+    Info (12134): Parameter "WIDTHAD_A" = "17"
+    Info (12134): Parameter "NUMWORDS_A" = "76800"
+    Info (12134): Parameter "WIDTH_B" = "16"
+    Info (12134): Parameter "WIDTHAD_B" = "17"
+    Info (12134): Parameter "NUMWORDS_B" = "76800"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ejj1.tdf
+    Info (12023): Found entity 1: altsyncram_ejj1 File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/altsyncram_ejj1.tdf Line: 33
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_nma.tdf
+    Info (12023): Found entity 1: decode_nma File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/decode_nma.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_g2a.tdf
+    Info (12023): Found entity 1: decode_g2a File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/decode_g2a.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_mib.tdf
+    Info (12023): Found entity 1: mux_mib File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/mux_mib.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "camera_display:disp_u|lpm_divide:Div0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_display.sv Line: 75
+Info (12133): Instantiated megafunction "camera_display:disp_u|lpm_divide:Div0" with the following parameter: File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_display.sv Line: 75
+    Info (12134): Parameter "LPM_WIDTHN" = "11"
+    Info (12134): Parameter "LPM_WIDTHD" = "3"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_6po.tdf
+    Info (12023): Found entity 1: lpm_divide_6po File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_divide_6po.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_fbg.tdf
+    Info (12023): Found entity 1: abs_divider_fbg File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/abs_divider_fbg.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_eve.tdf
+    Info (12023): Found entity 1: alt_u_div_eve File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/alt_u_div_eve.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_in9.tdf
+    Info (12023): Found entity 1: lpm_abs_in9 File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_abs_in9.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_1p9.tdf
+    Info (12023): Found entity 1: lpm_abs_1p9 File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_abs_1p9.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "camera_display:disp_u|lpm_divide:Div1" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_display.sv Line: 76
+Info (12133): Instantiated megafunction "camera_display:disp_u|lpm_divide:Div1" with the following parameter: File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/camera_display.sv Line: 76
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "3"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9po.tdf
+    Info (12023): Found entity 1: lpm_divide_9po File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_divide_9po.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_ibg.tdf
+    Info (12023): Found entity 1: abs_divider_ibg File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/abs_divider_ibg.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kve.tdf
+    Info (12023): Found entity 1: alt_u_div_kve File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/alt_u_div_kve.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_4p9.tdf
+    Info (12023): Found entity 1: lpm_abs_4p9 File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_abs_4p9.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "videoDiagnostics:overlay_u|roiCalibration:calibration_u|roiCalibrationRenderer:renderer_u|lpm_divide:Mod0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 24
+Info (12133): Instantiated megafunction "videoDiagnostics:overlay_u|roiCalibration:calibration_u|roiCalibrationRenderer:renderer_u|lpm_divide:Mod0" with the following parameter: File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 24
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "5"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_eho.tdf
+    Info (12023): Found entity 1: lpm_divide_eho File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_divide_eho.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_kbg.tdf
+    Info (12023): Found entity 1: abs_divider_kbg File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/abs_divider_kbg.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ove.tdf
+    Info (12023): Found entity 1: alt_u_div_ove File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/alt_u_div_ove.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_kn9.tdf
+    Info (12023): Found entity 1: lpm_abs_kn9 File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_abs_kn9.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "videoDiagnostics:overlay_u|roiCalibration:calibration_u|roiCalibrationRenderer:renderer_u|lpm_divide:Div0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 23
+Info (12133): Instantiated megafunction "videoDiagnostics:overlay_u|roiCalibration:calibration_u|roiCalibrationRenderer:renderer_u|lpm_divide:Div0" with the following parameter: File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/roiCalibrationRenderer.sv Line: 23
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "5"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bpo.tdf
+    Info (12023): Found entity 1: lpm_divide_bpo File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_divide_bpo.tdf Line: 24
+Info (12130): Elaborated megafunction instantiation "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|diagnosticRenderer:renderer_u|lpm_divide:Mod0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticRenderer.sv Line: 56
+Info (12133): Instantiated megafunction "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|diagnosticRenderer:renderer_u|lpm_divide:Mod0" with the following parameter: File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticRenderer.sv Line: 56
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_h3m.tdf
+    Info (12023): Found entity 1: lpm_divide_h3m File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_divide_h3m.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_klh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_klh File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/sign_div_unsign_klh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_fve.tdf
+    Info (12023): Found entity 1: alt_u_div_fve File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/alt_u_div_fve.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|diagnosticRenderer:renderer_u|lpm_divide:Div0" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticRenderer.sv Line: 55
+Info (12133): Instantiated megafunction "videoDiagnostics:overlay_u|colourDiagnostics:dynamic_u|diagnosticRenderer:renderer_u|lpm_divide:Div0" with the following parameter: File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/echo7/diagnosticRenderer.sv Line: 55
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ebm.tdf
+    Info (12023): Found entity 1: lpm_divide_ebm File: C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/db/lpm_divide_ebm.tdf Line: 24
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[11]" and its non-tri-state driver. File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[20]" and its non-tri-state driver. File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[25]" and its non-tri-state driver. File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[27]" and its non-tri-state driver. File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[31]" and its non-tri-state driver. File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[35]" and its non-tri-state driver. File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "GPIO_1[12]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[13]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[14]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[15]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[16]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[17]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[18]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[19]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[21]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[22]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[23]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[29]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[33]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[34]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[0]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[1]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[2]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[3]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[4]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[5]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[6]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[7]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[8]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[9]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[26]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[28]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[30]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13040): bidirectional pin "GPIO_1[32]" has no driver File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+Warning (13032): The following tri-state nodes are fed by constants
+    Warning (13033): The pin "GPIO_1[10]" is fed by GND File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "GPIO_1[11]~synth" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13010): Node "GPIO_1[20]~synth" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13010): Node "GPIO_1[25]~synth" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13010): Node "GPIO_1[27]~synth" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13010): Node "GPIO_1[31]~synth" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+    Warning (13010): Node "GPIO_1[35]~synth" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 34
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[8]" is stuck at VCC File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 33
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 33
+    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 35
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 92 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Quartus_Projects/Majortut/ECHOPHACE1/work/safety/active_synthesis/output_files/SafetyActive.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 8 node(s), including 0 DDIO, 3 PLL, 0 transceiver and 0 LCELL
+Warning: RST port on the PLL is not properly connected on instance video_pll:video_pll_u|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
+    Info: Must be connected
+Warning: RST port on the PLL is not properly connected on instance dualSonar:sonar_u|sonar_pll:pll_u|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
+    Info: Must be connected
+Warning: RST port on the PLL is not properly connected on instance video_pll:video_pll_u|altera_pll:altera_pll_i|general[1].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
+    Info: Must be connected
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 31
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Quartus_Projects/Majortut/ECHOPHACE1/rtl/top_level.sv Line: 32
+Info (21057): Implemented 8880 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 60 output pins
+    Info (21060): Implemented 36 bidirectional pins
+    Info (21061): Implemented 8602 logic cells
+    Info (21064): Implemented 160 RAM segments
+    Info (21065): Implemented 3 PLLs
+    Info (21062): Implemented 8 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 78 warnings
+    Info: Peak virtual memory: 5036 megabytes
+    Info: Processing ended: Fri Oct 23 15:40:51 2026
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:00:55

@@ -1,0 +1,204 @@
+{
+  "status": "PASS_SOFTWARE_CHECKS_BOARD_NOT_TESTED",
+  "date": "2026-10-23",
+  "rtl_tests": [
+    {
+      "test": "roiCalibration_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-005735-272091\\summary.json",
+      "log": "work\\echo7_tests\\20261023-005735-272091\\roiCalibration_tb\\simulation.log"
+    },
+    {
+      "test": "diagnosticRenderer_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-005735-272091\\summary.json",
+      "log": "work\\echo7_tests\\20261023-005735-272091\\diagnosticRenderer_tb\\simulation.log"
+    },
+    {
+      "test": "echo7_algorithms_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\echo7_algorithms_tb\\simulation.log"
+    },
+    {
+      "test": "vgaMaskOverlay_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\vgaMaskOverlay_tb\\simulation.log"
+    },
+    {
+      "test": "echo7_stream_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\echo7_stream_tb\\simulation.log"
+    },
+    {
+      "test": "echo7_integration_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\echo7_integration_tb\\simulation.log"
+    },
+    {
+      "test": "unsignedDivider_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\unsignedDivider_tb\\simulation.log"
+    },
+    {
+      "test": "colourMeanHsv_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\colourMeanHsv_tb\\simulation.log"
+    },
+    {
+      "test": "colourRegionStats_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\colourRegionStats_tb\\simulation.log"
+    },
+    {
+      "test": "echo7_diagnostics_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\echo7_diagnostics_tb\\simulation.log"
+    },
+    {
+      "test": "colourDiagnostics_protocol_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\colourDiagnostics_protocol_tb\\simulation.log"
+    },
+    {
+      "test": "ov7670_capture_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\ov7670_capture_tb\\simulation.log"
+    },
+    {
+      "test": "frame_buffer_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\frame_buffer_tb\\simulation.log"
+    },
+    {
+      "test": "camera_display_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\camera_display_tb\\simulation.log"
+    },
+    {
+      "test": "camera_system_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010654-039894\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010654-039894\\camera_system_tb\\simulation.log"
+    },
+    {
+      "test": "roiCalibration_protocol_tb",
+      "status": "PASS",
+      "summary": "work\\echo7_tests\\20261023-010842-113374\\summary.json",
+      "log": "work\\echo7_tests\\20261023-010842-113374\\roiCalibration_protocol_tb\\simulation.log"
+    }
+  ],
+  "simulator": "ModelSim 10.5b, outside sandbox",
+  "verilator_5_050": "NOT_RUN: executable not found",
+  "board": "NOT_RUN",
+  "quartus": {
+    "status": "PASS",
+    "errors": 0,
+    "warnings": 87,
+    "alm": 3221,
+    "registers": 2818,
+    "memory_bits": 1228800,
+    "ram_blocks": 152,
+    "dsp": 8,
+    "display_fmax_mhz_slow_85C": 28.23,
+    "display_fmax_mhz_slow_0C": 27.72,
+    "minimum_setup_slack_ns": 3.923,
+    "minimum_hold_slack_ns": 0.123,
+    "all_reported_tns_ns": 0.0,
+    "log": "work/roi_calibration/quartus.log",
+    "sof_sha256": "176b7c2812444b34b182cb3efc64fac148452b4ee53866c1bd8f555021b270ab",
+    "critical_warnings": 0,
+    "unconstrained_clock_input_output_paths": 0
+  },
+  "roi": {
+    "inclusive_bounds": [
+      220,
+      160,
+      419,
+      319
+    ],
+    "sample_inclusive_bounds": [
+      310,
+      230,
+      329,
+      249
+    ],
+    "min_detect_pixels": 32,
+    "detected_count": "combined red or blue classified DISPLAY pixels inside ROI",
+    "latency": "previous complete display frame; unavailable/mismatched frame displays dashes",
+    "switch4_pin": "AD11; verified chassis.qsf:141 and fitted Camera.pin:209"
+  },
+  "preserved_hashes_match_previous_manifest": [
+    "rtl/echo7/rgbFixedSeg.sv",
+    "rtl/echo7/rgbRatioSeg.sv",
+    "rtl/echo7/hsvSeg.sv",
+    "rtl/echo7/colourDiagnostics.sv",
+    "rtl/echo7/colourRegionStats.sv",
+    "rtl/echo7/colourMeanHsv.sv",
+    "rtl/echo7/diagnosticRenderer.sv",
+    "rtl/echo7/vgaMaskOverlay.sv",
+    "quartus/Camera.sdc"
+  ],
+  "changed_previous_manifest_files": [
+    "quartus\\Camera.qsf",
+    "rtl\\echo7\\diagnosticFont.sv",
+    "rtl\\echo7\\segmentationSelector.sv",
+    "rtl\\top_level.sv",
+    "simulate.sh",
+    "tb\\echo7\\echo7_diag_ref_pkg.sv",
+    "tools\\echo7\\run_tests.py"
+  ],
+  "source_sha256": {
+    "rtl\\echo7\\colourDiagnostics.sv": "5a12724a0aca77082752f3029d768b38cbab438992f7b8760f404e07d35ff7eb",
+    "rtl\\echo7\\colourMeanHsv.sv": "935976d8922b6be5637420f189cce07dca87556005ff932d258c63aba30c857d",
+    "rtl\\echo7\\colourRegionStats.sv": "46619838f8facfeeb6fa012661c0798930e924d1a5cc55b586a08a8be3174cb3",
+    "rtl\\echo7\\diagnosticFont.sv": "795c648d8fc6e018352f34d547a8892b27891a7e440b572d65ad186a2ca2cf0a",
+    "rtl\\echo7\\diagnosticRenderer.sv": "c946aeeb97588959703385c1b0c98d6fc2d4ed428ac2f3b02ae8b7be4af64fa5",
+    "rtl\\echo7\\echo7_diag_pkg.sv": "4d199fe96d5a3e40d2253dcc51e4860a8028963ed7304a34bec169e41ae5ef8d",
+    "rtl\\echo7\\hsvSeg.sv": "7e2f021d92b48eb90ee8a82fb1a915ae8e7fe937591e60496a8c69d870a57b0c",
+    "rtl\\echo7\\rgbFixedSeg.sv": "6090d4158a212dd42035debf0b2138c95c0be550b3f45fb2ea4e31afbc47982e",
+    "rtl\\echo7\\rgbRatioSeg.sv": "2eb3c85ba8795b7341f406ccd97aecd5c3c839701aed5fe931c23bdf32598bd7",
+    "rtl\\echo7\\roiCalibration.sv": "6e9bde636dff3e748f9129f6c0ea772265bb90895b4adf01f2dd08ec63b529d5",
+    "rtl\\echo7\\roiCalibrationRenderer.sv": "2014fd39b82b9c5e0e1308444d9c8881f8626a79974ea2ba7025916750b9f1c4",
+    "rtl\\echo7\\segmentationSelector.sv": "8906a1e27724439e9e9fe19392f4689f75027f49f3bb4616be934d2d6e923823",
+    "rtl\\echo7\\unsignedDivider.sv": "563698df2332cb949e92fc0e6a46b2b954951f1179e7c0859c8e946cfde99fa7",
+    "rtl\\echo7\\vgaMaskOverlay.sv": "48aa044e2aee26d4e042659fb46d43c58d8e14b069aa2c27c5fe00bd67157717",
+    "rtl\\echo7\\videoDiagnostics.sv": "75f6a3b2684d37f0a4eeec1a886c2684b1f91f8bfbb90abdfdad259de8ffca44",
+    "rtl\\top_level.sv": "920cd83d6b720d44a44ca32f9d50d89ca372221b86d2fabee984042277eacad4",
+    "quartus\\Camera.qsf": "1ceeaf5f8dcfc2979e31ed2babdb36507d25001c0bd8ed23b6c8d9e536cbc7f1"
+  },
+  "test_count": 16,
+  "full_camera_regression": "4 frames after configuration; VGA monitor 8 total complete frames, 0 problems",
+  "new_roi_test": "15 frames, 4608000 checked pixels; all comparisons passed",
+  "rtl_source_hashes_still_match_compiled_sources": true,
+  "additional_test_and_tool_sha256": {
+    "tb\\echo7\\colourDiagnostics_protocol_tb.sv": "0892e7ca8206c8821a079d7cee4a1a7f443b307af7d5b0dd4f9392d2799c317f",
+    "tb\\echo7\\colourMeanHsv_tb.sv": "d3ebe9d0a65345ac79a9cb3e894c3c22fbd89f116c623b49fd1fb053a22e14a0",
+    "tb\\echo7\\colourRegionStats_tb.sv": "5b08d5a9eaf8a8cb5f9432a7938f9ef9ae8898d823e35b5db86711e923c97bbd",
+    "tb\\echo7\\diagnosticRenderer_tb.sv": "751ed42b146398a855bd673ce39cc91ce32eef6d1e70e6953b3330b7b0b0179c",
+    "tb\\echo7\\echo7_algorithms_tb.sv": "a02479bc9d366029dd44ddfbc686c18d1054a1741932ff86e1ff47fe995c55b5",
+    "tb\\echo7\\echo7_diagnostics_tb.sv": "bbc911afc6624b7cbed930e26c516b53a6c791d9892ac13d43c18bf51e69b0f2",
+    "tb\\echo7\\echo7_diag_ref_pkg.sv": "a999c739e51831f0b2ff371b3e0142fced0def46558578d4d5694136c7409f07",
+    "tb\\echo7\\echo7_integration_tb.sv": "ec8819e5ab1cc4c7a5fc55e5f20efe3970755e5a8f2c973499bf8c9ca272495c",
+    "tb\\echo7\\echo7_ref_pkg.sv": "5ac0aa8c0b77d99a94dea6e81fb50c9f9ff72421251e0844f51e662f1fc92f6d",
+    "tb\\echo7\\echo7_stream_tb.sv": "4d3473f7be94af66f406156535c0b5076b8c7d57737718c28f542f76fc9b37ae",
+    "tb\\echo7\\roiCalibration_protocol_tb.sv": "36fd82b77e49d29da5732a9ff7de81e034b3a7448467fc4530c47d0a01c4d40b",
+    "tb\\echo7\\roiCalibration_tb.sv": "68019a299ff4e873a7c4cfd9ae0e309eca80e5032c5957b65f9d0ac8bfc70f82",
+    "tb\\echo7\\unsignedDivider_tb.sv": "07922f185ec71c2ed6f0cec519459b2023830c55f13103583d34eed5a97847b8",
+    "tb\\echo7\\vgaMaskOverlay_tb.sv": "1be2ca7cc2517acac30d8c90cee786f9f289255f7af4823544057e7559729112",
+    "tools\\echo7\\run_tests.py": "e2ace0e2f3753d00604422b2fbc22f773cbc8028735d1d8df3de5ba344b51a6f",
+    "tb\\camera_system_tb.sv": "a6efe55667573ff3dff6e7939ae7da9b401c25dd23be6ee06c265db2c72301ca",
+    "simulate.sh": "08cd08ea5e49cf93f4e7d1d1a6923771f3277fc4b6b04d8d2cb5f0c48a227607"
+  }
+}

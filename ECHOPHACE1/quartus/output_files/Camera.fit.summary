@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Oct 23 16:18:08 2026
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Camera
+Top-level Entity Name : top_level
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 3,892 / 32,070 ( 12 % )
+Total registers : 3593
+Total pins : 107 / 457 ( 23 % )
+Total virtual pins : 0
+Total block memory bits : 1,228,800 / 4,065,280 ( 30 % )
+Total RAM Blocks : 152 / 397 ( 38 % )
+Total DSP Blocks : 8 / 87 ( 9 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2 / 6 ( 33 % )
+Total DLLs : 0 / 4 ( 0 % )

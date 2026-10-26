@@ -1,0 +1,116 @@
+ECHO-7 Emergency Stop & Safety Controller — 2026-10-23
+
+当前交付状态
+代码、Self-checking 仿真和 Camera 工程编译已完成。真实板卡尚未验证。
+POWER 编码未能从提供的源码确定。默认 POWER_KEY_CONFIGURED=0，POWER_KEY=00 只是占位值。
+当前 Camera.sof 是安全读码版：可以看视频、读取遥控器按键、读取超声波、发送零速度，但不能运动。
+不得把测试用 A5 当成实物 POWER 编码。确认实物编码后修改顶层两个参数并重新编译，重新检查时序。
+当前完整编译资源/时序对应未配置版，未配置导致的常量优化不能代表启用运动后的资源或时序。
+另在 work/safety/active_synthesis 中使用合成测试码检查启用运动路径的 Analysis & Synthesis，不生成下载文件。
+
+1. 实际源码与来源
+当前工程：C:\Quartus_Projects\Majortut\ECHOPHACE1
+参考资料实际在：C:\Quartus_Projects\Majortut\Chassis + emergencystop\mtrx3700-hwtest-src
+  ir/rtl/nec_decoder.sv
+  hwtest/rtl/ir_drive.sv
+  hwtest/rtl/chassis_command.sv
+  hwtest/rtl/uart_rx.sv
+  sonar/rtl/sonar_range.sv
+  sonar/rtl/sonar_pll.sv
+  hwtest/rtl/top_level.sv 和 hwtest/quartus/hwtest.qsf
+当前工程 rtl/uart_tx.sv 直接复用。六个参考 RTL 的原样副本位于 rtl/safety/reference/。
+reference_sources.json 记录来源和 SHA256。原参考工程没有修改。
+原 nec_decoder 的 s/gap/sr/code 缺少完整复位；派生 necDecoderSafe 加入确定复位，保留解码算法和反码检查。
+原 chassis_command 仅每200ms发送，新增 safeChassisCommand 保持协议并提供优先零速度，不修改参考副本。
+
+2. POWER 编码及读码
+参考 ir_drive 明确给出的命令字节：CH+=1A、CH-=1E、VOL-=1F、VOL+=1B，速度键1..4=01..04。
+没有 POWER 的定义，也没有源码注释提及的 ir_remote_model；不能确认实体遥控器 POWER 编码。
+有效 NEC 帧检查 code[31:24] == ~code[23:16]；HEX1..0 显示 code[23:16] 的十六进制值。
+下载当前安全读码版后，释放 KEY1/KEY2，按 POWER，记录 HEX1..0；多按几次确认一致，LEDR7表示收到过有效帧。
+然后由人工将 rtl/top_level.sv 的 POWER_KEY 改为实测 8'hXX、POWER_KEY_CONFIGURED 改为1，重新编译和审核。
+没有自学习、自动解锁或再次按 POWER 解除急停。当前按键匹配沿用参考模块：不限制 NEC custom/address 字段。
+
+3. 新增和修改文件
+新增 rtl/safety/：
+  irEmergencyStop.sv, controlWatchdog.sv, ultrasonicSafety.sv,
+  motorSafetyArbiter.sv, motorSafetyController.sv, irMotionControl.sv,
+  safeChassisCommand.sv, sonarSampleCdc.sv, dualSonar.sv,
+  safetyHex.sv, safetySystem.sv, necDecoderSafe.sv。
+新增 rtl/safety/reference/ 中6个原样参考文件（nec_decoder/chassis_command副本仅供比对，不参与编译）。
+新增 tb/safety/：safety_unit_tb.sv, uartSafety_tb.sv, irSafety_tb.sv, sonarSafety_tb.sv。
+修改 rtl/top_level.sv、quartus/Camera.qsf、quartus/Camera.sdc、tb/camera_system_tb.sv、
+  tools/echo7/run_tests.py、simulate.sh、OWNERS.md、AI_STATEMENT.md。
+work/safety/ 保存来源、哈希、测试/编译记录及本报告。未改 Camera 配置、采集、算法、VGA、ROI、旋转或帧缓存 RTL。
+
+4. 数据流、复位及仲裁
+IRDA_RXD -> NEC 解码 -> POWER 锁存 / 手动请求 -> 请求有效期 -> 最终安全仲裁 -> JSON -> UART TX。
+未来视觉请求应进入 motorSafetyController 的同一 request_valid/request_left/request_right 接口，不能绕过仲裁。
+速度单位为有符号0.1 m/s，合法范围 -5..+5，超范围请求清零并使请求过期。
+POWER 有效事件锁存 estop_latched；重复帧、松键、再次POWER、CH/VOL或新视觉请求都不能清除。
+KEY0低有效，50MHz域同步后清除锁存/请求/有效期，进入零速IDLE；重复帧不能启动，必须新的完整运动命令。
+优先级：E-STOP > 复位/过期/关键故障 > 启用时超声波阻止 > 停靠完成 > 正常请求。
+故障期间清除旧请求，故障解除本身不会恢复旧速度。
+安全核心及UART使用 CLOCK_50；摄像头和VGA数据通路仍使用原时钟域。固定ROI、Mask、HSV及旋转保持原开关配置。
+
+5. UART和延迟
+115200 8N1（50MHz、434时钟/bit），保持参考协议：{"T":1,"L":0.0,"R":0.0}\n。
+普通运动或停车心跳周期200ms；停止状态及非零到零的变化会触发优先停车，不等下一次心跳。
+已经开始的完整JSON行不能撤销，会先发送完，再发零速度行；不截断、不在中间拼接另一条命令。
+KEY0也通过优先零速度路径处理，在途UART行保留完整；UART发送器仅由上电复位初始化。
+ModelSim在50MHz/434时钟bit下扫描最长26字节非零行的26个字节位置：
+  POWER解码事件 -> 零速帧第一个起始位：最大实测 2.257350 ms。
+  POWER解码事件 -> 零速帧最后一个停止位完整结束：最大实测 4.341030 ms。
+根据最长26字节在途帧 + 24字节停车帧 + 控制周期余量，保守数字链路上界分别为2.258ms和4.342ms。
+这些数字不含按键到完整NEC解码所需时间、不含ESP32处理、电机驱动或车轮减速时间，也不证明底盘收到命令。
+
+6. Watchdog
+默认 WATCHDOG_CLKS=25,000,000，500ms。计时由接受的新运动请求事件/有效运动重复事件刷新。
+UART TX ready/done 和 RX活动不会刷新看门狗。超时后清零，并持续发送零速；新的合法请求才允许恢复。
+现有IR控制另有300ms按住有效期；没有后续NEC运动事件时，手动模式通常先由300ms松键机制停车。
+速度键重复不延长前一个方向键的保持时间。复位或保持超时后的无上下文repeat不启动运动。
+当前没有实现UART断线检测或命令ACK，LEDR6仅表示收到过格式正确的UART字节。
+官方资料 https://www.waveshare.com/wiki/UGV02 说明3秒未收到运动命令自动停车，参考chassis_command注释也有此说明。
+本地没有你这台底盘实际运行的ESP32固件或配置证据。其是否启用、是否被其他控制源续期，须实机验证。
+
+7. 双超声波：Ultrasonic Safety DISABLED
+顶层 sonar_safety_enable 固定0；两只仍按100ms周期、相差50ms发起真实测量。
+超声波使用原43.904MHz目标PLL和sonar_range模块；本次Quartus实际生成约43.916MHz，时间/毫米比例偏差约0.027%。
+稳定数据+toggle同步进入50MHz域，保留 sonar1/2_distance_mm、valid和update；未用无限远替换数据。
+0和测量上限4000判为无效；未收到回波或一直高不会刷新数据，启用保护时由过期检查处理。
+未来启用时：任一有效距离<=200mm阻止运动；进入危险后必须>=230mm才解除距离滞回。
+任一无效/未测到/超过300ms未更新均阻止运动。由于尚无传感器朝向定义，保守地阻止所有方向。
+两路独立年龄、质量和危险状态；移除故障后仍需新运动请求。
+按住KEY1或KEY2，HEX2..0分别显示第一/第二只传感器的原始毫米值（十六进制，如0C8=200mm，FA0=4000）。
+质量/过期状态可在仿真及未来SignalTap中查看；仅显示的旧距离不代表仍有效。
+
+8. 已确认引脚
+IRDA_RXD = PIN_AA30；KEY0 = PIN_AA14。
+UART FPGA TX -> GPIO_1[31] / PIN_AF23；RX <- GPIO_1[33] / PIN_AD21。
+Sonar1 TRIG GPIO_1[27] / PIN_AJ22；ECHO GPIO_1[29] / PIN_AG22。
+用户明确确认2026转接板Port2/J4：Sonar2 TRIG GPIO_1[35] / PIN_AC22；ECHO GPIO_1[34] / PIN_AA20。
+HEX0..2分配从提供的hwtest.qsf逐条复制。摄像头GPIO_1[10..25]不变。
+
+9. 验证
+实际用已安装 ModelSim 10.5b；未安装软件，未运行Verilator 5.050。
+最终各项PASS：safety_unit_tb、uartSafety_tb、irSafety_tb、sonarSafety_tb、rotation_tb、
+  roiCalibration_protocol_tb、ov7670_capture_tb、frame_buffer_tb、camera_display_tb、camera_system_tb。
+camera_system_tb 完成8个VGA帧，0个协议问题。详细运行路径、版本、状态及SHA256见 verification.json。
+首次Quartus因整数强制转换语法失败，已改成定宽运算；初版增强延迟TB误把复位后排队的停车行当运动行，修正等待后PASS。
+保留失败记录，不将失败运行的总状态改写为PASS；最终结果按各测试的实际成功运行列出。
+Camera完整编译：0错误、93警告；3779 ALM，3495寄存器，1,228,800存储位，152 RAM blocks，8 DSP，2 PLL。
+最差setup +5.157ns，hold +0.144ns；显示时钟最差所报Fmax 28.70MHz（工作25MHz），CLOCK_50 Fmax最低152.53MHz。
+警告包括既有视频常量/PLL复位提示、超声波PLL同类提示、未配置版安全状态常量等；不能称零警告。
+
+10. 板上操作及待验证事项
+1) 保持摄像头接线，底盘车轮架空；下载 quartus/output_files/Camera.sof 安全读码版。
+2) 确认原视频、逆时针旋转、HSV、固定ROI、Mask及动态框正常；SW0..4含义不变。
+3) 释放KEY1/KEY2，按POWER读取HEX1..0。记录实测编码，填入顶层参数并重新编译、检查时序。
+4) 先低速0.1m/s，按CH+检查运动；松键确认停车。再按POWER检查LEDR4锁存、零速度持续发送。
+5) 急停后按CH/VOL/速度键、重复POWER，均不应运动。KEY0复位后保持静止，新的方向键才允许运动。
+6) 用逻辑分析仪观察GPIO_1[31]，验证正常T:1帧、急停优先停车帧及真实时间；观察车轮实际停止距离。
+7) 拔掉IR控制/停止发新命令，验证松键和看门狗。UART断线测试必须另行验证底盘自带超时，不能依赖FPGA检测断线。
+8) 超声波本阶段仅观察测量；LEDR9=0表示保护禁用，近障碍不会由超声波自动停车。
+LEDR0/1/2保留摄像头状态；LEDR3安全停止；4急停锁存；5请求过期；6曾收到UART字节；7曾收到有效IR；8 POWER已配置；9超声波保护启用（当前0）。
+未验证：实物POWER编码、底盘固件/接收确认、物理刹车时间/距离、IR遮挡/干扰、真实双超声波误差/串扰、运动版最终布线时序。
+FPGA/无线红外停止逻辑不是独立断电式急停；本次没有改变底盘固件或增加后续视觉运动FSM。

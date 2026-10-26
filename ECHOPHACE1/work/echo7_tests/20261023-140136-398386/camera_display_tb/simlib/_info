@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Quartus_Projects/Majortut/ECHOPHACE1/work/echo7_tests/20261023-140136-398386/camera_display_tb
+vcamera_display
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 10 camera_pkg 0 22 @k?:6bd:T950i=BMWR7:Z2
+Z2 !s110 1792724716
+!i10b 1
+!s100 ^FU3lThz8eKd479kIJ[SC3
+I`Jg5Re[_2>=UjDV<H<zNa3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 camera_display_sv_unit
+S1
+R0
+w1792724189
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_display.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_display.sv
+L0 22
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1792724716.000000
+Z6 !s107 C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\camera_display_tb.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\vga_monitor_model.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_display.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\frame_buffer.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_pkg.sv|
+Z7 !s90 -sv|-work|C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-140136-398386\camera_display_tb\simlib|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_pkg.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\frame_buffer.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_display.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\vga_monitor_model.sv|C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\camera_display_tb.sv|
+!i113 1
+Z8 o-sv -work {C:\Quartus_Projects\Majortut\ECHOPHACE1\work\echo7_tests\20261023-140136-398386\camera_display_tb\simlib}
+Z9 tCvgOpt 0
+vcamera_display_tb
+R1
+R2
+!i10b 1
+!s100 M3LXg:4z`jbJB4Mk5L:Bk3
+IcGBL_hgCib4F??hM?>Ojf3
+R3
+!s105 camera_display_tb_sv_unit
+S1
+R0
+Z10 w1792414946
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\camera_display_tb.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\tb\camera_display_tb.sv
+L0 16
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+Xcamera_pkg
+R1
+R2
+!i10b 1
+!s100 6fPO63:C7bBn0AM>XTYUe1
+I@k?:6bd:T950i=BMWR7:Z2
+V@k?:6bd:T950i=BMWR7:Z2
+S1
+R0
+R10
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_pkg.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\camera_pkg.sv
+L0 11
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vframe_buffer
+R1
+R2
+!i10b 1
+!s100 l4PXW^Z@m544T<Ld@2?c90
+IUE8:][cdlO3GEGEzQIG<63
+R3
+!s105 frame_buffer_sv_unit
+S1
+R0
+R10
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\frame_buffer.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\rtl\frame_buffer.sv
+L0 53
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vvga_monitor_model
+R1
+R2
+!i10b 1
+!s100 68n4H2`PRafW?3841Gckj3
+IJ>0NJm<S7BPVFdkQRSUEg1
+R3
+!s105 vga_monitor_model_sv_unit
+S1
+R0
+R10
+8C:\Quartus_Projects\Majortut\ECHOPHACE1\tb\vga_monitor_model.sv
+FC:\Quartus_Projects\Majortut\ECHOPHACE1\tb\vga_monitor_model.sv
+L0 64
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

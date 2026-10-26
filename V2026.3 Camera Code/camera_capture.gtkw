@@ -1,0 +1,34 @@
+[*] GTKWave save file: the camera's video port and the capture module (ov7670_capture_tb, run with wave).
+[dumpfile] "waveform.fst"
+[timestart] 83140000000
+*-15.0 83141500000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ov7670_capture_tb.
+[sst_width] 260
+[signals_width] 260
+[sst_expanded] 1
+[sst_vpaned_height] 200
+@200
+-the camera's pins (change after the falling edge of PCLK)
+@28
+ov7670_capture_tb.dut.pclk
+ov7670_capture_tb.dut.vsync
+ov7670_capture_tb.dut.href
+@22
+ov7670_capture_tb.dut.d[7:0]
+@200
+-the capture module
+@28
+ov7670_capture_tb.dut.second
+@22
+ov7670_capture_tb.dut.first_byte[7:0]
+@28
+ov7670_capture_tb.dut.frame_start
+ov7670_capture_tb.dut.valid
+@22
+ov7670_capture_tb.dut.pixel[15:0]
+ov7670_capture_tb.dut.x[9:0]
+ov7670_capture_tb.dut.y[8:0]
+ov7670_capture_tb.dut.col[9:0]
+ov7670_capture_tb.dut.row[8:0]
+[pattern_trace] 1
+[pattern_trace] 0

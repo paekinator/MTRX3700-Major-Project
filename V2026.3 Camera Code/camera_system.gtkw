@@ -1,0 +1,49 @@
+[*] GTKWave save file: the whole camera project (camera_system_tb, run with wave).
+[dumpfile] "waveform.fst"
+[timestart] 0
+*-26.0 20000000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] camera_system_tb.
+[treeopen] camera_system_tb.dut.
+[sst_width] 260
+[signals_width] 300
+[sst_expanded] 1
+[sst_vpaned_height] 200
+@200
+-configuration (100 kHz SCCB clock)
+@22
+camera_system_tb.dut.cfg_u.state[2:0]
+camera_system_tb.dut.cfg_u.index[6:0]
+@28
+camera_system_tb.dut.cfg_u.cam_reset_n
+camera_system_tb.dut.cfg_u.sioc
+camera_system_tb.dut.cfg_u.siod
+camera_system_tb.dut.cfg_u.done
+@200
+-capture (PCLK domain)
+@28
+camera_system_tb.dut.cap_u.pclk
+camera_system_tb.dut.cap_u.vsync
+camera_system_tb.dut.cap_u.href
+camera_system_tb.dut.cap_u.frame_start
+camera_system_tb.dut.cap_u.valid
+@22
+camera_system_tb.dut.cap_u.pixel[15:0]
+camera_system_tb.dut.cap_u.x[9:0]
+camera_system_tb.dut.cap_u.y[8:0]
+@200
+-display (25 MHz pixel clock, Avalon-ST)
+@28
+camera_system_tb.dut.disp_u.clk
+camera_system_tb.dut.disp_u.valid
+camera_system_tb.dut.disp_u.ready
+camera_system_tb.dut.disp_u.startofpacket
+camera_system_tb.dut.disp_u.endofpacket
+@22
+camera_system_tb.dut.disp_u.x[9:0]
+camera_system_tb.dut.disp_u.y[8:0]
+camera_system_tb.dut.disp_u.rd_x[8:0]
+camera_system_tb.dut.disp_u.rd_y[7:0]
+camera_system_tb.dut.disp_u.rd_pixel[15:0]
+camera_system_tb.dut.disp_u.data[29:0]
+[pattern_trace] 1
+[pattern_trace] 0
