@@ -1,0 +1,108 @@
+ECHO-7 Part A: physical results checkpoint
+
+Scope
+Basic standalone Part A functionality at one indoor setup. Camera and marker
+positions were user-reported fixed for the stationary batch; distance and
+illumination were not measured. These are finite test observations, not full
+Part A coverage across distance, angle, scale, lighting or scene complexity.
+No marker/symbol identity, CNN decision, Arduino motion, closed-loop robot
+behavior or full-robot R6 compliance is established.
+
+Current profile
+EPA2 / 78 result words, native 320 x 240 RGB565, ratio segmentation with
+red minimum 64, blue minimum 32 and dominance 3/2. Causal neighbour cleanup;
+4-connected row-reclaimed components; MIN_AREA 32; eight active handles and
+eight completed candidate slots per colour. Overflow invalidates the whole
+candidate frame. Candidate centres are integer bounding-box midpoints;
+raw centroids are integer pixel-coordinate averages. They are different
+point definitions even when they happen to give the same coordinates.
+
+Stationary hands-free baseline
+paired_v2_fixed_001 / 002 / 003: each CRC verified, 69/69 packet comparisons
+match, one red and one blue valid candidate, no overflow. Main red centres
+were (158,80) in all three; blue centres (158,147). Observed integer centre
+ranges were zero pixels on both axes. Red areas 2101,2106,2114: mean 2107,
+range 13, range/mean 0.617%. Blue areas 1912,1912,1917: mean 1913.667,
+range 5, range/mean 0.261%. Red xmax changed from 184 to 185 despite the
+unchanged floored centre. This is a three-sample single-condition baseline,
+not subpixel stability or broad accuracy evidence.
+Evidence: validation/fixed_batch_v2.json
+
+Separated red distractor
+red_single_v2_002: frame 17280, CRC 8629, 69/69 comparisons match. Valid
+2 red / 1 blue, no overflow. Red cleaned areas 2097 and 301; blue 1925.
+Global raw red centroid (167,93) versus the main raw component (157,81)
+shows a same-frame, same-definition offset of (+10,+12) pixels. Components
+remain separate; the extractor does not decide which component is the target.
+Evidence: validation/red_separation_v2.json
+
+Separated blue distractor
+blue_single_v2_001: frame 19498, CRC 3de0, 69/69 comparisons match. Valid
+1 red / 2 blue, no overflow. Blue cleaned areas 1934 and 268; red 2128.
+Global raw blue centroid (168,150) versus the main raw component (158,147)
+shows (+10,+3) pixels. Four small background blue pixels also contribute to
+the global raw statistic; the difference is not claimed to be tile-only.
+Evidence: validation/blue_separation_v2.json
+
+Blank scene
+blank_v2_001: frame 23467, CRC ee14, 69/69 comparisons match. Valid empty
+candidate frame, 0 red / 0 blue, no overflow. Raw red area 0; one isolated
+raw blue pixel at (1,21), below MIN_AREA and removed by causal cleanup.
+No coloured test targets or hands are visible. One blank scene does not
+establish a general false-positive rate.
+Evidence: validation/blank_scene_v2.json
+
+Active-handle capacity and skin interference
+paired_v2_handheld_001 / 002 / 003 all match numerically, but only 2/3 have
+valid candidate frames and 0/3 have only one red and one blue. Holding fingers
+produce extra red candidates of area 40 and 64 in the first two frames.
+The third correctly becomes invalid on red active overflow: independent
+prefix BFS peaks at nine handles. The first exceeding row is y49, with six
+carried components plus three seeds in the visible upper-left hand/arm,
+before the main printed red starts at y54. Both published counts are zero.
+The active/output cause and handle peak are software diagnostics; the packet
+transmits overflow flags, not separate peak counts. These handheld frames
+are not fixed-scene repeatability evidence.
+Evidence: validation/handheld_batch_v2.json
+
+Completed-result capacity
+red_distractor_v2_001: frame 538, CRC 2f50, 69/69 comparisons match. The main
+red plus a nine-red grid produce ten qualifying red components, exceeding
+the eight completed slots. Active red peak is only six. The whole candidate
+frame is correctly invalid, both counts zero and every candidate valid bit
+zero. Some invalid slot fields retain diagnostic values and must not be used
+as detections. The grid card is near/crosses image edges, so this is a capacity
+case rather than validation of every tile's physical geometry.
+Evidence: validation/completed_capacity_v2.json
+
+Retained fixture limitations and earlier captures
+red_single_v2_001 remains a failed separation fixture attempt: the clipped,
+dark tile at x301..319/y222..239 peaks at R57, below the R64 threshold. It
+contributes zero red pixels even though 242/342 ROI pixels satisfy dominance.
+Its numeric processing PASS is not a two-red scene PASS. The successful
+retry was repositioned into the lit, visible part of the scene without a
+threshold or source change.
+Evidence: validation/red_single_framing_attempt_v2.json
+
+paired_v2_001 was the first positive valid 1R1B frame, but the outer paper was
+cropped and the blue component ended at y238. It is retained as limited
+framing evidence, not substituted for the later hands-free batch.
+Evidence: validation/first_positive_v2.json
+
+Earlier EPA1/V1 captures and their reports are retained. V1 used a lifetime
+provisional-label cap without row reclamation; fragmentation could overflow
+even when the final image contained few large objects. Earlier threshold,
+underlit, clipped and handheld observations remain in the evidence set.
+They are not relabelled as successful scene tests or discarded from replay.
+Replay and simulation records are separate from real measured packet IDs;
+this text does not replace toolchain, timing or complete regression logs.
+
+Verification basis
+For the physical reviews above, raw transport/CRC and decoded pixels were
+checked, colour masks and causal cleanup recomputed, and whole-image pixel
+BFS checked measured component areas, bounds and centres. Capacity reviews
+also independently used prefix BFS. All evidence JSON files identify the
+raw dump SHA256 and distinguish measured words from software diagnostics.
+Numeric agreement validates implemented processing of those pixels; physical
+scene labels and correspondence were visually reviewed and remain limited
+by the small number of conditions tested.

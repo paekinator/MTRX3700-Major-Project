@@ -2,7 +2,11 @@
 // AI-assisted implementation: OpenAI Codex; see OWNERS.md and AI_STATEMENT.md.
 module segmentationSelector #(
     parameter int unsigned STABLE_CYCLES = 250000, // 10 ms at 25 MHz; must be >= 1
-    parameter int CONTROL_WIDTH = 3 // 4 adds SW4 calibration; legacy users remain 3-bit.
+    parameter int CONTROL_WIDTH = 3, // 4 adds SW4 calibration; legacy users remain 3-bit.
+    parameter int RATIO_RED_MIN_VALUE = 80,
+    parameter int RATIO_BLUE_MIN_VALUE = 80,
+    parameter int RATIO_NUM = 3,
+    parameter int RATIO_DEN = 2
 ) (
     input logic clk, reset,
     input logic [CONTROL_WIDTH-1:0] control_async,
@@ -42,7 +46,9 @@ module segmentationSelector #(
     logic fv, rv, hv;
     logic [1:0] fm, rm, hm, fm1, fm2, rm1, rm2;
     rgbFixedSeg fixed_u (.clk, .reset, .ce(advance), .in_valid(in_valid), .rgb565, .out_valid(fv), .mask(fm));
-    rgbRatioSeg ratio_u (.clk, .reset, .ce(advance), .in_valid(in_valid), .rgb565, .out_valid(rv), .mask(rm));
+    rgbRatioSeg #(.RED_MIN_VALUE(RATIO_RED_MIN_VALUE), .BLUE_MIN_VALUE(RATIO_BLUE_MIN_VALUE),
+                  .RATIO_NUM(RATIO_NUM), .RATIO_DEN(RATIO_DEN)) ratio_u (
+        .clk, .reset, .ce(advance), .in_valid(in_valid), .rgb565, .out_valid(rv), .mask(rm));
     hsvSeg hsv_u (.clk, .reset, .ce(advance), .in_valid(in_valid), .rgb565, .out_valid(hv), .mask(hm));
     logic [29:0] data_pipe [0:2];
     logic [CONTROL_WIDTH-1:0] control_pipe [0:2];

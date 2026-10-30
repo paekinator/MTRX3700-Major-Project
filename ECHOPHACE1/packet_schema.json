@@ -1,0 +1,690 @@
+{
+  "schema": "echo-parta-snapshot-packet-v2",
+  "status": "V2_IMPLEMENTATION_PENDING_VERIFICATION",
+  "ai_assisted": true,
+  "human_owner": "Member A; name/SID pending",
+  "n_results": 78,
+  "word_bits": 32,
+  "word_order": "word0 at most significant32bits of FrameGrab results bus; each result high16 then low16 in dump.bin",
+  "framegrab": {
+    "version": 1,
+    "mode": 0,
+    "width": 320,
+    "height": 240,
+    "format": 1,
+    "format_name": "RGB565",
+    "n_results": 78,
+    "pixel_word_offset_16bit": 163,
+    "crc_16bit_word_offset": 76963,
+    "total_16bit_words": 76964,
+    "total_bytes": 153928
+  },
+  "coordinates": "native unrotated decimated camera; x0..319,y0..239. Sensor MVFP0x07; VGA display rotation does not affect this data.",
+  "classification_modes": {
+    "0": "fixed RGB",
+    "1": "ratio RGB",
+    "2": "HSV",
+    "3": "fixed RGB fallback"
+  },
+  "timing": "At each camera frame_start, publish results for the just-ended native frame. frame_snap keeps that frame and latches this packet at the following first raw pixel. SOP counter increments only for kept x0,y0; its prior value identifies the completed frame. Explicit seen bits, not nonzero IDs, gate pairing, so startup and16bit wrap recover normally.",
+  "algorithm": "Raw centroids precede causal cleanup. Four-connected CCL reclaims labels at row boundaries only after canonicalizing every stored reference. CAP8 limits active label handles and a separate eight-slot completed output pool per colour. MIN_AREA32 is applied when components retire. Active or completed capacity overflow invalidates the whole candidate frame; candidate centres are bbox midpoints.",
+  "words": [
+    {
+      "index": 0,
+      "name": "magic",
+      "value_hex": "45504132",
+      "description": "ASCII EPA2"
+    },
+    {
+      "index": 1,
+      "name": "schema_version",
+      "value": 2
+    },
+    {
+      "index": 2,
+      "name": "expected_frame_id",
+      "bits": "15:0",
+      "description": "Native kept-pixel SOP counter, first ID1, modulo65536; completed sensor frame at publication boundary"
+    },
+    {
+      "index": 3,
+      "name": "raw_frame_id",
+      "bits": "15:0"
+    },
+    {
+      "index": 4,
+      "name": "candidate_frame_id",
+      "bits": "15:0"
+    },
+    {
+      "index": 5,
+      "name": "flags",
+      "bit_definitions": {
+        "0": "same_frame_results: native_sop_seen AND raw_available AND candidates_available AND ids_match; does not imply algorithm frame_valid",
+        "1": "raw_available: raw publication observed since prior frame_start, including publication on this boundary",
+        "2": "candidates_available: candidate publication observed since prior frame_start, including publication on this boundary",
+        "3": "ids_match: expected_frame_id == raw_frame_id == candidate_frame_id",
+        "4": "raw_frame_valid",
+        "5": "raw_frame_error",
+        "6": "raw_overrun",
+        "7": "candidate_frame_valid",
+        "8": "candidate_frame_error",
+        "9": "candidate_overrun",
+        "10": "candidate_overflow",
+        "11": "red_candidate_overflow",
+        "12": "blue_candidate_overflow",
+        "13": "raw_red_valid",
+        "14": "raw_blue_valid",
+        "15": "native_sop_seen in the frame ending at this boundary",
+        "16": "raw_busy_at_boundary",
+        "17": "candidate_busy_at_boundary"
+      },
+      "reserved": "31:18 zero"
+    },
+    {
+      "index": 6,
+      "name": "geometry",
+      "fields": {
+        "31:16": "width",
+        "15:0": "height"
+      }
+    },
+    {
+      "index": 7,
+      "name": "configuration",
+      "fields": {
+        "1:0": "completed frame classifier mode tag from segmentationSelector.out_mode at accepted SOP",
+        "7:4": "CAP",
+        "24:8": "MIN_AREA"
+      },
+      "reserved": "31:25 and3:2 zero"
+    },
+    {
+      "index": 8,
+      "name": "raw_red_area",
+      "bits": "16:0"
+    },
+    {
+      "index": 9,
+      "name": "raw_red_centroid",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 10,
+      "name": "raw_blue_area",
+      "bits": "16:0"
+    },
+    {
+      "index": 11,
+      "name": "raw_blue_centroid",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 12,
+      "name": "candidate_counts",
+      "fields": {
+        "3:0": "red_count",
+        "7:4": "blue_count"
+      },
+      "reserved": "31:8 zero"
+    },
+    {
+      "index": 13,
+      "name": "red_0_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 14,
+      "name": "red_0_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 15,
+      "name": "red_0_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 16,
+      "name": "red_0_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 17,
+      "name": "red_1_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 18,
+      "name": "red_1_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 19,
+      "name": "red_1_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 20,
+      "name": "red_1_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 21,
+      "name": "red_2_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 22,
+      "name": "red_2_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 23,
+      "name": "red_2_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 24,
+      "name": "red_2_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 25,
+      "name": "red_3_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 26,
+      "name": "red_3_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 27,
+      "name": "red_3_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 28,
+      "name": "red_3_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 29,
+      "name": "red_4_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 30,
+      "name": "red_4_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 31,
+      "name": "red_4_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 32,
+      "name": "red_4_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 33,
+      "name": "red_5_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 34,
+      "name": "red_5_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 35,
+      "name": "red_5_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 36,
+      "name": "red_5_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 37,
+      "name": "red_6_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 38,
+      "name": "red_6_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 39,
+      "name": "red_6_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 40,
+      "name": "red_6_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 41,
+      "name": "red_7_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 42,
+      "name": "red_7_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 43,
+      "name": "red_7_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 44,
+      "name": "red_7_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 45,
+      "name": "blue_0_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 46,
+      "name": "blue_0_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 47,
+      "name": "blue_0_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 48,
+      "name": "blue_0_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 49,
+      "name": "blue_1_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 50,
+      "name": "blue_1_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 51,
+      "name": "blue_1_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 52,
+      "name": "blue_1_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 53,
+      "name": "blue_2_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 54,
+      "name": "blue_2_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 55,
+      "name": "blue_2_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 56,
+      "name": "blue_2_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 57,
+      "name": "blue_3_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 58,
+      "name": "blue_3_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 59,
+      "name": "blue_3_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 60,
+      "name": "blue_3_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 61,
+      "name": "blue_4_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 62,
+      "name": "blue_4_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 63,
+      "name": "blue_4_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 64,
+      "name": "blue_4_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 65,
+      "name": "blue_5_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 66,
+      "name": "blue_5_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 67,
+      "name": "blue_5_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 68,
+      "name": "blue_5_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 69,
+      "name": "blue_6_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 70,
+      "name": "blue_6_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 71,
+      "name": "blue_6_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 72,
+      "name": "blue_6_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 73,
+      "name": "blue_7_valid_area",
+      "fields": {
+        "31": "valid",
+        "16:0": "area",
+        "30:17": "reserved zero"
+      }
+    },
+    {
+      "index": 74,
+      "name": "blue_7_x_bounds",
+      "fields": {
+        "31:16": "xmin",
+        "15:0": "xmax"
+      }
+    },
+    {
+      "index": 75,
+      "name": "blue_7_y_bounds",
+      "fields": {
+        "31:16": "ymin",
+        "15:0": "ymax"
+      }
+    },
+    {
+      "index": 76,
+      "name": "blue_7_bbox_centre",
+      "fields": {
+        "31:16": "cx",
+        "15:0": "cy"
+      }
+    },
+    {
+      "index": 77,
+      "name": "ratio_calibration",
+      "fields": {
+        "31:24": "red minimum brightness",
+        "23:16": "blue minimum brightness",
+        "15:8": "dominance ratio numerator",
+        "7:0": "dominance ratio denominator"
+      },
+      "default_hex": "40200302"
+    }
+  ],
+  "camera_configuration": {
+    "fps": 25,
+    "xclk_hz": 10000000,
+    "pclk_constraint_ns": 50,
+    "CLKRC": "0x81",
+    "DBLV": "0x4A",
+    "MVFP": "0x07",
+    "note": "Nominal/expected20MHz from configuredprescaler, not a physicalfrequencymeasurement. Part A top rejectsFPS overrides otherthan25; packetindicesunchanged.",
+    "expected_pclk_hz": 20000000,
+    "physical_pclk_frequency_measured": false
+  },
+  "row_housekeeping": "Requires W+CAP=328 idle clocks after each normal row at W320/CAP8; final publication is W+CAP+1=329 clocks after EOP. Early input is overrun. Full two-PCLK-per-raw-pixel sensor simulation without extra blanking measured1283interrow idle and1280clean-EOP-to-boundary clocks.",
+  "legacy": "EPA1/schema1/77 words uses lifetime provisional CAP8, ratio floor80 for both colours. EPA2/schema2/78 words uses row-reclaimed active labels and the appended ratio calibration word. Word indices2..76 remain unchanged."
+}

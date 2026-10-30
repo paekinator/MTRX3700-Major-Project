@@ -57,3 +57,35 @@ The watchdog monitors accepted control updates, not UART receipt or link health.
 Ultrasonic Safety DISABLED; real measurements remain available. Software results,
 initial failed attempts, timing limits and board test steps are recorded in
 work/safety/report.txt and work/safety/verification.json. Student review pending.
+
+Part A front-end update (2026-10-29): Member A name/SID is pending team entry.
+`rtl/part_a/{part_a_pkg,boundedCandidates,causalMaskCleanup,rawColourCentroid,
+partACapturePipeline}.sv`, `tb/part_a/*.sv` and `tools/part_a/*.py` are new
+AI-assisted project implementations/test infrastructure by OpenAI Codex at the
+user's request. They implement bounded native-camera candidates and a raw centroid
+baseline; candidate centres are bounding-box midpoints. Named student engineering
+review is required; no human authorship or review is implied by these records.
+`rtl/part_a/top_level_part_a.sv` and `quartus/PartAPipeline.{qpf,qsf,sdc}` adapt
+the existing camera/display design into a camera-only Part A project. Its GPIOs
+outside the camera range are tri-stated. Existing Camera.qpf remains a separate
+project. `packet_schema.json` specifies its 77-word recorded-frame interface.
+`rtl/{frame_snap,snapshot_ram,snapshot_probes}.sv`, `tcl/grab_jtag.tcl` and
+`tools/{grab,jtag_export}.py` are unchanged staff-provided FrameGrab V2026.1
+resources downloaded from the course Ed lesson; their original notices remain.
+`run_part_a_tests.sh` is a Part A test entry point; it does not certify the complete
+robot's course R6 tests. The course's whole-robot system tests and Member B/C
+integration remain separate team work.
+
+Part A EPA2 update (2026-10-29): `boundedCandidates.sv` now canonicalizes the
+line-label references before reclaiming labels at each row boundary. It separately
+bounds active handles and completed outputs. New AI-assisted files
+`tools/part_a/candidates_reclaimed_model.py`, `test_reclaimed_model.py` and
+`tb/part_a/partARecordedReplay_tb.sv` add independent BFS capacity/descriptor checks
+and recorded-camera replay. `rgbRatioSeg.sv` and `segmentationSelector.sv` add
+separate calibrated red/blue minima while preserving their original defaults.
+The Part A top/wrapper explicitly select R64/B32 and record the profile in appended
+word77 of the EPA2 78-word interface. The EPA1 source/image remains an archived
+baseline; its lifetime-label capacity was found insufficient on the printed tests.
+The changes and tests are AI-assisted engineering work by OpenAI Codex; named
+student ownership/review remains pending. Recorded input predictions, simulated
+results and actual FPGA observations are distinguished in the test evidence.

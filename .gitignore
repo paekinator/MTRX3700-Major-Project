@@ -6,3 +6,7 @@
 # Quartus generated databases
 **/db/
 **/incremental_db/
+
+# Generated Part A vectors, Quartus scratch projects and local verification logs
+ECHOPHACE1/work/part_a_*/
+**/__pycache__/
