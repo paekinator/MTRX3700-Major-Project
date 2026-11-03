@@ -1,0 +1,26 @@
+# Regenerable local caches
+/quartus/db/
+/quartus/incremental_db/
+/quartus/*.qws
+/sim/work/
+/sim/obj_dir/
+/sim/*.wlf
+/sim/*.vcd
+/sim/*.fst
+/sim/transcript
+/sim/compile.log
+/sim/extra_compile.log
+__pycache__/
+# Reports and the final SOF are explicitly retained.
+/quartus/output_files/*
+!/quartus/output_files/*.rpt
+!/quartus/output_files/*.summary
+!/quartus/output_files/*.pin
+!/quartus/output_files/*.jdi
+!/quartus/output_files/*.sld
+!/quartus/output_files/PartBDebug.sof
+# Local compilation orchestration and audit artefacts
+/full_compile_once.log
+/full_compile_once.started
+/full_compile_once.result
+/cleanup_manifest.json

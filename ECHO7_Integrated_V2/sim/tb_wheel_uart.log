@@ -1,0 +1,12 @@
+# vsim -c -onfinish exit -l tb_wheel_uart.log work.tb_wheel_uart -do "C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do" 
+# Start time: 07:25:06 on Nov 04,2026
+# Loading sv_std.std
+# Loading work.tb_wheel_uart
+# Loading work.chassis_command
+# Loading work.uart_tx
+# do {C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do}
+# PASS: tb_wheel_uart signed speeds, clamp, all 28 busy byte positions
+# ** Note: $finish    : C:/Quartus_Projects/ECHO7_Integrated_V2/tests/member_c/tb_wheel_uart.sv(50)
+#    Time: 1406150 ns  Iteration: 0  Instance: /tb_wheel_uart
+# End time: 07:25:07 on Nov 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

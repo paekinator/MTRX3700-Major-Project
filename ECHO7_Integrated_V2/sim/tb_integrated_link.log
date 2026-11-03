@@ -1,0 +1,174 @@
+# vsim -c -onfinish exit -l tb_integrated_link.log work.tb_integrated_link -do "C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do" 
+# Start time: 07:25:10 on Nov 04,2026
+# Loading sv_std.std
+# Loading work.perception_pkg
+# Loading work.tb_integrated_link
+# Loading work.echo7IntegratedTop
+# Loading work.video_pll
+# Loading work.clock_divider
+# Loading work.ov7670_config
+# Loading work.i2c_master
+# Loading work.ov7670_capture
+# Loading work.frame_buffer
+# Loading work.camera_pkg
+# Loading work.camera_display
+# Loading work.vision_pkg
+# Loading work.candidate_pkg
+# Loading work.perceptionCore
+# Loading work.hsvColourGate
+# Loading work.cameraStreamBridge
+# Loading work.heldBusCdc
+# Loading work.asyncPixelFifo
+# Loading work.horizontalRunFilter
+# Loading work.causalMaskCleanup
+# Loading work.boundedCandidates
+# Loading work.glyphBanks
+# Loading work.projectiveMarkerReader
+# Loading work.mainColourSupportReader
+# Loading work.nativeAnchorReader
+# Loading work.nativeAnchorDivide40
+# Loading work.projectiveSerialMultiply
+# Loading work.targetTracker
+# Loading work.calibrationGeometry
+# Loading work.calibrationPointMapper
+# Loading work.calibrationSerialMultiply
+# Loading work.markerQueryStore
+# Loading work.colourSampler
+# Loading work.fixedSheetInteraction
+# Loading work.memberCBoard
+# Loading work.nec_decoder
+# Loading work.hex_digit
+# Loading work.sonar_guard
+# Loading work.sonar_pll
+# Loading work.sonar_range
+# Loading work.member_c_control
+# Loading work.perception_adapter
+# Loading work.motion_fsm
+# Loading work.safety_arbiter
+# Loading work.chassis_command
+# Loading work.uart_tx
+# Loading work.uart_rx
+# Loading work.pulse_stretch
+# Loading work.memberBDebug
+# Loading work.snapshot_probes
+# Loading work.memberBVgaModeSwitch
+# Loading work.memberBVgaOverlay
+# Loading work.memberBVgaContour
+# Loading work.memberBVgaLabels
+# Loading work.vga_sink
+# Loading work.frame_snap
+# Loading work.snapshot_ram
+# Loading work.memberBVgaDiagnostics
+# Loading work.memberBVgaHsv
+# do {C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do}
+# OK 1: original public v3 packed widths 24/141
+# OK 2: KEY0 shared reset/IDLE
+# OK 3: SW000 cannot start
+# OK 4: KEY0 shared reset/IDLE
+# OK 5: SW111 cannot start
+# OK 6: KEY0 shared reset/IDLE
+# OK 7: SW1..6 creates typed TARGET_SELECT
+# OK 8: request held through backpressure; selection latched
+# OK 9: actual tracker report held under C backpressure
+# OK 10: request handshakes exactly once into real tracker
+# OK 11: first observed frame not locked
+# OK 12: second observed frame not locked
+# OK 13: third locked report permits APPROACH -0.05/-0.05
+# OK 14: repeated POWER does not replace request/restart
+# OK 15: KEY0 shared reset/IDLE
+# OK 16: SW1..6 creates typed TARGET_SELECT
+# OK 17: request held through backpressure; selection latched
+# OK 18: actual tracker report held under C backpressure
+# OK 19: request handshakes exactly once into real tracker
+# OK 20: first observed frame not locked
+# OK 21: second observed frame not locked
+# OK 22: third locked report permits APPROACH -0.05/-0.05
+# OK 23: repeated POWER does not replace request/restart
+# OK 24: KEY0 shared reset/IDLE
+# OK 25: SW1..6 creates typed TARGET_SELECT
+# OK 26: request held through backpressure; selection latched
+# OK 27: actual tracker report held under C backpressure
+# OK 28: request handshakes exactly once into real tracker
+# OK 29: first observed frame not locked
+# OK 30: second observed frame not locked
+# OK 31: third locked report permits APPROACH -0.05/-0.05
+# OK 32: repeated POWER does not replace request/restart
+# OK 33: KEY0 shared reset/IDLE
+# OK 34: SW1..6 creates typed TARGET_SELECT
+# OK 35: request held through backpressure; selection latched
+# OK 36: actual tracker report held under C backpressure
+# OK 37: request handshakes exactly once into real tracker
+# OK 38: first observed frame not locked
+# OK 39: second observed frame not locked
+# OK 40: third locked report permits APPROACH -0.05/-0.05
+# OK 41: repeated POWER does not replace request/restart
+# OK 42: KEY0 shared reset/IDLE
+# OK 43: SW1..6 creates typed TARGET_SELECT
+# OK 44: request held through backpressure; selection latched
+# OK 45: actual tracker report held under C backpressure
+# OK 46: request handshakes exactly once into real tracker
+# OK 47: first observed frame not locked
+# OK 48: second observed frame not locked
+# OK 49: third locked report permits APPROACH -0.05/-0.05
+# OK 50: repeated POWER does not replace request/restart
+# OK 51: KEY0 shared reset/IDLE
+# OK 52: SW1..6 creates typed TARGET_SELECT
+# OK 53: request held through backpressure; selection latched
+# OK 54: actual tracker report held under C backpressure
+# OK 55: request handshakes exactly once into real tracker
+# OK 56: first observed frame not locked
+# OK 57: second observed frame not locked
+# OK 58: third locked report permits APPROACH -0.05/-0.05
+# OK 59: repeated POWER does not replace request/restart
+# OK 60: centre80 ALIGN candidate turn signs
+# OK 61: centre120 returns APPROACH
+# OK 62: centre180 opposite ALIGN turn
+# OK 63: 400 mm fine approach 0.03 m/s
+# OK 64: 350 mm is normal DOCKED, not sonar E-STOP
+# OK 65: DOCKED does not restart after range rebound/POWER
+# OK 66: KEY0 shared reset/IDLE
+# OK 67: SEARCH stays still without report
+# OK 68: capture older than 150 ms clears position and enters LOST
+# OK 69: fresh locked reports recover LOST
+# OK 70: wrong digit/type/tag/config or frameGood revokes movement
+# OK 71: recover only from fresh matching locked sequence
+# OK 72: wrong digit/type/tag/config or frameGood revokes movement
+# OK 73: recover only from fresh matching locked sequence
+# OK 74: wrong digit/type/tag/config or frameGood revokes movement
+# OK 75: recover only from fresh matching locked sequence
+# OK 76: wrong digit/type/tag/config or frameGood revokes movement
+# OK 77: recover only from fresh matching locked sequence
+# OK 78: wrong digit/type/tag/config or frameGood revokes movement
+# OK 79: recover only from fresh matching locked sequence
+# OK 80: ambiguous real tracker report stops
+# OK 81: target lost stops
+# OK 82: status config version change invalidates cache
+# OK 83: new configuration confirmed after fresh captures
+# OK 84: camera transport fault blocks motion
+# OK 85: SW0/1 overlay and SW8 perspective wiring retained
+# OK 86: SW9 pure-camera mode blocks perception motion
+# OK 87: SW9 release requires fresh reports
+# OK 88: JTAG SELECT rejected, no second request master
+# OK 89: 250 mm safety stop cannot masquerade as DOCKED
+# OK 90: busy movement JSON completes intact
+# OK 91: immediately following JSON is zero (no 200 ms wait)
+# OK 92: latched sonar stop cannot be released by POWER
+# OK 93: KEY0 shared reset/IDLE
+# OK 94: invalid J3 data cancels movement
+# OK 95: busy movement JSON completes intact
+# OK 96: immediately following JSON is zero (no 200 ms wait)
+# OK 97: KEY0 shared reset/IDLE
+# OK 98: simultaneous A and sonar stop: A priority
+# OK 99: busy movement JSON completes intact
+# OK 100: immediately following JSON is zero (no 200 ms wait)
+# OK 101: POWER/repeat cannot clear A latch
+# OK 102: KEY0 shared reset/IDLE
+# OK 103: KEY0 simultaneously resets B/C; UART frame preserved
+# OK 104: busy movement JSON completes intact
+# OK 105: immediately following JSON is zero (no 200 ms wait)
+# OK 106: KEY0 release has no automatic start without new distance/POWER
+# PASS: tb_integrated_link checks=106 requests=10 reports=80 UART_lines=10
+# ** Note: $finish    : C:/Quartus_Projects/ECHO7_Integrated_V2/tests/integration/tb_integrated_link.sv(102)
+#    Time: 23269660 ns  Iteration: 1  Instance: /tb_integrated_link
+# End time: 07:26:52 on Nov 04,2026, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 0

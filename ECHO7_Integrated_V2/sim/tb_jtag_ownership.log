@@ -1,0 +1,13 @@
+# vsim -c -onfinish exit -l tb_jtag_ownership.log work.tb_jtag_ownership -do "C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do" 
+# Start time: 07:25:10 on Nov 04,2026
+# Loading sv_std.std
+# Loading work.perception_pkg
+# Loading work.tb_jtag_ownership
+# Loading work.memberBDebug
+# Loading work.snapshot_probes
+# do {C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do}
+# PASS: tb_jtag_ownership 9 commands: sole C owner, visual debug retained
+# ** Note: $finish    : C:/Quartus_Projects/ECHO7_Integrated_V2/tests/integration/tb_jtag_ownership.sv(28)
+#    Time: 3940 ns  Iteration: 1  Instance: /tb_jtag_ownership
+# End time: 07:25:10 on Nov 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

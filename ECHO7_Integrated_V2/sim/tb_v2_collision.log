@@ -1,0 +1,46 @@
+# vsim -c -onfinish exit -l tb_v2_collision.log work.perceptionCoreReplay_tb "+COLLISION_ONLY" -do "C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do" 
+# Start time: 07:47:22 on Nov 04,2026
+# Loading sv_std.std
+# Loading work.candidate_pkg
+# Loading work.perception_pkg
+# Loading work.perceptionCoreReplay_tb
+# Loading work.vision_pkg
+# Loading work.camera_pkg
+# Loading work.perceptionCore
+# Loading work.hsvColourGate
+# Loading work.cameraStreamBridge
+# Loading work.heldBusCdc
+# Loading work.asyncPixelFifo
+# Loading work.horizontalRunFilter
+# Loading work.causalMaskCleanup
+# Loading work.boundedCandidates
+# Loading work.glyphBanks
+# Loading work.projectiveMarkerReader
+# Loading work.mainColourSupportReader
+# Loading work.nativeAnchorReader
+# Loading work.nativeAnchorDivide40
+# Loading work.projectiveSerialMultiply
+# Loading work.targetTracker
+# Loading work.calibrationGeometry
+# Loading work.calibrationPointMapper
+# Loading work.calibrationSerialMultiply
+# Loading work.markerQueryStore
+# Loading work.colourSampler
+# Loading work.fixedSheetInteraction
+# do {C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do}
+# CORE_FRAME id=1 tag=1 cfg=0 good=1 observed=1 locked=0 reason=2 centre=65,204 samples=0 state=0
+# CORE_FRAME id=2 tag=1 cfg=0 good=1 observed=1 locked=0 reason=2 centre=65,204 samples=0 state=0
+# CORE_FRAME id=3 tag=1 cfg=0 good=1 observed=1 locked=1 reason=0 centre=65,204 samples=0 state=0
+# CORE_FRAME id=5 tag=1 cfg=0 good=0 observed=0 locked=0 reason=11 centre=0,0 samples=0 state=0
+# CORE_FRAME id=6 tag=1 cfg=0 good=1 observed=1 locked=0 reason=2 centre=65,204 samples=0 state=0
+# CORE_FRAME id=7 tag=1 cfg=0 good=1 observed=1 locked=0 reason=2 centre=65,204 samples=0 state=0
+# CORE_FRAME id=8 tag=1 cfg=0 good=1 observed=1 locked=1 reason=0 centre=65,204 samples=0 state=0
+# CORE_FRAME id=10 tag=1 cfg=0 good=0 observed=0 locked=0 reason=11 centre=0,0 samples=0 state=0
+# CORE_FRAME id=11 tag=1 cfg=0 good=1 observed=1 locked=0 reason=2 centre=65,204 samples=0 state=0
+# CORE_FRAME id=12 tag=1 cfg=0 good=1 observed=1 locked=0 reason=2 centre=65,204 samples=0 state=0
+# CORE_FRAME id=13 tag=1 cfg=0 good=1 observed=1 locked=1 reason=0 centre=65,204 samples=0 state=0
+# PASS perceptionCoreCollision_tb collisions=2 reports=11 source=PROTOCOL_FAULT_INJECTION
+# ** Note: $finish    : C:/Quartus_Projects/ECHO7_Integrated_V2/tests/integration/perceptionCoreReplay_tb.sv(362)
+#    Time: 2500 ns  Iteration: 1  Instance: /perceptionCoreReplay_tb
+# End time: 07:47:22 on Nov 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

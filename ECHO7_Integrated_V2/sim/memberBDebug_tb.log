@@ -1,0 +1,13 @@
+# vsim -c -onfinish exit -l memberBDebug_tb.log work.memberBDebug_tb -do "C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do" 
+# Start time: 07:25:09 on Nov 04,2026
+# Loading sv_std.std
+# Loading work.perception_pkg
+# Loading work.memberBDebug_tb
+# Loading work.memberBDebug
+# Loading work.snapshot_probes
+# do {C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do}
+# PASS memberBDebug_tb: coherent commands, backpressure, 96 frozen words, reset
+# ** Note: $finish    : C:/Quartus_Projects/ECHO7_Integrated_V2/tests/integration/memberBDebug_tb.sv(163)
+#    Time: 263980 ns  Iteration: 1  Instance: /memberBDebug_tb
+# End time: 07:25:09 on Nov 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -1,0 +1,17 @@
+# vsim -c -onfinish exit -l tb_motion_uart.log work.tb_motion_uart -do "C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do" 
+# Start time: 07:25:06 on Nov 04,2026
+# Loading sv_std.std
+# Loading work.perception_pkg
+# Loading work.tb_motion_uart
+# Loading work.member_c_control
+# Loading work.perception_adapter
+# Loading work.motion_fsm
+# Loading work.safety_arbiter
+# Loading work.chassis_command
+# Loading work.uart_tx
+# do {C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do}
+# PASS: tb_motion_uart stale/wrong target/sonar/A/docking zero priority
+# ** Note: $finish    : C:/Quartus_Projects/ECHO7_Integrated_V2/tests/member_c/tb_motion_uart.sv(93)
+#    Time: 1109310 ns  Iteration: 0  Instance: /tb_motion_uart
+# End time: 07:25:06 on Nov 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -1,0 +1,637 @@
+{
+  "new_b": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject",
+  "old_bc": "C:\\Quartus_Projects\\ECHO7_Integrated",
+  "original_c": "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src",
+  "original_files": {
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\assets\\markers\\recover_from_pdf.py": "3c3c48f4fe284989ff66884a6ed5e716df2705ce5023586c36a8f7226ac8b693",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\MemberBCdc.sdc": "c7bab195aed4f9684daf61267f7f14534d62071681975bc054cec495d5fd494a",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\PartBDebug.qpf": "4573096ea666044c9b73346a96615200bd6efeee80b73aadb5c71ce673ca5d0f",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\PartBDebug.qsf": "d6c6fc894248b9b19c977d6bc76920d467dd872174a5e129cbfed1cbb728bfa8",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\PartBDebug.sdc": "3ab66737699ad34915ef204ffd1e837470a87d4aa077d8ff1ce3f7cbb4dae492",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\vga_sink.qsys": "5942928415e94927c7d0521c50e837ca0e6e9fd0f036a0ef103ba8e7cefdf16d",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\cameraStreamBridge.sv": "f9bc22e35da1ec87111a058319f4915a693b65cd121c3c82461d3a1204ba70f3",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\clock_divider.sv": "2eea9e58a6c64c40bbc701012f596e6076e70867b50151513630378278070c42",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\i2c_master.sv": "466847848a5f17e8af0b954b0418fe0ece0dfcb743d72ce19f1eda7483d7824a",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\ov7670_capture.sv": "883a8f8ce6d65524b41d96b66fe1642227e8d6fd90983484174ddf6e29cd60d1",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\ov7670_config.sv": "5c679f7a5f638cdeb9e38a5147e5edc8fff75490200506629ac1b121cd78c9ae",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\asyncPixelFifo.sv": "542ec953cb7a8ec0968d06207d1c57d4bb18d3040111589f8b1b3b7a8d9b905d",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\camera_pkg.sv": "45c8a5661399a2d532a64b38ccbebf0fa90f7667ca4bb5b6bf1dc9aa10227b8d",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\heldBusCdc.sv": "a382e9b0af5ab44e1f004173500ace0df7e4c33a85b022648200d87d69fae72d",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\memberBBuildId.svh": "d12ae049feb14cffdc805ec5b488db437eb51073c2f6fc5745a8032e294c1749",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\perceptionLink.sv": "8a8e2029e076e9f6fb40cfc78b36d190c1a0b86e8b65fa439497bcfd1b416653",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\perception_pkg.sv": "f46e579b74470a827ccf44f8feb1407d060fd6a8d5a07b4f7fffe576f02dfda4",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\video_pll.sv": "65bfdd798c15f8677c338eacb6dca28b04fd8ea29aac2d0b6e5010829b13a8bd",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\vision_pkg.sv": "6b8ef37e41a1a8474bd4a5885c6d8a01617783410602ef5087f8cc8ddfdfd156",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\frame_snap.sv": "93ae5bd32da82206b3f27d4de1ea421756bb89b324df040d97122256a765acc6",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBDebug.sv": "93bd3993dcf2894f2cb7737a5a2dd631a19ab0e3d4a02541016eb41d4eda6028",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaContour.sv": "79e5b0cb94c8a3b37479b10751dc2d4a22527fc6a74bf659a51263a7ed69cab8",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaDiagnostics.sv": "c141f393c356e339872605fd41678cb29d9563af73f6000e2d31b9cae99a63a8",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaHsv.sv": "04936233165d24fa8dfb93087e0de91d1d48c4f8aa61d41349cd53c4a6dc3bea",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaLabels.sv": "43e165dcf54458a632a09406b632ac95598f96842fc4ebb8c8f322e2593f5291",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaModeSwitch.sv": "897ffe7878f1642894991f61cb6aa52cce49922ab9059f7c2cb5b326138b26bb",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaOverlay.sv": "008851fcea9a3b8bd0d3d659cc40dd540f90a4008ed435698622959ac4409547",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberCSimulator.sv": "318752d1cf0b4cbef2099ec3ee96b4c8b4ff4d143b692ad90b890895243c50ed",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\snapshot_probes.sv": "d71e1422827ffd0cbdfe5b39fac4e6d4edd50b8adebc9d8eddb0061b20f7d389",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\snapshot_ram.sv": "9c3e48932fce35de40de402e38fdd2521e0b9f2627a2a6ae0d4e8a71ee2b0749",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\display\\camera_display.sv": "0a53644e8c2af1b0e4be77ae3282b6436aa9952165616f20862c787b22a3751b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\display\\frame_buffer.sv": "0e54b911566ea57982deda9de31cf4372ccb39645ff8835a8a465fdf51086993",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\interaction\\calibrationGeometry.sv": "f6e981c8f5118d689d89f0e51d36db7c8af5303874d8d706dc67697e700279c9",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\interaction\\calibrationPointMapper.sv": "28dabf7418c2dce9053ef6b136ec41d27f71b9d8dbcbbb9a1bce609998f05e4b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\interaction\\colourSampler.sv": "e489c154529daef2b2b0e2595bfcdb14d3ac1dc5a5d27cd1365510e9b2a3820e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\interaction\\fixedSheetInteraction.sv": "15808bbc55d711a2df8b81b9b6c3f1309599f559c738de8729386574dc938920",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\top\\perceptionCore.sv": "f22c8502d4fc6a9c7041fad69dbb019295c0283025a61af516591575cd17a933",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\top\\perceptionDemoTop.sv": "65a01717a3b2c3052f500fa30138b189cfe2b591f8c526b5c140e73f747cae3b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\tracking\\targetTracker.sv": "f868f6ad34426a650a9cfd864082dd915fe4c088bc1f02187cbbb659b5dcb290",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\boundedCandidates.sv": "b91dab5f93234b99f07fb56de6767838247ea15f3c107354317c4453ebd0cd45",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\candidate_pkg.sv": "9bf00b0b5e232f406d359f8654e50c91b3282a0016724a057d2e8810a34099a6",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\causalMaskCleanup.sv": "8e419dc6f1eba9e18fc7f75a7761d2d11fdf8dfbc382014e0c32a529d8242012",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\glyphBanks.sv": "c094109d785d66223a3e07c8b219e027eb5bc647f9271f51198f62ae1c85a5a3",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\horizontalRunFilter.sv": "0c1c921b0392618018fd83b743d306ed2bc6c7b6b4439d4b7ab6715d5d3fbc5d",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\hsvColourGate.sv": "6bfce98caac8e63af8c87e2202b8d6f4a5d19e2d8b4c16154e7d0c8f6ab20b72",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\mainColourSupportReader.sv": "9a9892a5a6d0955cc1106f1b07b11ef66537b07bc27514184ed7d81d64ddd47e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\markerQueryStore.sv": "87988ecea31aa382a7cdf7b10e30b4cb496d878ea62f933feddcc71afc57386b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\nativeAnchorReader.sv": "943f3330ac0550168c76ad30b8d5a90abcc8f27cdae4768ffdd4a0eae7f8348c",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\projectiveMarkerReader.sv": "ea94753ce873dd76acf292c26beef20944fa842d3f77a6c1c6d50c4a15d01054",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_active_capacity.py": "a1bbd3a8e4076215449fc1b589d4423856c884bceeb8ef8c503285c7aa5da0f2",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_ai_transcript.py": "e86003058d2c5ff2c8dc6530627cec00575b71645f3142e3a8062285d51045ac",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_anchor_ownership.py": "d288f238bb0091bc389a475e40f44a9fa8acbda930281fbd0429144da8c29a3e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_autodebug.py": "8b82495a8bd27c771cc374d6e5a8888953b549f9c31d29262a89e2b6d1269326",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_auto_orientation.py": "75d026974684a30dcb945335afda7c008e6c86e05816241c1e20ad03fdc1797a",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_bctl_tcl.py": "b64a54587cc402045076b128aafa6684017cda0401bf72f5f1c33ad7577cf236",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_calibration_measurement.py": "327db8b4435f5b13d8220e4c0befc984b6e9a995a6237b8867e8c353a801f0e6",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_candidate_pruning.py": "6990c86a1d31ead0a4805216089e29ce29f169c3c0d4ec08f33a489e2bdcbe6b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_capacity15.py": "e654b9877d1926728047fc88f34a4eda24f90d61bb79d8a844c6392a57e40c44",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_capture_transaction.py": "a978ac74f96e278136b2a224024366577bacc91c94b49cd1ec89f7ca74608fad",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_contract.py": "793a77ee5b00cf6caa14401db839f0466d3dd2cea0ace6b6155bb9dd887e6618",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_datasheet_profile.py": "9a9878395a52eafb93cef8b22f773ca068b7d000271a9d60b213beaf11965a5e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_debug_decode.py": "71a62aad559a501bce9109170dbf9af4dafadd23d6693790854d29c56cfb2551",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_duplicate_scene.py": "0af24175c84f05d8d8038a5d6e6c5e2440be279b656e7149ce2348be3d6dcede",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_glyph_encoding.py": "c3f87085c02a8502b6b48bd686bf13a20a6e898370abe248d6efc20bc44310ad",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_hardware_measurement.py": "e073af8b6e81e01854eaebd5064133abe3750b22695e4d381dcd9eafd0e46a94",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_hsv.py": "154fd1d85c938ce8ecb771acf67ad0868c76ffc79fecaced6af2d5cb665a0f55",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_interface_validation.py": "36cf08e719eab815d8c932fc54d4e5e9611da56ef3780eee545b301a46ecc805",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_main_colour_support.py": "c4d5816df758e2650e9c1705a9cb70748e797b41b12508849ecfdd14d841d62f",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_projective.py": "2c8de819e2de2dcec451f9f2de55887a7c5f014ddb6214ca08501f7d7f4715a1",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_projective_calibration.py": "6fdae319d08c9c6604beb14858dbd0125c5537b8b37e37fde69ff9b242deae16",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_query_protocol.py": "da2cc997660dfb09b7c4d6ce6e9ee4c6dd2953ccf732a46b4e3051a1d55b7165",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_raw_camera_mode.py": "fc7fa089cce56eda65af5098d54107a9f57d72b833dcbdf62d7f09566ac03a69",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_reader6_decode.py": "cd95157c2fd90dfce65e8371b1c67e0f828ca5bbf404f5c7da584fa9d64db0ee",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_reader8_decode.py": "0fffa897bc63d13695112320d9568a9674fcff10603e3e8d28c133884d2bb450",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_reader9_decode.py": "7ece4b91a416121c96509be51701e892c38d444fcc8554caf3954782bea18489",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_reclaimed_model.py": "9626265c64ad8d94230a52214c3770af50016f4d76d185b9160b1587ff929e45",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_reference_pairing.py": "cf16602b16a7119a4a27b0bc5710e30c9ffccf56824a2d704c3838e964483a67",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_repository_check.py": "a1ec5196bb720ca59ac8c97a12602bf1a4fc702044dd70cebd5d462efa56149e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_run2.py": "c7b1396414239c5ad49b1bddf724dd6b1bc92aa185d5aac6f002a7b5f54178a3",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_run2_decode.py": "5aa9f8d6dc90efa9e4a6e37f2a90e1c91ffed5f2362c7da7f16981d86751da23",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_scene_measurement.py": "ba6b058e178efa6b4a28aa9099edf0dde229355b7d4348d8fb4ca95f6190c54f",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_schema6_capacity.py": "cdfb9a63bbc8f6d8f57c10cf4da6c2d22e0fa56ac55b02102752a8866c8f4f63",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_schema7_shared_pool.py": "6d9742ad6cecdf46348edeeabe4268111c76b8e1dd66840cb52a2071a7b9dce0",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_submission.py": "d2aec940a9ac32ba7025f8f9886663dca5c8b34aabc9501a9cc5f3c71839ac5b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_sw9_comparison.py": "7d4fbd09216d485f708420faf68d1b372ef9dcdc3fbdbd8a925af29e16fe7c1e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_synchronisers.py": "f1574df1cfecbbe7eae161f277fba14b74561e4a497ec98c3550f43714baaf95",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_tools.py": "0c2bcd5c8b75cdd28321100a267f799a1f0a2954712eb06f4c6fdd3f33cf92bf",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_trial_stream.py": "574f183d4feb5e79dffad9815fa4d760fb46baa06e9f19d9e46750f466a13cd4",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_trial_tcl.py": "21af8081522867fdef3f86bfd89dd7dd0c3ac0cc4ec0f05d2a9d5dedbf5c395d",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_verilator_suite.py": "cafa30beec9f11e39cfc66b9fc96d4e9b100044aaea611599f6db2a1f5ce3330",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\python\\test_vision.py": "2ee8865f5d7f5933dcdfe6b7e9f3ea87d78139079f9066904f17cefab8202e75",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\boundedCandidatesActive_tb.sv": "a30be64e3347d531779067b8ccee596c57bb8ab2d310c435f71ac4c7cdf3f146",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\boundedCandidatesCapacity15_tb.sv": "68b11b5051166763379f64b4d9ccad0f2461dbe283b0db836b71c9dcdddeaa88",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\boundedCandidatesCompleted16_tb.sv": "078e20b686a32bd07048878b25bbb526c37a9cd7d215a365c0569cecc986d868",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\boundedCandidatesPruning_tb.sv": "52bbf636855f4bd88e9f8cdd1a5568966d863c63a260c8eafcee968750e1aac5",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\boundedCandidates_tb.sv": "407eb1fc5dcfad17e63ce1c8fbe0090e5a4d1ece2868f02db7779a021f05f06c",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\calibrationGeometry_tb.sv": "a44662265f6cab7d86562666c3b8c3d80440b5266d02e782db29d1b68987e8ce",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\calibrationPointMapper_tb.sv": "157ec551d0220b6886a9e77ebdc8c7f979e719b1acc079d7bc116e017962901a",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\cdcTransport_tb.sv": "1e8c0cda32539bea1fbcda07a26914b80a3a6c9dcd748d10b1ea2ecbf72d4d18",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\colourSampler_tb.sv": "ffc3f64b6bf36785f99334e87451628ede99543926f91482ba9bb149ac464128",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\fixedSheetInteraction_tb.sv": "67d2bc370996d892c7333c1804b99f38d0ae0e82e5940dd92819a011d1d1ff7f",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\glyphBanks_tb.sv": "0ffc20a795fb61889cda2885aff77277cd29566dbcaeeec8e9ddcce1b4eb7b09",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\horizontalRunFilter_tb.sv": "db7ee8bd750a633ef90d952a7c07794618d83e492a3d87a547b3dad55c5dafe7",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\hsvColourGate_tb.sv": "e55497c4117a6132d93267fba5c1151cd7ba077663372bcedecf8bdcb54a9998",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\jtagInteraction_tb.sv": "a38c13d296a98ad1a95236a678c1ba832e33630dc17311b6f1b902e9828b66dd",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\lateSnapshot_tb.sv": "e3df81ade28349a3dcce5696894eb05388f532281d2b1d0de34d00e43633870a",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\mainColourSupportReader_tb.sv": "965e17206c676a211ec40c5f47290ffdab7cc4fcdcfaa796fbc011bea85c642b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\markerQueryStore_tb.sv": "4faceb9d63809bea305eb23abee9177c4e832916eef39d22be7b962c30f529b4",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBDebug_tb.sv": "75ab4d6f63fc5afd009476330ceabb68967f35bdd7572962f0aea1c3f781ea23",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBDisplayCdc_tb.sv": "9655ddb33bde573159dbb7aed1daeb9a376237f795c2b2d413b28c8ada540a3e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBVgaArithmetic_tb.sv": "005238ffaf32602876572bf67304d073b05dbb0d23f2f1970136998131945529",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBVgaContour_tb.sv": "5797fac1a92e0468b42f89231648e3d2db4f0c501916798d594aa2c50169b047",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBVgaDiagnostics_tb.sv": "311030499a9147f2f32dba684d004159a35c6c55693308ce033cdc759a3d75d9",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBVgaHsv_tb.sv": "ebbea877d650f8b2477573905da87fad8b3481807963ce69d3eac0d599fc6dbf",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBVgaModeSwitch_tb.sv": "3f1ce960739b10803ed163593f348ba15d4c68829ac15eb603f117fca5e75376",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBVgaOverlay_tb.sv": "38d84373e7f7dd34fb816cb67d129302112614454b168a065a400c2aa2cc620f",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBVgaPipeline_tb.sv": "cf3644d06f208eba3a149680a26d5e21fdd39d2ff8202b5a88a1bc177ec396cb",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBVgaPreview_tb.sv": "2762cc6a2491283c1b934a0e5745f540704dff7b50d8e9d0d3646d275c4da3df",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberCSimulator_tb.sv": "31350c388705391490b630d83303610820a54c9af2e081895a1457cdd302c6e8",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\nativeAnchorReader_tb.sv": "eade3f04f645ab51151f61f9a74456a5fe50c1fb28d937a858f1801fb74df0a8",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\nativeAnchorSupport_tb.sv": "997854221dc2ab73a40faaf96e8e3b0b4ce12a319b8ce18fe10937170d1eddfe",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\perceptionCalibration_tb.sv": "3a7b3d8bfd887bbd503be1f1dc0e62781f43ff3de4d6e6ad47b085fe7050c74f",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\perceptionCoreCalibration_tb.sv": "a44e311df52fa00a88fe9192ebf11d272e6a92f597ef2272adb0ac2968b2887e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\perceptionCorePause_tb.sv": "19317de6edfe91a484e0ce3d99b84233ad8f7b117609d916a2a0cb83dc854d19",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\perceptionCoreProfile_tb.sv": "c287424b9b0d4a369e45ef0f945951a4c925e1880e04be9ad0c3dc2af5ca01cc",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\perceptionCoreQuery_tb.sv": "0ef992d5ecf8fe8b3fc97bd91b592071474d25c77b800c8a4199994d5b1a6f45",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\perceptionCoreReplay_tb.sv": "6532ffe21933693143207b370e3f48def7a12d060651ed2e9b80fe3fe54db95b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\projectiveMarkerReader_tb.sv": "348abc8df911786d658519ee845defb4c2d1f8289b2f4dc2ee022825a7aa8fe4",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\targetTracker_tb.sv": "a98b1df67019730592b1f82d2de69f1eba49348855ee10ed65965e08f13e1987",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\vgaMapping_tb.sv": "537cef3653730cd0856a7185af11ce2bcf71839ebc9402f6839143196a7ddfee",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\check_repository.py": "197ef7fd6ccac4fc23e081ab961c0abd2cddf0d6295232a53a599926a355a9a2",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\compare_sw9_trials.py": "ebba1b6ea4665cd7736827447ff3cc64f5fb580a87381979e09249b60d4ede82",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\echo7.py": "9f0eab7c0db38ce620e651024f499da0d8a00b43605f843048c4ac11aca8901b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\export_ai_transcript.py": "1e0079909afaca01cb73f63033b092fd96a3133bc50b10448fddec855e9be286",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\export_submission.py": "beb2d4fb393ddd3d19d6713419a544eef40e41152ac930873370fb5e50bf1cd8",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\measure_recorded_scene.py": "0310a69347bae4f6c59bf0c697d9e7b0a47081fd2e91eae0ab06b54f462958f1",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\member_b_client.py": "8b218e57e3d7582b564c49b485cfa1fdfffd658630ed770b118aa893c0704f74",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\render_member_b_datasheet.py": "1015d5fbacde7911a9c52fa18d705a9dea19b07c137f66656815c4f680c446e8",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\render_vga_preview.py": "d8b621142b533106c106e199f2efd583425771b9767dcfed4ccddb94153cc63d",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\run_r6_windows.py": "aeacf7b0f51022b2b7df890025d3ee5fd0b4bd29bea77563b07b5f792959543d",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\update_owners.py": "e40cfe10be20eaa15e152b0fb20ccf999bd0e9405d5201aa5f3fc306abb9b2f2",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\validate_member_c_interface.py": "cfdc7a79545dd4695c890e943009102e1d812fd1b42fc8de38abb2729010a5ec",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\capture\\grab.py": "39c217bd55d7add419422d307412b588cb620c25ad5eddfe977378e77ba6d35f",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\analyse_capture.py": "6e2f76d9703f323120e97c8a29c5498eb929824a56aa456f521d4287c7c05231",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\audit_calibration.py": "d094ec3dd0fc0f1d243d39646d23087502b8a0c0262e30f1413d753db40b7b66",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\audit_hsv.py": "8b108daf40ff66b50b270c406111a7b0b4db9049afe5d971ba81fbc971841c09",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\audit_hsv_cleanup.py": "b220cf31cef547bcaf738368e489e23654c17b528e963237d454afe6b121e366",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\audit_hsv_opening.py": "52abf2c7c583296a320a90bb29f4e2345174e3680573560d53c7d9367076fe48",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\audit_hsv_profiles.py": "a385a642b872d34dfc22d5035926f1a6be4862dc349aaea44e66e7bb105a15e0",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\calibration_measurement.py": "539ab978ba77da06d6b0a6fd641d984e6f63f8066257eca8d3c4f49c8971d8c2",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\candidates_model.py": "c5304398d404da9280c8583f11cbc9129443eccccb9da06f79676bf4170d0bd6",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\candidates_reclaimed_model.py": "a22f0cae3338c5a403cd7b5cf6eee0541672861d178fef0170e6c03e657079e5",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\capture_transaction.py": "cba8632b5b5e0d9f2b96308ac4b96da10656ce4af8573c1f0db9336276a697fa",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\collect_evidence.py": "6cf5508021a1d4dba66ffd852605828ca8fd23de828caf09e4853b95c7b015c0",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\contract_model.py": "91a61184cd4369b05e78e7e9866959c8cc5cef09f7cc87925f50ddafd7f13c74",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\debug_decode.py": "7362ce6cda1aa5aa3bf2bf302f66ec5886290b2f51fa8dbb8e2ab0fdcfb6c109",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_calibration_geometry_vectors.py": "be19a7283713295a4273db7b2f703cd851aa8ac8403f4ee6a354a91536ef24db",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_calibration_mapper_vectors.py": "454307bdb4d1f793493081bcec9515a2ac5ba7fddcc959dda223540bc896b159",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_calibration_scene.py": "cc68dd61cd97163cc4ec71242d76c2bdc6c9f765872af1542a4453f35ceb323a",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_capacity_vectors.py": "07f3dc9c83bfb1b9f8e1426d07173b020e5045c2800888c201ec594a7563bbb5",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_completed16_vectors.py": "e2448a8363fac65f117d45465191391ca63fe1854c8ed36138be03f9b0044c9a",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_contour_vectors.py": "55ea82e0c681eb4424fb20ac00c3b4b520192b43b5a045b10f0f920278500a3a",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_main_colour_vectors.py": "001395688a60215ad34ff01ece3e6c99a29210e992e47769a28fbdd1ca2c90d9",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_native_anchor_support_vectors.py": "79deba0a437ec2e53d109c07e8ab8659a3f938108d3b0aedb8d93f79264faf4f",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_projective_vectors.py": "60f2e6e9fc67fde4281772b6cd053cb450a3aff5b4540619fc6d77bcb578ec14",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\export_vision_vectors.py": "db175e56287ee2984c29bb5cca38b6a266542c688971c9382fa84cfe6fd414b5",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\hardware_measurement.py": "42229db52769da6dbfac4acf1948e6980a44ccd1b2682cbfea134dd1cc80479d",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\orientation_pixel_budget.py": "554eac7d59b366d2fd6e64018d38b9df3afe4284bafb31595dfcb581578ee02b",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\projective_calibration.py": "0cbafdc47dd7c78b71875928252613a68b362decc2fce62dfa183205e1dd3146",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\projective_reference.py": "ee1c8134212b26b424614d0db999a0ac5ae61f8464d5ab704500636f1558e19e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\query_transport.py": "041414fa52ff1fb1d9ff9ba7395fff53578f4fe1abc5b32795077efbf09f6dba",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\synchronisers.py": "f0c46cf1b0a3cafb16fb0f794091a6e59ceb68298868195930bc5f42110efb66",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\trial_stream.py": "0b5346089b3f4ea82387ced25b269166200699d265587299527d4e2859077c6c",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\verilator_suite.py": "0f5f3542c0c92b9cf57380ba00ccfbd8e78b7f566340f888b8222972579119f4",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\lib\\vision_reference.py": "cb599c2fb9122cea0391fdf043bed85676cdbac1438f53e6b32ae5a12cd7183e",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\tcl\\grab_jtag.tcl": "7ff3afdd5e713704af01ec9db23cb725e87eeaa31c443c2bc6a98f927a741362",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\tcl\\jtag_control.tcl": "cafd113702abed82913626e4539d95e88a246ae016045065d2bd8c38479445bc",
+    "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\tcl\\timing_check.tcl": "c1fbeef2f6b5ef9a4f7a213e45ee4c61c781b60c68167da265cf0d0027fbabde",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\MemberBCdc.sdc": "c7bab195aed4f9684daf61267f7f14534d62071681975bc054cec495d5fd494a",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\MemberCIntegration.sdc": "1346a012dfb49dd0e0a2d4f145350135c9fb5dab2025b8706f4f768db1eeb279",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\PartBDebug.qpf": "4573096ea666044c9b73346a96615200bd6efeee80b73aadb5c71ce673ca5d0f",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\PartBDebug.qsf": "aa8a110993aa7761d2a06e322ca536e7019866b82f92c6ade1e09d916e85d59d",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\PartBDebug.sdc": "f43fbdae3a7d06efc256918ca0605c7f2f3868c907ff603b7806a9ac0a0ca031",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\vga_sink.qsys": "5942928415e94927c7d0521c50e837ca0e6e9fd0f036a0ef103ba8e7cefdf16d",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\capture\\cameraStreamBridge.sv": "f9bc22e35da1ec87111a058319f4915a693b65cd121c3c82461d3a1204ba70f3",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\capture\\clock_divider.sv": "2eea9e58a6c64c40bbc701012f596e6076e70867b50151513630378278070c42",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\capture\\i2c_master.sv": "466847848a5f17e8af0b954b0418fe0ece0dfcb743d72ce19f1eda7483d7824a",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\capture\\ov7670_capture.sv": "883a8f8ce6d65524b41d96b66fe1642227e8d6fd90983484174ddf6e29cd60d1",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\capture\\ov7670_config.sv": "5c679f7a5f638cdeb9e38a5147e5edc8fff75490200506629ac1b121cd78c9ae",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\common\\asyncPixelFifo.sv": "542ec953cb7a8ec0968d06207d1c57d4bb18d3040111589f8b1b3b7a8d9b905d",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\common\\camera_pkg.sv": "45c8a5661399a2d532a64b38ccbebf0fa90f7667ca4bb5b6bf1dc9aa10227b8d",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\common\\heldBusCdc.sv": "a382e9b0af5ab44e1f004173500ace0df7e4c33a85b022648200d87d69fae72d",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\common\\memberBBuildId.svh": "d12ae049feb14cffdc805ec5b488db437eb51073c2f6fc5745a8032e294c1749",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\common\\perception_pkg.sv": "f46e579b74470a827ccf44f8feb1407d060fd6a8d5a07b4f7fffe576f02dfda4",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\common\\video_pll.sv": "65bfdd798c15f8677c338eacb6dca28b04fd8ea29aac2d0b6e5010829b13a8bd",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\common\\vision_pkg.sv": "ae905259d577fa0e9cffc0e72ff4c0bfd8aaf69f5e28cf650636dc4f2df0bb23",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\frame_snap.sv": "93ae5bd32da82206b3f27d4de1ea421756bb89b324df040d97122256a765acc6",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\memberBDebug.sv": "363289b97c8ee3705658886081ec8052624283d0c4ce7f5622f9146a414cf3c8",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\memberBVgaContour.sv": "79e5b0cb94c8a3b37479b10751dc2d4a22527fc6a74bf659a51263a7ed69cab8",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\memberBVgaDiagnostics.sv": "02d5f44dc27558aa52632e632ffef087d87f6778d6c7c046a1f049489925b633",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\memberBVgaHsv.sv": "04936233165d24fa8dfb93087e0de91d1d48c4f8aa61d41349cd53c4a6dc3bea",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\memberBVgaLabels.sv": "43e165dcf54458a632a09406b632ac95598f96842fc4ebb8c8f322e2593f5291",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\memberBVgaModeSwitch.sv": "897ffe7878f1642894991f61cb6aa52cce49922ab9059f7c2cb5b326138b26bb",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\memberBVgaOverlay.sv": "008851fcea9a3b8bd0d3d659cc40dd540f90a4008ed435698622959ac4409547",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\snapshot_probes.sv": "d71e1422827ffd0cbdfe5b39fac4e6d4edd50b8adebc9d8eddb0061b20f7d389",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\debug\\snapshot_ram.sv": "9c3e48932fce35de40de402e38fdd2521e0b9f2627a2a6ae0d4e8a71ee2b0749",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\display\\camera_display.sv": "0a53644e8c2af1b0e4be77ae3282b6436aa9952165616f20862c787b22a3751b",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\display\\frame_buffer.sv": "0e54b911566ea57982deda9de31cf4372ccb39645ff8835a8a465fdf51086993",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\interaction\\colourSampler.sv": "7e68d175046502be5143dd678e1b78cf2149456bcc95a107b3380bb31f241d0d",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\interaction\\fixedSheetInteraction.sv": "07d06b61882a2eab53bbf48ccc83a419776b7b61a518f3b91630e587a8193852",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\blink.sv": "84630ca26f8f9aa062f2be252c9eff6bf99bab9e453ade72fee249247597e05c",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\chassis_command.sv": "dc704bc9b6b118c757987516b8ad15514d73a9f6e024b9a2379450fcdf22df23",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\hex_digit.sv": "e3c1613dcefb631adc6fd6bb24d1fd48b44452a743c62d542f488809f7813ea1",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\memberCBoard.sv": "f30b87d7d855d238bc2cf05d576ba9ca863ca7684519b03abb2e926b3a2fe031",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\member_c_control.sv": "0e029f6bdb9740a8c9626a52e397adff1ceb7577940bf7408dbca81a9e3c23f8",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\motion_fsm.sv": "f301e99d4c6ec97b64785bf9727356b67fb187b0061e8eb9ce555adbe60378fd",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\nec_decoder.sv": "99f95de1bb6150db364a7c1692d9603dce32edcbf1193c23e35dd2b6d92022a0",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\perception_adapter.sv": "9d107de79d908fc503cb35d5d4a3677a5cd823ddbc23b33c980ef3dcaec0907e",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\safety_arbiter.sv": "baa25fa2227e306bd94597b06c05fc44da95ce6cefd02a1c8848438e975b2b67",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\sonar_guard.sv": "6f792f03808ffebe459842cd0755c51dfaa6946bfa24dbcaa59e5eecb5120d0f",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\sonar_pll.sv": "703bbc3591b316eef57e3d37d270580d098e2ac0484c2ab94b800f7c5b3615e7",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\sonar_range.sv": "b69134ef4ed17e734bb0c7e581849e9ea1b59f01fbd73730728c0f42568fa7df",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\uart_rx.sv": "9f85ec23ea4770e2c6e31c2591bcd9e1a1ff61910b785b270bd4b194c987da6a",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\uart_tx.sv": "d142568a145c1acde7dd9d9183cbb88742ddddd170e615ca4d41141dfcc27ec6",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\top\\echo7IntegratedTop.sv": "8e4567db7f9e94a263ab62cb0db7feb4a74579844934d075d2a513bf94756188",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\top\\perceptionCore.sv": "f9e5b20881faf93244da92def77e418ff326d3b3f905d21d5176a840e40d7b58",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\tracking\\targetTracker.sv": "f868f6ad34426a650a9cfd864082dd915fe4c088bc1f02187cbbb659b5dcb290",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\vision\\boundedCandidates.sv": "b91dab5f93234b99f07fb56de6767838247ea15f3c107354317c4453ebd0cd45",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\vision\\candidate_pkg.sv": "9bf00b0b5e232f406d359f8654e50c91b3282a0016724a057d2e8810a34099a6",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\vision\\causalMaskCleanup.sv": "8e419dc6f1eba9e18fc7f75a7761d2d11fdf8dfbc382014e0c32a529d8242012",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\vision\\glyphBanks.sv": "c094109d785d66223a3e07c8b219e027eb5bc647f9271f51198f62ae1c85a5a3",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\vision\\horizontalRunFilter.sv": "0c1c921b0392618018fd83b743d306ed2bc6c7b6b4439d4b7ab6715d5d3fbc5d",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\vision\\hsvColourGate.sv": "6bfce98caac8e63af8c87e2202b8d6f4a5d19e2d8b4c16154e7d0c8f6ab20b72",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\vision\\markerQueryStore.sv": "87988ecea31aa382a7cdf7b10e30b4cb496d878ea62f933feddcc71afc57386b",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\vision\\nativeAnchorReader.sv": "85da2e65f078f7918f32f8a16d2ebe45200b5f6f93ca9c86dbba0835d5ef2e30",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\vision\\projectiveMarkerReader.sv": "24e226d071922debb06e07716f70614353369e6af261d3a02e300ecc14596860",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\check_integration.py": "ffcda7ee877a413fd8f8bb88cbe7f67e74ba2653544a8113820fa9c3b9b7b33f",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\run.do": "e7978b3a152271e48c99e180a45bd10319d52c9e14d8922572df79debe0fec28",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\run_integration.ps1": "9e1f0b9cdd94662034cbff99cc1504a52af6e69de18d2e03c8ec5ca753b97ebc",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\board_fixture.svh": "a68fe9a0d1e85cbf5d73f9918d7b6b3d782d3f0b08a051d964adbb2a16235951",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\memberBDebug_tb.sv": "cdcebf664632cc02fb2268feaa04c4a10c3946ca9ab4a20c0a2727603217cd64",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\tb_integrated_link.sv": "06f804eb27bda6100af4fec75c524796f96eefc5b65ae71978bb0efa2c23714f",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\tb_integrated_pins.sv": "51f76e54d2892e414959bfc356a8ed4ec574f5f96f40e6b6bab6751d3706764f",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\tb_jtag_ownership.sv": "bafd102aba6b56656af25a3117123c26b662946cbb5a9a62c2cd4a8a0894b2ca",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\vga_sink_sim.sv": "512903e3164252c3225fb7e0fe89febdaa1d1303a621c6377b19b83c0371f6e6",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\hcsr04_model.sv": "6923b305ba9cc0a15fd4817ec11734d3ae6b46bfc6bfb785c175213b93c93930",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_member_c.sv": "a6bd1eb6a7baa6fcde2f6727ab666487c24b6c9f009730f91b12236762389d18",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_motion_uart.sv": "2b52a806e31cc8fbcca9bdc97d22cbe382aeb8fd4cb7b2f4a8f1fed3902d914a",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_safety_arbiter.sv": "5e72363822012665bc6b9b63427e81187dabea6bef26824af12a0c1f7e566656",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_uart_stop_priority.sv": "1cc33c752c548ebd6ed9fdebf27186755c0c9ee4feb75545afe89a2f6f7f7f9c",
+    "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_wheel_uart.sv": "02cae95564d857d48c45417ab0871adb2b8c35c4a2c045c362fb0ebd5a639131",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\quartus\\check_timing.tcl": "17654b9a53d8f46c859725cb2e4e0526aa1eae2b0f76421ff9930622f5740095",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\quartus\\hwtest.qpf": "6fdad2ad059f5f289586febcb1eb46d2c75fceb066a64d1786fe82fe9a41aeae",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\quartus\\hwtest.qsf": "2a7a77328aa061255758bbeeb423fa5cf7ab2f70f39a455cf82ffd8e64aac744",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\quartus\\hwtest.sdc": "5553963681ce0fac9d789ec8af5635f33a699d65ea810adc0467bde33a190158",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\quartus\\j3_pins.qsf": "521652797aa8e12935147ea4eea512f3cf4cd3bbe6746eb5f0157bd255398456",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\blink.sv": "84630ca26f8f9aa062f2be252c9eff6bf99bab9e453ade72fee249247597e05c",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\chassis_command.sv": "dc704bc9b6b118c757987516b8ad15514d73a9f6e024b9a2379450fcdf22df23",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\hex_digit.sv": "e3c1613dcefb631adc6fd6bb24d1fd48b44452a743c62d542f488809f7813ea1",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\ir_drive.sv": "6419d71550c41cf0299514576f5240bdc15460be1f2a037e2c14935819f03977",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\member_c_control.sv": "0e029f6bdb9740a8c9626a52e397adff1ceb7577940bf7408dbca81a9e3c23f8",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\motion_fsm.sv": "f301e99d4c6ec97b64785bf9727356b67fb187b0061e8eb9ce555adbe60378fd",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\perception_adapter.sv": "9d107de79d908fc503cb35d5d4a3677a5cd823ddbc23b33c980ef3dcaec0907e",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\perception_pkg.sv": "f46e579b74470a827ccf44f8feb1407d060fd6a8d5a07b4f7fffe576f02dfda4",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\safety_arbiter.sv": "baa25fa2227e306bd94597b06c05fc44da95ce6cefd02a1c8848438e975b2b67",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\sonar_guard.sv": "6f792f03808ffebe459842cd0755c51dfaa6946bfa24dbcaa59e5eecb5120d0f",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\sonar_pll.sv": "703bbc3591b316eef57e3d37d270580d098e2ac0484c2ab94b800f7c5b3615e7",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\sonar_range.sv": "b69134ef4ed17e734bb0c7e581849e9ea1b59f01fbd73730728c0f42568fa7df",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\top_level.sv": "0858d33efc152ac92315e7383a5b964f96befe9e640c6e19ab5c23657493d8eb",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\uart_rx.sv": "9f85ec23ea4770e2c6e31c2591bcd9e1a1ff61910b785b270bd4b194c987da6a",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\rtl\\uart_tx.sv": "d142568a145c1acde7dd9d9183cbb88742ddddd170e615ca4d41141dfcc27ec6",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\tb\\hcsr04_model.sv": "6923b305ba9cc0a15fd4817ec11734d3ae6b46bfc6bfb785c175213b93c93930",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\tb\\run.do": "e7978b3a152271e48c99e180a45bd10319d52c9e14d8922572df79debe0fec28",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\tb\\run_tests.ps1": "d5c1db33f6383ec98bc74b9acf4cbe9d8f8d72895f3c8dbeaab4820a4f62b3ec",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\tb\\tb_ir_reader.sv": "23ea9b24232caa625c3af52e354adb99b742534fb8ec703b7fa955388d4e56ab",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\tb\\tb_member_c.sv": "a6bd1eb6a7baa6fcde2f6727ab666487c24b6c9f009730f91b12236762389d18",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\tb\\tb_motion_uart.sv": "2b52a806e31cc8fbcca9bdc97d22cbe382aeb8fd4cb7b2f4a8f1fed3902d914a",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\tb\\tb_safety_arbiter.sv": "5e72363822012665bc6b9b63427e81187dabea6bef26824af12a0c1f7e566656",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\tb\\tb_uart_stop_priority.sv": "1cc33c752c548ebd6ed9fdebf27186755c0c9ee4feb75545afe89a2f6f7f7f9c",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\hwtest\\tb\\tb_wheel_uart.sv": "02cae95564d857d48c45417ab0871adb2b8c35c4a2c045c362fb0ebd5a639131",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\ir\\rtl\\nec_decoder.sv": "99f95de1bb6150db364a7c1692d9603dce32edcbf1193c23e35dd2b6d92022a0",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\sonar\\rtl\\sonar_pll.sv": "c1cc454af5ee33a00ba3a8e16d963c4cd37b5a0ed9a2e3033b6bf8443c615e73",
+    "C:\\Quartus_Projects\\test code\\mtrx3700-hwtest-src\\sonar\\rtl\\sonar_range.sv": "8b98255d0740cfd5ebc388f4d2f9f17feb26edd525cccb5cdab25d7ef691122d"
+  },
+  "copies": {
+    "rtl/common/camera_pkg.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\camera_pkg.sv",
+      "sha256": "45c8a5661399a2d532a64b38ccbebf0fa90f7667ca4bb5b6bf1dc9aa10227b8d"
+    },
+    "rtl/capture/clock_divider.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\clock_divider.sv",
+      "sha256": "2eea9e58a6c64c40bbc701012f596e6076e70867b50151513630378278070c42"
+    },
+    "rtl/capture/i2c_master.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\i2c_master.sv",
+      "sha256": "466847848a5f17e8af0b954b0418fe0ece0dfcb743d72ce19f1eda7483d7824a"
+    },
+    "rtl/capture/ov7670_config.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\ov7670_config.sv",
+      "sha256": "5c679f7a5f638cdeb9e38a5147e5edc8fff75490200506629ac1b121cd78c9ae"
+    },
+    "rtl/capture/ov7670_capture.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\ov7670_capture.sv",
+      "sha256": "883a8f8ce6d65524b41d96b66fe1642227e8d6fd90983484174ddf6e29cd60d1"
+    },
+    "rtl/display/frame_buffer.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\display\\frame_buffer.sv",
+      "sha256": "0e54b911566ea57982deda9de31cf4372ccb39645ff8835a8a465fdf51086993"
+    },
+    "rtl/display/camera_display.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\display\\camera_display.sv",
+      "sha256": "0a53644e8c2af1b0e4be77ae3282b6436aa9952165616f20862c787b22a3751b"
+    },
+    "rtl/common/video_pll.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\video_pll.sv",
+      "sha256": "65bfdd798c15f8677c338eacb6dca28b04fd8ea29aac2d0b6e5010829b13a8bd"
+    },
+    "rtl/debug/snapshot_ram.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\snapshot_ram.sv",
+      "sha256": "9c3e48932fce35de40de402e38fdd2521e0b9f2627a2a6ae0d4e8a71ee2b0749"
+    },
+    "rtl/debug/snapshot_probes.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\snapshot_probes.sv",
+      "sha256": "d71e1422827ffd0cbdfe5b39fac4e6d4edd50b8adebc9d8eddb0061b20f7d389"
+    },
+    "rtl/debug/frame_snap.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\frame_snap.sv",
+      "sha256": "93ae5bd32da82206b3f27d4de1ea421756bb89b324df040d97122256a765acc6"
+    },
+    "rtl/vision/candidate_pkg.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\candidate_pkg.sv",
+      "sha256": "9bf00b0b5e232f406d359f8654e50c91b3282a0016724a057d2e8810a34099a6"
+    },
+    "rtl/vision/causalMaskCleanup.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\causalMaskCleanup.sv",
+      "sha256": "8e419dc6f1eba9e18fc7f75a7761d2d11fdf8dfbc382014e0c32a529d8242012"
+    },
+    "rtl/vision/boundedCandidates.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\boundedCandidates.sv",
+      "sha256": "b91dab5f93234b99f07fb56de6767838247ea15f3c107354317c4453ebd0cd45"
+    },
+    "rtl/common/perception_pkg.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\perception_pkg.sv",
+      "sha256": "f46e579b74470a827ccf44f8feb1407d060fd6a8d5a07b4f7fffe576f02dfda4"
+    },
+    "rtl/common/vision_pkg.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\vision_pkg.sv",
+      "sha256": "6b8ef37e41a1a8474bd4a5885c6d8a01617783410602ef5087f8cc8ddfdfd156"
+    },
+    "rtl/common/heldBusCdc.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\heldBusCdc.sv",
+      "sha256": "a382e9b0af5ab44e1f004173500ace0df7e4c33a85b022648200d87d69fae72d"
+    },
+    "rtl/common/asyncPixelFifo.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\asyncPixelFifo.sv",
+      "sha256": "542ec953cb7a8ec0968d06207d1c57d4bb18d3040111589f8b1b3b7a8d9b905d"
+    },
+    "rtl/capture/cameraStreamBridge.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\capture\\cameraStreamBridge.sv",
+      "sha256": "f9bc22e35da1ec87111a058319f4915a693b65cd121c3c82461d3a1204ba70f3"
+    },
+    "rtl/vision/glyphBanks.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\glyphBanks.sv",
+      "sha256": "c094109d785d66223a3e07c8b219e027eb5bc647f9271f51198f62ae1c85a5a3"
+    },
+    "rtl/vision/nativeAnchorReader.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\nativeAnchorReader.sv",
+      "sha256": "943f3330ac0550168c76ad30b8d5a90abcc8f27cdae4768ffdd4a0eae7f8348c"
+    },
+    "rtl/vision/mainColourSupportReader.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\mainColourSupportReader.sv",
+      "sha256": "9a9892a5a6d0955cc1106f1b07b11ef66537b07bc27514184ed7d81d64ddd47e"
+    },
+    "rtl/vision/projectiveMarkerReader.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\projectiveMarkerReader.sv",
+      "sha256": "ea94753ce873dd76acf292c26beef20944fa842d3f77a6c1c6d50c4a15d01054"
+    },
+    "rtl/interaction/calibrationPointMapper.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\interaction\\calibrationPointMapper.sv",
+      "sha256": "28dabf7418c2dce9053ef6b136ec41d27f71b9d8dbcbbb9a1bce609998f05e4b"
+    },
+    "rtl/interaction/calibrationGeometry.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\interaction\\calibrationGeometry.sv",
+      "sha256": "f6e981c8f5118d689d89f0e51d36db7c8af5303874d8d706dc67697e700279c9"
+    },
+    "rtl/vision/markerQueryStore.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\markerQueryStore.sv",
+      "sha256": "87988ecea31aa382a7cdf7b10e30b4cb496d878ea62f933feddcc71afc57386b"
+    },
+    "rtl/tracking/targetTracker.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\tracking\\targetTracker.sv",
+      "sha256": "f868f6ad34426a650a9cfd864082dd915fe4c088bc1f02187cbbb659b5dcb290"
+    },
+    "rtl/interaction/colourSampler.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\interaction\\colourSampler.sv",
+      "sha256": "e489c154529daef2b2b0e2595bfcdb14d3ac1dc5a5d27cd1365510e9b2a3820e"
+    },
+    "rtl/interaction/fixedSheetInteraction.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\interaction\\fixedSheetInteraction.sv",
+      "sha256": "15808bbc55d711a2df8b81b9b6c3f1309599f559c738de8729386574dc938920"
+    },
+    "rtl/debug/memberBDebug.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBDebug.sv",
+      "sha256": "93bd3993dcf2894f2cb7737a5a2dd631a19ab0e3d4a02541016eb41d4eda6028"
+    },
+    "rtl/debug/memberBVgaContour.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaContour.sv",
+      "sha256": "79e5b0cb94c8a3b37479b10751dc2d4a22527fc6a74bf659a51263a7ed69cab8"
+    },
+    "rtl/debug/memberBVgaLabels.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaLabels.sv",
+      "sha256": "43e165dcf54458a632a09406b632ac95598f96842fc4ebb8c8f322e2593f5291"
+    },
+    "rtl/debug/memberBVgaHsv.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaHsv.sv",
+      "sha256": "04936233165d24fa8dfb93087e0de91d1d48c4f8aa61d41349cd53c4a6dc3bea"
+    },
+    "rtl/debug/memberBVgaDiagnostics.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaDiagnostics.sv",
+      "sha256": "c141f393c356e339872605fd41678cb29d9563af73f6000e2d31b9cae99a63a8"
+    },
+    "rtl/debug/memberBVgaOverlay.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaOverlay.sv",
+      "sha256": "008851fcea9a3b8bd0d3d659cc40dd540f90a4008ed435698622959ac4409547"
+    },
+    "rtl/debug/memberBVgaModeSwitch.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\debug\\memberBVgaModeSwitch.sv",
+      "sha256": "897ffe7878f1642894991f61cb6aa52cce49922ab9059f7c2cb5b326138b26bb"
+    },
+    "rtl/top/perceptionCore.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\top\\perceptionCore.sv",
+      "sha256": "f22c8502d4fc6a9c7041fad69dbb019295c0283025a61af516591575cd17a933"
+    },
+    "rtl/vision/hsvColourGate.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\hsvColourGate.sv",
+      "sha256": "6bfce98caac8e63af8c87e2202b8d6f4a5d19e2d8b4c16154e7d0c8f6ab20b72"
+    },
+    "rtl/vision/horizontalRunFilter.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\vision\\horizontalRunFilter.sv",
+      "sha256": "0c1c921b0392618018fd83b743d306ed2bc6c7b6b4439d4b7ab6715d5d3fbc5d"
+    },
+    "rtl/common/memberBBuildId.svh": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\rtl\\common\\memberBBuildId.svh",
+      "sha256": "d12ae049feb14cffdc805ec5b488db437eb51073c2f6fc5745a8032e294c1749"
+    },
+    "quartus/PartBDebug.qpf": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\PartBDebug.qpf",
+      "sha256": "4573096ea666044c9b73346a96615200bd6efeee80b73aadb5c71ce673ca5d0f"
+    },
+    "quartus/MemberBCdc.sdc": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\MemberBCdc.sdc",
+      "sha256": "c7bab195aed4f9684daf61267f7f14534d62071681975bc054cec495d5fd494a"
+    },
+    "quartus/vga_sink.qsys": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\vga_sink.qsys",
+      "sha256": "5942928415e94927c7d0521c50e837ca0e6e9fd0f036a0ef103ba8e7cefdf16d"
+    },
+    "OWNERS.md": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\OWNERS.md",
+      "sha256": "6a2951e7f49f7790c50e1e269094cbacab1407956d72b3e3b4f14cc01b9efc4a"
+    },
+    "rtl/top/echo7IntegratedTop.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\top\\echo7IntegratedTop.sv",
+      "sha256": "8e4567db7f9e94a263ab62cb0db7feb4a74579844934d075d2a513bf94756188"
+    },
+    "quartus/PartBDebug.sdc": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\PartBDebug.sdc",
+      "sha256": "f43fbdae3a7d06efc256918ca0605c7f2f3868c907ff603b7806a9ac0a0ca031"
+    },
+    "quartus/MemberCIntegration.sdc": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\MemberCIntegration.sdc",
+      "sha256": "1346a012dfb49dd0e0a2d4f145350135c9fb5dab2025b8706f4f768db1eeb279"
+    },
+    "rtl/member_c/blink.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\blink.sv",
+      "sha256": "84630ca26f8f9aa062f2be252c9eff6bf99bab9e453ade72fee249247597e05c"
+    },
+    "rtl/member_c/chassis_command.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\chassis_command.sv",
+      "sha256": "dc704bc9b6b118c757987516b8ad15514d73a9f6e024b9a2379450fcdf22df23"
+    },
+    "rtl/member_c/hex_digit.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\hex_digit.sv",
+      "sha256": "e3c1613dcefb631adc6fd6bb24d1fd48b44452a743c62d542f488809f7813ea1"
+    },
+    "rtl/member_c/memberCBoard.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\memberCBoard.sv",
+      "sha256": "f30b87d7d855d238bc2cf05d576ba9ca863ca7684519b03abb2e926b3a2fe031"
+    },
+    "rtl/member_c/member_c_control.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\member_c_control.sv",
+      "sha256": "0e029f6bdb9740a8c9626a52e397adff1ceb7577940bf7408dbca81a9e3c23f8"
+    },
+    "rtl/member_c/motion_fsm.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\motion_fsm.sv",
+      "sha256": "f301e99d4c6ec97b64785bf9727356b67fb187b0061e8eb9ce555adbe60378fd"
+    },
+    "rtl/member_c/nec_decoder.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\nec_decoder.sv",
+      "sha256": "99f95de1bb6150db364a7c1692d9603dce32edcbf1193c23e35dd2b6d92022a0"
+    },
+    "rtl/member_c/perception_adapter.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\perception_adapter.sv",
+      "sha256": "9d107de79d908fc503cb35d5d4a3677a5cd823ddbc23b33c980ef3dcaec0907e"
+    },
+    "rtl/member_c/safety_arbiter.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\safety_arbiter.sv",
+      "sha256": "baa25fa2227e306bd94597b06c05fc44da95ce6cefd02a1c8848438e975b2b67"
+    },
+    "rtl/member_c/sonar_guard.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\sonar_guard.sv",
+      "sha256": "6f792f03808ffebe459842cd0755c51dfaa6946bfa24dbcaa59e5eecb5120d0f"
+    },
+    "rtl/member_c/sonar_pll.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\sonar_pll.sv",
+      "sha256": "703bbc3591b316eef57e3d37d270580d098e2ac0484c2ab94b800f7c5b3615e7"
+    },
+    "rtl/member_c/sonar_range.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\sonar_range.sv",
+      "sha256": "b69134ef4ed17e734bb0c7e581849e9ea1b59f01fbd73730728c0f42568fa7df"
+    },
+    "rtl/member_c/uart_rx.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\uart_rx.sv",
+      "sha256": "9f85ec23ea4770e2c6e31c2591bcd9e1a1ff61910b785b270bd4b194c987da6a"
+    },
+    "rtl/member_c/uart_tx.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\rtl\\member_c\\uart_tx.sv",
+      "sha256": "d142568a145c1acde7dd9d9183cbb88742ddddd170e615ca4d41141dfcc27ec6"
+    },
+    "tests/run.do": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\run.do",
+      "sha256": "e7978b3a152271e48c99e180a45bd10319d52c9e14d8922572df79debe0fec28"
+    },
+    "tests/run_integration.ps1": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\run_integration.ps1",
+      "sha256": "9e1f0b9cdd94662034cbff99cc1504a52af6e69de18d2e03c8ec5ca753b97ebc"
+    },
+    "tests/integration/board_fixture.svh": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\board_fixture.svh",
+      "sha256": "a68fe9a0d1e85cbf5d73f9918d7b6b3d782d3f0b08a051d964adbb2a16235951"
+    },
+    "tests/integration/memberBDebug_tb.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tests\\rtl\\memberBDebug_tb.sv",
+      "sha256": "75ab4d6f63fc5afd009476330ceabb68967f35bdd7572962f0aea1c3f781ea23"
+    },
+    "tests/integration/tb_integrated_link.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\tb_integrated_link.sv",
+      "sha256": "06f804eb27bda6100af4fec75c524796f96eefc5b65ae71978bb0efa2c23714f"
+    },
+    "tests/integration/tb_integrated_pins.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\tb_integrated_pins.sv",
+      "sha256": "51f76e54d2892e414959bfc356a8ed4ec574f5f96f40e6b6bab6751d3706764f"
+    },
+    "tests/integration/tb_jtag_ownership.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\tb_jtag_ownership.sv",
+      "sha256": "bafd102aba6b56656af25a3117123c26b662946cbb5a9a62c2cd4a8a0894b2ca"
+    },
+    "tests/integration/vga_sink_sim.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\integration\\vga_sink_sim.sv",
+      "sha256": "512903e3164252c3225fb7e0fe89febdaa1d1303a621c6377b19b83c0371f6e6"
+    },
+    "tests/member_c/hcsr04_model.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\hcsr04_model.sv",
+      "sha256": "6923b305ba9cc0a15fd4817ec11734d3ae6b46bfc6bfb785c175213b93c93930"
+    },
+    "tests/member_c/tb_member_c.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_member_c.sv",
+      "sha256": "a6bd1eb6a7baa6fcde2f6727ab666487c24b6c9f009730f91b12236762389d18"
+    },
+    "tests/member_c/tb_motion_uart.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_motion_uart.sv",
+      "sha256": "2b52a806e31cc8fbcca9bdc97d22cbe382aeb8fd4cb7b2f4a8f1fed3902d914a"
+    },
+    "tests/member_c/tb_safety_arbiter.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_safety_arbiter.sv",
+      "sha256": "5e72363822012665bc6b9b63427e81187dabea6bef26824af12a0c1f7e566656"
+    },
+    "tests/member_c/tb_uart_stop_priority.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_uart_stop_priority.sv",
+      "sha256": "1cc33c752c548ebd6ed9fdebf27186755c0c9ee4feb75545afe89a2f6f7f7f9c"
+    },
+    "tests/member_c/tb_wheel_uart.sv": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\tests\\member_c\\tb_wheel_uart.sv",
+      "sha256": "02cae95564d857d48c45417ab0871adb2b8c35c4a2c045c362fb0ebd5a639131"
+    },
+    "tests/vectors/sheet_320x240_rgb565.hex": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\assets\\markers\\sheet_320x240_rgb565.hex",
+      "sha256": "cabb6bc2ade2de13033e83bce1912ed974e6522ddcbf261122b9dafbd9ebb2cc"
+    },
+    "tests/reference_member_b_timing_check.tcl": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\tools\\tcl\\timing_check.tcl",
+      "sha256": "c1fbeef2f6b5ef9a4f7a213e45ee4c61c781b60c68167da265cf0d0027fbabde"
+    }
+  },
+  "modified_copies": [
+    "rtl/debug/memberBDebug.sv"
+  ],
+  "new_b_baseline": {
+    "fit.summary": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\output_files\\PartBDebug.fit.summary",
+      "sha256": "e41b96cbd0be314dab9d663f4de20c5a46df7ad9d336886423269a9a27fb9d0e",
+      "text": "Fitter Status : Successful - Tue Nov 03 23:27:43 2026\nQuartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition\nRevision Name : PartBDebug\nTop-level Entity Name : perceptionDemoTop\nFamily : Cyclone V\nDevice : 5CSEMA5F31C6\nTiming Models : Final\nLogic utilization (in ALMs) : 29,690 / 32,070 ( 93 % )\nTotal registers : 40599\nTotal pins : 111 / 457 ( 24 % )\nTotal virtual pins : 0\nTotal block memory bits : 2,806,736 / 4,065,280 ( 69 % )\nTotal RAM Blocks : 356 / 397 ( 90 % )\nTotal DSP Blocks : 57 / 87 ( 66 % )\nTotal HSSI RX PCSs : 0\nTotal HSSI PMA RX Deserializers : 0\nTotal HSSI TX PCSs : 0\nTotal HSSI PMA TX Serializers : 0\nTotal PLLs : 1 / 6 ( 17 % )\nTotal DLLs : 0 / 4 ( 0 % )\n"
+    },
+    "sta.summary": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\output_files\\PartBDebug.sta.summary",
+      "sha256": "99698634e6bbed601c751c929998021ed95cd8b90621a909607082655d945636",
+      "text": "------------------------------------------------------------\nTiming Analyzer Summary\n------------------------------------------------------------\n\nType  : Slow 1100mV 85C Model Setup 'CLOCK_50'\nSlack : 1.622\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 4.879\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'\nSlack : 10.083\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Setup 'PCLK'\nSlack : 17.332\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Setup 'sccb_clk'\nSlack : 9993.402\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.220\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'CLOCK_50'\nSlack : 0.222\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'PCLK'\nSlack : 0.224\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'\nSlack : 0.362\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'sccb_clk'\nSlack : 0.373\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'\nSlack : 23.543\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'\nSlack : 0.881\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.666\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'\nSlack : 8.872\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'\nSlack : 15.442\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 18.758\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'PCLK'\nSlack : 23.674\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'sccb_clk'\nSlack : 4999.285\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'CLOCK_50'\nSlack : 1.529\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 5.032\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'\nSlack : 10.183\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'PCLK'\nSlack : 17.321\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'sccb_clk'\nSlack : 9993.478\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.208\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'CLOCK_50'\nSlack : 0.210\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'PCLK'\nSlack : 0.211\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'\nSlack : 0.377\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'sccb_clk'\nSlack : 0.386\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'\nSlack : 24.014\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'\nSlack : 0.826\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.666\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'\nSlack : 8.904\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'\nSlack : 15.423\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 18.736\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'PCLK'\nSlack : 23.664\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'sccb_clk'\nSlack : 4999.227\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'CLOCK_50'\nSlack : 9.246\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'\nSlack : 13.024\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'PCLK'\nSlack : 17.637\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 19.725\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'sccb_clk'\nSlack : 9996.162\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'CLOCK_50'\nSlack : 0.128\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.130\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'PCLK'\nSlack : 0.144\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'\nSlack : 0.177\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'sccb_clk'\nSlack : 0.180\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'\nSlack : 26.490\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'\nSlack : 0.504\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.666\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'\nSlack : 8.479\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'\nSlack : 14.954\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 18.876\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'PCLK'\nSlack : 23.253\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'sccb_clk'\nSlack : 4999.566\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'CLOCK_50'\nSlack : 10.151\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'\nSlack : 13.513\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'PCLK'\nSlack : 17.997\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 21.468\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'sccb_clk'\nSlack : 9996.509\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'CLOCK_50'\nSlack : 0.114\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.118\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'PCLK'\nSlack : 0.131\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'\nSlack : 0.169\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'sccb_clk'\nSlack : 0.171\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'\nSlack : 27.375\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'\nSlack : 0.452\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.666\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'\nSlack : 8.433\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'\nSlack : 14.910\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 18.880\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'PCLK'\nSlack : 23.207\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'sccb_clk'\nSlack : 4999.556\nTNS   : 0.000\n\n------------------------------------------------------------\n"
+    },
+    "flow.rpt": {
+      "source": "C:\\Quartus_Projects\\ECHO72.0\\MTRX3700_MajorProject\\quartus\\output_files\\PartBDebug.flow.rpt",
+      "sha256": "1ce6eb71e7606973e7921eab95521aeee1298dcba7efb0c2fdf1ea542162fe61",
+      "text": "Flow report for PartBDebug\nTue Nov 03 23:30:08 2026\nQuartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition\n\n\n---------------------\n; Table of Contents ;\n---------------------\n  1. Legal Notice\n  2. Flow Summary\n  3. Flow Settings\n  4. Flow Non-Default Global Settings\n  5. Flow Elapsed Time\n  6. Flow OS Summary\n  7. Flow Log\n  8. Flow Messages\n  9. Flow Suppressed Messages\n\n\n\n----------------\n; Legal Notice ;\n----------------\nCopyright (C) 2018  Intel Corporation. All rights reserved.\nYour use of Intel Corporation's design tools, logic functions \nand other software and tools, and its AMPP partner logic \nfunctions, and any output files from any of the foregoing \n(including device programming or simulation files), and any \nassociated documentation or information are expressly subject \nto the terms and conditions of the Intel Program License \nSubscription Agreement, the Intel Quartus Prime License Agreement,\nthe Intel FPGA IP License Agreement, or other applicable license\nagreement, including, without limitation, that your use is for\nthe sole purpose of programming logic devices manufactured by\nIntel and sold by Intel or its authorized distributors.  Please\nrefer to the applicable agreement for further details.\n\n\n\n+-------------------------------------------------------------------------------+\n; Flow Summary                                                                  ;\n+---------------------------------+---------------------------------------------+\n; Flow Status                     ; Successful - Tue Nov 03 23:28:23 2026       ;\n; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;\n; Revision Name                   ; PartBDebug                                  ;\n; Top-level Entity Name           ; perceptionDemoTop                           ;\n; Family                          ; Cyclone V                                   ;\n; Device                          ; 5CSEMA5F31C6                                ;\n; Timing Models                   ; Final                                       ;\n; Logic utilization (in ALMs)     ; 29,690 / 32,070 ( 93 % )                    ;\n; Total registers                 ; 40599                                       ;\n; Total pins                      ; 111 / 457 ( 24 % )                          ;\n; Total virtual pins              ; 0                                           ;\n; Total block memory bits         ; 2,806,736 / 4,065,280 ( 69 % )              ;\n; Total DSP Blocks                ; 57 / 87 ( 66 % )                            ;\n; Total HSSI RX PCSs              ; 0                                           ;\n; Total HSSI PMA RX Deserializers ; 0                                           ;\n; Total HSSI TX PCSs              ; 0                                           ;\n; Total HSSI PMA TX Serializers   ; 0                                           ;\n; Total PLLs                      ; 1 / 6 ( 17 % )                              ;\n; Total DLLs                      ; 0 / 4 ( 0 % )                               ;\n+---------------------------------+---------------------------------------------+\n\n\n+-----------------------------------------+\n; Flow Settings                           ;\n+-------------------+---------------------+\n; Option            ; Setting             ;\n+-------------------+---------------------+\n; Start date & time ; 11/03/2026 21:57:17 ;\n; Main task         ; Compilation         ;\n; Revision Name     ; PartBDebug          ;\n+-------------------+---------------------+\n\n\n+-------------------------------------------------------------------------------------------------------------------------------+\n; Flow Non-Default Global Settings                                                                                              ;\n+-------------------------------------+----------------------------------------+---------------+-------------------+------------+\n; Assignment Name                     ; Value                                  ; Default Value ; Entity Name       ; Section Id ;\n+-------------------------------------+----------------------------------------+---------------+-------------------+------------+\n; COMPILER_SIGNATURE_ID               ; 1096692499901.179370343736620          ; --            ; --                ; --         ;\n; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                ; --         ;\n; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                ; --         ;\n; NUM_PARALLEL_PROCESSORS             ; 2                                      ; --            ; --                ; --         ;\n; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; perceptionDemoTop ; Top        ;\n; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; perceptionDemoTop ; Top        ;\n; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; perceptionDemoTop ; Top        ;\n; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --                ; --         ;\n; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                ; --         ;\n; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --                ; --         ;\n; SEARCH_PATH                         ; ../rtl/common                          ; --            ; --                ; --         ;\n; SEED                                ; 2                                      ; 1             ; --                ; --         ;\n; TOP_LEVEL_ENTITY                    ; perceptionDemoTop                      ; PartBDebug    ; --                ; --         ;\n; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001  ; --                ; --         ;\n+-------------------------------------+----------------------------------------+---------------+-------------------+------------+\n\n\n+--------------------------------------------------------------------------------------------------------------------------+\n; Flow Elapsed Time                                                                                                        ;\n+----------------------+--------------+-------------------------+---------------------+------------------------------------+\n; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;\n+----------------------+--------------+-------------------------+---------------------+------------------------------------+\n; Analysis & Synthesis ; 00:07:22     ; 1.1                     ; 5642 MB             ; 00:08:22                           ;\n; Fitter               ; 01:22:49     ; 1.1                     ; 7489 MB             ; 00:29:10                           ;\n; Assembler            ; 00:00:19     ; 1.0                     ; 5338 MB             ; 00:00:18                           ;\n; Timing Analyzer      ; 00:01:44     ; 1.7                     ; 6337 MB             ; 00:02:55                           ;\n; Total                ; 01:32:14     ; --                      ; --                  ; 00:40:45                           ;\n+----------------------+--------------+-------------------------+---------------------+------------------------------------+\n\n\n+------------------------------------------------------------------------------------+\n; Flow OS Summary                                                                    ;\n+----------------------+------------------+------------+------------+----------------+\n; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;\n+----------------------+------------------+------------+------------+----------------+\n; Analysis & Synthesis ; DESKTOP-39FL7AV  ; Windows 10 ; 10.0       ; x86_64         ;\n; Fitter               ; DESKTOP-39FL7AV  ; Windows 10 ; 10.0       ; x86_64         ;\n; Assembler            ; DESKTOP-39FL7AV  ; Windows 10 ; 10.0       ; x86_64         ;\n; Timing Analyzer      ; DESKTOP-39FL7AV  ; Windows 10 ; 10.0       ; x86_64         ;\n+----------------------+------------------+------------+------------+----------------+\n\n\n------------\n; Flow Log ;\n------------\nquartus_map --read_settings_files=on --write_settings_files=off PartBDebug -c PartBDebug\nquartus_fit --read_settings_files=off --write_settings_files=off PartBDebug -c PartBDebug\nquartus_asm --read_settings_files=off --write_settings_files=off PartBDebug -c PartBDebug\nquartus_sta PartBDebug -c PartBDebug\n\n\n\n"
+    }
+  },
+  "old_bc_baseline": {
+    "fit.summary": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\output_files\\PartBDebug.fit.summary",
+      "sha256": "00ebf9b9906b8af66e8e4cf6705647dc903042ccddd14cb981d4b8d25e8a1eb1",
+      "text": "Fitter Status : Successful - Wed Nov 04 07:13:11 2026\nQuartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition\nRevision Name : PartBDebug\nTop-level Entity Name : echo7IntegratedTop\nFamily : Cyclone V\nDevice : 5CSEMA5F31C6\nTiming Models : Final\nLogic utilization (in ALMs) : 28,302 / 32,070 ( 88 % )\nTotal registers : 37536\nTotal pins : 133 / 457 ( 29 % )\nTotal virtual pins : 0\nTotal block memory bits : 2,792,288 / 4,065,280 ( 69 % )\nTotal RAM Blocks : 349 / 397 ( 88 % )\nTotal DSP Blocks : 47 / 87 ( 54 % )\nTotal HSSI RX PCSs : 0\nTotal HSSI PMA RX Deserializers : 0\nTotal HSSI TX PCSs : 0\nTotal HSSI PMA TX Serializers : 0\nTotal PLLs : 2 / 6 ( 33 % )\nTotal DLLs : 0 / 4 ( 0 % )\n"
+    },
+    "sta.summary": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\output_files\\PartBDebug.sta.summary",
+      "sha256": "ad0d8a74316c65da72b7e5be18eb2871d56ec1ee66893f0fc65f93204923ac12",
+      "text": "------------------------------------------------------------\nTiming Analyzer Summary\n------------------------------------------------------------\n\nType  : Slow 1100mV 85C Model Setup 'CLOCK_50'\nSlack : 2.659\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 4.771\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'\nSlack : 9.141\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Setup 'PCLK'\nSlack : 13.818\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Setup 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 17.989\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Setup 'sccb_clk'\nSlack : 9994.391\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.219\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'CLOCK_50'\nSlack : 0.220\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'PCLK'\nSlack : 0.301\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.331\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'\nSlack : 0.362\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Hold 'sccb_clk'\nSlack : 0.373\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'\nSlack : 25.419\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'\nSlack : 0.824\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.138\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.666\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'\nSlack : 8.872\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 10.681\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'\nSlack : 15.276\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 18.739\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'PCLK'\nSlack : 23.716\nTNS   : 0.000\n\nType  : Slow 1100mV 85C Model Minimum Pulse Width 'sccb_clk'\nSlack : 4999.328\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'CLOCK_50'\nSlack : 2.821\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 4.908\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'\nSlack : 9.397\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'PCLK'\nSlack : 14.025\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 18.234\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Setup 'sccb_clk'\nSlack : 9994.484\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'CLOCK_50'\nSlack : 0.203\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.206\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'PCLK'\nSlack : 0.280\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.305\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'\nSlack : 0.378\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Hold 'sccb_clk'\nSlack : 0.387\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'\nSlack : 25.787\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'\nSlack : 0.779\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.138\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.666\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'\nSlack : 8.906\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 10.629\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'\nSlack : 15.236\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 18.723\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'PCLK'\nSlack : 23.692\nTNS   : 0.000\n\nType  : Slow 1100mV 0C Model Minimum Pulse Width 'sccb_clk'\nSlack : 4999.277\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'CLOCK_50'\nSlack : 9.415\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'\nSlack : 12.226\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'PCLK'\nSlack : 15.208\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 19.706\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 19.855\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Setup 'sccb_clk'\nSlack : 9996.768\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'CLOCK_50'\nSlack : 0.128\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.130\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'\nSlack : 0.177\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'PCLK'\nSlack : 0.178\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'sccb_clk'\nSlack : 0.180\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Hold 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.181\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'\nSlack : 27.698\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'\nSlack : 0.459\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.138\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.666\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'\nSlack : 8.479\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 10.934\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'\nSlack : 14.859\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 18.872\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'PCLK'\nSlack : 23.258\nTNS   : 0.000\n\nType  : Fast 1100mV 85C Model Minimum Pulse Width 'sccb_clk'\nSlack : 4999.603\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'CLOCK_50'\nSlack : 10.435\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'\nSlack : 12.836\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'PCLK'\nSlack : 15.936\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 20.032\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 21.498\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Setup 'sccb_clk'\nSlack : 9997.052\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'CLOCK_50'\nSlack : 0.108\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.120\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'PCLK'\nSlack : 0.161\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'\nSlack : 0.168\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 0.172\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Hold 'sccb_clk'\nSlack : 0.172\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'\nSlack : 28.413\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'\nSlack : 0.413\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.138\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'\nSlack : 1.666\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'\nSlack : 8.432\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'chassis|sonar_u|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 10.925\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'\nSlack : 14.822\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'video_pll_u|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'\nSlack : 18.876\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'PCLK'\nSlack : 23.227\nTNS   : 0.000\n\nType  : Fast 1100mV 0C Model Minimum Pulse Width 'sccb_clk'\nSlack : 4999.590\nTNS   : 0.000\n\n------------------------------------------------------------\n"
+    },
+    "flow.rpt": {
+      "source": "C:\\Quartus_Projects\\ECHO7_Integrated\\quartus\\output_files\\PartBDebug.flow.rpt",
+      "sha256": "8eb9a0135a3e52397ec750c941255e0ae02dfdd8ce67a2f18825e98560ec102d",
+      "text": "Flow report for PartBDebug\nWed Nov 04 07:15:06 2026\nQuartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition\n\n\n---------------------\n; Table of Contents ;\n---------------------\n  1. Legal Notice\n  2. Flow Summary\n  3. Flow Settings\n  4. Flow Non-Default Global Settings\n  5. Flow Elapsed Time\n  6. Flow OS Summary\n  7. Flow Log\n  8. Flow Messages\n  9. Flow Suppressed Messages\n\n\n\n----------------\n; Legal Notice ;\n----------------\nCopyright (C) 2018  Intel Corporation. All rights reserved.\nYour use of Intel Corporation's design tools, logic functions \nand other software and tools, and its AMPP partner logic \nfunctions, and any output files from any of the foregoing \n(including device programming or simulation files), and any \nassociated documentation or information are expressly subject \nto the terms and conditions of the Intel Program License \nSubscription Agreement, the Intel Quartus Prime License Agreement,\nthe Intel FPGA IP License Agreement, or other applicable license\nagreement, including, without limitation, that your use is for\nthe sole purpose of programming logic devices manufactured by\nIntel and sold by Intel or its authorized distributors.  Please\nrefer to the applicable agreement for further details.\n\n\n\n+-------------------------------------------------------------------------------+\n; Flow Summary                                                                  ;\n+---------------------------------+---------------------------------------------+\n; Flow Status                     ; Successful - Wed Nov 04 07:13:40 2026       ;\n; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;\n; Revision Name                   ; PartBDebug                                  ;\n; Top-level Entity Name           ; echo7IntegratedTop                          ;\n; Family                          ; Cyclone V                                   ;\n; Device                          ; 5CSEMA5F31C6                                ;\n; Timing Models                   ; Final                                       ;\n; Logic utilization (in ALMs)     ; 28,302 / 32,070 ( 88 % )                    ;\n; Total registers                 ; 37536                                       ;\n; Total pins                      ; 133 / 457 ( 29 % )                          ;\n; Total virtual pins              ; 0                                           ;\n; Total block memory bits         ; 2,792,288 / 4,065,280 ( 69 % )              ;\n; Total DSP Blocks                ; 47 / 87 ( 54 % )                            ;\n; Total HSSI RX PCSs              ; 0                                           ;\n; Total HSSI PMA RX Deserializers ; 0                                           ;\n; Total HSSI TX PCSs              ; 0                                           ;\n; Total HSSI PMA TX Serializers   ; 0                                           ;\n; Total PLLs                      ; 2 / 6 ( 33 % )                              ;\n; Total DLLs                      ; 0 / 4 ( 0 % )                               ;\n+---------------------------------+---------------------------------------------+\n\n\n+-----------------------------------------+\n; Flow Settings                           ;\n+-------------------+---------------------+\n; Option            ; Setting             ;\n+-------------------+---------------------+\n; Start date & time ; 11/04/2026 06:57:57 ;\n; Main task         ; Compilation         ;\n; Revision Name     ; PartBDebug          ;\n+-------------------+---------------------+\n\n\n+--------------------------------------------------------------------------------------------------------------------------------+\n; Flow Non-Default Global Settings                                                                                               ;\n+-------------------------------------+----------------------------------------+---------------+--------------------+------------+\n; Assignment Name                     ; Value                                  ; Default Value ; Entity Name        ; Section Id ;\n+-------------------------------------+----------------------------------------+---------------+--------------------+------------+\n; COMPILER_SIGNATURE_ID               ; 1096692499901.179373587743928          ; --            ; --                 ; --         ;\n; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                 ; --         ;\n; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                 ; --         ;\n; NUM_PARALLEL_PROCESSORS             ; 2                                      ; --            ; --                 ; --         ;\n; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; echo7IntegratedTop ; Top        ;\n; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; echo7IntegratedTop ; Top        ;\n; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; echo7IntegratedTop ; Top        ;\n; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --                 ; --         ;\n; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                 ; --         ;\n; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --                 ; --         ;\n; SEARCH_PATH                         ; ../rtl/common                          ; --            ; --                 ; --         ;\n; SEED                                ; 2                                      ; 1             ; --                 ; --         ;\n; TOP_LEVEL_ENTITY                    ; echo7IntegratedTop                     ; PartBDebug    ; --                 ; --         ;\n; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001  ; --                 ; --         ;\n+-------------------------------------+----------------------------------------+---------------+--------------------+------------+\n\n\n+--------------------------------------------------------------------------------------------------------------------------+\n; Flow Elapsed Time                                                                                                        ;\n+----------------------+--------------+-------------------------+---------------------+------------------------------------+\n; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;\n+----------------------+--------------+-------------------------+---------------------+------------------------------------+\n; Analysis & Synthesis ; 00:05:15     ; 1.1                     ; 5643 MB             ; 00:06:01                           ;\n; Fitter               ; 00:09:52     ; 1.2                     ; 7425 MB             ; 00:16:18                           ;\n; Assembler            ; 00:00:18     ; 1.0                     ; 5311 MB             ; 00:00:17                           ;\n; Timing Analyzer      ; 00:01:25     ; 1.8                     ; 6266 MB             ; 00:02:26                           ;\n; Total                ; 00:16:50     ; --                      ; --                  ; 00:25:02                           ;\n+----------------------+--------------+-------------------------+---------------------+------------------------------------+\n\n\n+------------------------------------------------------------------------------------+\n; Flow OS Summary                                                                    ;\n+----------------------+------------------+------------+------------+----------------+\n; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;\n+----------------------+------------------+------------+------------+----------------+\n; Analysis & Synthesis ; DESKTOP-39FL7AV  ; Windows 10 ; 10.0       ; x86_64         ;\n; Fitter               ; DESKTOP-39FL7AV  ; Windows 10 ; 10.0       ; x86_64         ;\n; Assembler            ; DESKTOP-39FL7AV  ; Windows 10 ; 10.0       ; x86_64         ;\n; Timing Analyzer      ; DESKTOP-39FL7AV  ; Windows 10 ; 10.0       ; x86_64         ;\n+----------------------+------------------+------------+------------+----------------+\n\n\n------------\n; Flow Log ;\n------------\nquartus_map --read_settings_files=on --write_settings_files=off PartBDebug -c PartBDebug\nquartus_fit --read_settings_files=off --write_settings_files=off PartBDebug -c PartBDebug\nquartus_asm --read_settings_files=off --write_settings_files=off PartBDebug -c PartBDebug\nquartus_sta PartBDebug -c PartBDebug\n\n\n\n"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# vsim -c -onfinish exit -l tb_safety_arbiter.log work.tb_safety_arbiter -do "C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do" 
+# Start time: 07:25:07 on Nov 04,2026
+# Loading sv_std.std
+# Loading work.tb_safety_arbiter
+# Loading work.safety_arbiter
+# do {C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do}
+# PASS: tb_safety_arbiter priority and lockouts
+# ** Note: $finish    : C:/Quartus_Projects/ECHO7_Integrated_V2/tests/member_c/tb_safety_arbiter.sv(33)
+#    Time: 4560 ns  Iteration: 1  Instance: /tb_safety_arbiter
+# End time: 07:25:08 on Nov 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

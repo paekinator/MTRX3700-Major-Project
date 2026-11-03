@@ -1,0 +1,84 @@
+# vsim -c -onfinish exit -l tb_integrated_pins.log work.tb_integrated_pins -do "C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do" 
+# Start time: 07:26:53 on Nov 04,2026
+# Loading sv_std.std
+# Loading work.perception_pkg
+# Loading work.tb_integrated_pins
+# Loading work.echo7IntegratedTop
+# Loading work.video_pll
+# Loading work.clock_divider
+# Loading work.ov7670_config
+# Loading work.i2c_master
+# Loading work.ov7670_capture
+# Loading work.frame_buffer
+# Loading work.camera_pkg
+# Loading work.camera_display
+# Loading work.vision_pkg
+# Loading work.candidate_pkg
+# Loading work.perceptionCore
+# Loading work.hsvColourGate
+# Loading work.cameraStreamBridge
+# Loading work.heldBusCdc
+# Loading work.asyncPixelFifo
+# Loading work.horizontalRunFilter
+# Loading work.causalMaskCleanup
+# Loading work.boundedCandidates
+# Loading work.glyphBanks
+# Loading work.projectiveMarkerReader
+# Loading work.mainColourSupportReader
+# Loading work.nativeAnchorReader
+# Loading work.nativeAnchorDivide40
+# Loading work.projectiveSerialMultiply
+# Loading work.targetTracker
+# Loading work.calibrationGeometry
+# Loading work.calibrationPointMapper
+# Loading work.calibrationSerialMultiply
+# Loading work.markerQueryStore
+# Loading work.colourSampler
+# Loading work.fixedSheetInteraction
+# Loading work.memberCBoard
+# Loading work.nec_decoder
+# Loading work.hex_digit
+# Loading work.sonar_guard
+# Loading work.sonar_pll
+# Loading work.sonar_range
+# Loading work.member_c_control
+# Loading work.perception_adapter
+# Loading work.motion_fsm
+# Loading work.safety_arbiter
+# Loading work.chassis_command
+# Loading work.uart_tx
+# Loading work.uart_rx
+# Loading work.pulse_stretch
+# Loading work.memberBDebug
+# Loading work.snapshot_probes
+# Loading work.memberBVgaModeSwitch
+# Loading work.memberBVgaOverlay
+# Loading work.memberBVgaContour
+# Loading work.memberBVgaLabels
+# Loading work.vga_sink
+# Loading work.frame_snap
+# Loading work.snapshot_ram
+# Loading work.hcsr04_model
+# Loading work.memberBVgaDiagnostics
+# Loading work.memberBVgaHsv
+# do {C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do}
+# [HCSR04 @0.0 us] PROBLEM: TRIG pulse of 0.01 us ignored: the module needs at least 10 us high. (At 50 MHz that is 500 clock cycles.)
+# OK 1: power-up stops before valid J3 sample
+# OK 2: physical GPIO27/29 -> teacher driver -> CDC: 1000 mm
+# OK 3: physical IR POWER selects SW blue3 through real request link
+# OK 4: POWER only starts SEARCH
+# OK 5: original NEC 32-bit capture retained
+# OK 6: KEY1 HEX H-ED12 retained
+# OK 7: real tracker locks third report; actual board starts APPROACH
+# OK 8: GPIO31 emits complete 115200-baud negative-forward 0.05 JSON
+# OK 9: physical J3 250 mm stops safely, not DOCKED
+# OK 10: real J3 safety causes zero JSON on actual UART pin
+# OK 11: physical IR A latches higher-priority E-STOP
+# OK 12: physical repeat cannot restart or clear A
+# OK 13: physical KEY0 clears latches and waits for new sensor/POWER
+# OK 14: sensor model: no runtime trigger errors; two physical distance measurements
+# PASS: tb_integrated_pins checks=14 sensor_measurements=2 UART_lines=3 initial_model_events=1
+# ** Note: $finish    : C:/Quartus_Projects/ECHO7_Integrated_V2/tests/integration/tb_integrated_pins.sv(37)
+#    Time: 187054800 ns  Iteration: 1  Instance: /tb_integrated_pins
+# End time: 07:34:04 on Nov 04,2026, Elapsed time: 0:07:11
+# Errors: 0, Warnings: 0

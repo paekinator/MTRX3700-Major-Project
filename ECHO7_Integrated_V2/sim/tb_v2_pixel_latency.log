@@ -1,0 +1,45 @@
+# vsim -c -onfinish exit -l tb_v2_pixel_latency.log work.tb_v2_pixel_latency -do "C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do" 
+# Start time: 07:47:23 on Nov 04,2026
+# Loading sv_std.std
+# Loading work.perception_pkg
+# Loading work.tb_v2_pixel_latency
+# Loading work.vision_pkg
+# Loading work.candidate_pkg
+# Loading work.camera_pkg
+# Loading work.perceptionCore
+# Loading work.hsvColourGate
+# Loading work.cameraStreamBridge
+# Loading work.heldBusCdc
+# Loading work.asyncPixelFifo
+# Loading work.horizontalRunFilter
+# Loading work.causalMaskCleanup
+# Loading work.boundedCandidates
+# Loading work.glyphBanks
+# Loading work.projectiveMarkerReader
+# Loading work.mainColourSupportReader
+# Loading work.nativeAnchorReader
+# Loading work.nativeAnchorDivide40
+# Loading work.projectiveSerialMultiply
+# Loading work.targetTracker
+# Loading work.calibrationGeometry
+# Loading work.calibrationPointMapper
+# Loading work.calibrationSerialMultiply
+# Loading work.markerQueryStore
+# Loading work.colourSampler
+# Loading work.fixedSheetInteraction
+# Loading work.member_c_control
+# Loading work.perception_adapter
+# Loading work.motion_fsm
+# Loading work.safety_arbiter
+# do {C:\Quartus_Projects\ECHO7_Integrated_V2\tests\run.do}
+# PIXEL_REPORT frame=1 bypass=0 age_us=40917 locked=0 centreU=52 interactionBusy=0
+# PIXEL_REPORT frame=2 bypass=0 age_us=40917 locked=0 centreU=52 interactionBusy=0
+# PIXEL_REPORT frame=3 bypass=0 age_us=40917 locked=1 centreU=52 interactionBusy=1
+# PIXEL_REPORT frame=4 bypass=1 age_us=22540 locked=0 centreU=52 interactionBusy=0
+# PIXEL_REPORT frame=5 bypass=1 age_us=22540 locked=0 centreU=52 interactionBusy=0
+# PIXEL_REPORT frame=6 bypass=1 age_us=22540 locked=1 centreU=52 interactionBusy=0
+# PASS: tb_v2_pixel_latency reports=6 normal_max_us=40917 bypass_max_us=22540 limit_us=150000
+# ** Note: $finish    : C:/Quartus_Projects/ECHO7_Integrated_V2/tests/integration/tb_v2_pixel_latency.sv(78)
+#    Time: 240918857 ns  Iteration: 1  Instance: /tb_v2_pixel_latency
+# End time: 07:51:28 on Nov 04,2026, Elapsed time: 0:04:05
+# Errors: 0, Warnings: 0
